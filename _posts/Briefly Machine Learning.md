@@ -5,7 +5,7 @@ title: Briefly Machine Learning
 
 ![cover](https://user-images.githubusercontent.com/17668390/40880123-23849aa8-6660-11e8-926c-2b14b6b077fa.jpg)
 
-Machine Learning
+**Machine Learning**
 
 Machine Learning is a method of data analysis that automates analytical model building. Using algorithms that learn from data in iterative fashion. Machine Learning allows computer to find hidden insight without being explicitly programmed where to look.
 
@@ -58,8 +58,8 @@ Popular technique include self-organizing maps , nearest-neighbor mapping , k-me
 
 This type of learning has three primary components -
 
-**agent** — the learner or decision maker
-**environment** — everything the agent interacts with
+**agent** — the learner or decision maker<br>
+**environment** — everything the agent interacts with<br>
 **action** — what the agent can do
 
 The objective is for the agent to choose actions that maximize the expected reward over a given amount of time. The agent will reach the goal much faster by following a good policy. So the goal in the reinforcement learning is to learn the best policy.
