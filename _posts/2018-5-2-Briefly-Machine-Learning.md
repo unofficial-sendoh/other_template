@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2014-3-3-Hello-World
+title: Briefly Machine Learning
 ---
 
 ![cover](https://user-images.githubusercontent.com/17668390/40880123-23849aa8-6660-11e8-926c-2b14b6b077fa.jpg)
