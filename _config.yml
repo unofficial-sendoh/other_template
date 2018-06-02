@@ -19,15 +19,15 @@ avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/je
 footer-links:
   dribbble:
   email:
-  facebook:iphoton.2k14
+  facebook: iphoton.2k14
   flickr:
-  github:iphton
-  instagram:innat_2k14/
-  linkedin:innat2k14
+  github: iphton
+  instagram: innat_2k14/
+  linkedin: innat2k14
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter:innat_2k14
-  stackoverflow:users/story/9215780 # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  twitter: innat_2k14
+  stackoverflow: users/story/9215780 # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/
 
