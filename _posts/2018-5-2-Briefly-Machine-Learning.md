@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Briefly Machine Learning
-excerpt: A brief introduction to Machine Learning in general<br>
+excerpt: A brief introduction to Machine Learning in general
 images:
   - url: /images/cover_brief_ml.jpg
 
