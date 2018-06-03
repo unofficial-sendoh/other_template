@@ -43,6 +43,7 @@ So we should address data quality issue -
 
 Data preparation is very important for our models. Models are learned from the data and perform , so the amount and quality of data available for building the models are important factors. After cleaning the data sets we then need to split it into two part Test set and Train set . We’ll build and train our models using Train data sets and next we’ll test our models using Test data sets. Now this’s an iterative process as because we need to get best models. After the model is ready , then we can deploy our model.
 
+![ml_process](https://user-images.githubusercontent.com/17668390/40884042-0ca8b7f0-66c0-11e8-84be-1dbf6040050b.png)
 
 There are different types of Machine Learning technique out there for different types of problem. There’re main three types of ML algorithms
 
