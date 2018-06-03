@@ -76,20 +76,28 @@ This was just for Fun-type project to scrap data from various web site. Here we 
 Selected Sites for data scraping were : 
 
 **Amazon**
-. Get-best-seller-book-list
-. Scrap-most-value-comment
-. Detail-information-for-one-book
+
+- Get-best-seller-book-list
+
+- Scrap-most-value-comment
+
+- Detail-information-for-one-book
 
 **IMDB**
-. Download_all_top_rated_movie_poster
-. List_of_top_rated_movies
+
+- Download_all_top_rated_movie_poster
+
+- List_of_top_rated_movies
 
 **Linked In**
-. Scrape-detail-information-for-one-people
-. Load-n-times-pages-at-a-time
+
+- Scrape-detail-information-for-one-people
+
+- Load-n-times-pages-at-a-time
 
 **Udemy**
-. Best_seller_courses
+
+- Best_seller_courses
 
 
 
