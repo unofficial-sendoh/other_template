@@ -44,3 +44,23 @@ This is university level project and choose following component to build autonom
 - Deploy the model
 
 ---
+
+## Tech Zone BD | E-Learning for Developer and Designer
+
+<p align="center">
+  <img width="700" height="353" src="https://user-images.githubusercontent.com/17668390/39472389-d9a0a538-4cfd-11e8-8b99-f6bfe3e3f9c6.jpg">
+</p>
+
+Tech Zone BD will provide technical information on Windows OS & Android OS. Community will provide Trick , Tips about both OS.
+
+Hardware & Software will be major focused. In the Code Section it will be the best point to learn some of most popular programming language such as C/C++ - Python - Swift - Java - C# and also in aditional language such as Matlab & Arduino Code etc. It will be a great journey for new programmer to have such website where he can learn such new things and find help in a great respect.
+
+One of the great thing that one can get is Community Support. One can share their creative work with others & let other know what he/she is cabale of.
+
+---
+
+## Control Raspberry Pi GPIO with Web-Sockets
+
+In this project we built a web based circuit controller system using Raspberry Pi in real time. Web-socket - can be run together with a normal HTTP server. We've tested two approaches - using Node ( server environment ) and also using Tornado ( Python web framework ).
+
+You can click a button in a web browser, and enable a GPIO on your Raspberry Pi which turns on a light in your house. All in real time, and with communication going both ways!
