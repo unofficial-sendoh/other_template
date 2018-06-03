@@ -1,7 +1,7 @@
 
 > I don’t update this page as much, so head to my [GitHub](https://github.com/iphton) for the most recent projects
 
-## Autonomous | Self-Driving Car ( In Progress )
+## [Autonomous | Self-Driving Car ( In Progress )](https://github.com/iphton/Self-Driving-Car)
 
 <p align="center">
   <img width="700" height="393" src="https://www.israel21c.org/wp-content/uploads/2017/07/shutterstock_autodrive-1168x657.jpg">
@@ -46,7 +46,7 @@ This is university level project and choose following component to build autonom
 
 
 
-## Tech Zone BD | E-Learning for Developer and Designer
+## [Tech Zone BD | E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone)
 
 <p align="center">
   <img width="700" height="353" src="https://user-images.githubusercontent.com/17668390/39472389-d9a0a538-4cfd-11e8-8b99-f6bfe3e3f9c6.jpg">
@@ -61,7 +61,7 @@ One of the great thing that one can get is Community Support. One can share thei
 
 
 
-## Control Raspberry Pi GPIO with Web-Sockets
+## [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket)
 
 In this project we built a web based circuit controller system using Raspberry Pi in real time. Web-socket - can be run together with a normal HTTP server. We've tested two approaches - using Node ( server environment ) and also using Tornado ( Python web framework ).
 
@@ -69,7 +69,7 @@ You can click a button in a web browser, and enable a GPIO on your Raspberry Pi 
 
 
 
-## Data Scraping
+## [Data Scraping](https://github.com/iphton/Data-Scraping)
 
 This was just for Fun-type project to scrap data from various web site. Here we used Python and it's some powerful packages like selenium , beautiful soup , scrap , request etc.
 
@@ -93,7 +93,7 @@ Selected Sites for data scraping were :
 
 
 
-## MovieLens-IMDB-Analysis
+## [MovieLens-IMDB-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
 
 IMDB Movie Dataset. Our research question is What types of movies genres user viewed and rated most than other movies genres ? We take some general approach to solve it. We successfully find the relationship between genres and ratings value including average ratings value with concern launch year.
 
