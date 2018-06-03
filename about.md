@@ -16,7 +16,16 @@ If you’re working in the crime cast and healthcare, don’t hesitate to reach 
 
 ---
 
-Being a hobbyist on **Graphics Design** I also love to make cool things in Photoshop, Illustrator, Premiere and After effect.I always striving to learn and grow because I know there's always something more to learn in the world of graphics design.I'm all about making 
-cool things and being creative. I'm also love to play **PC game** in my spare time especially NFS, Devil May Cry,Far Cry etc.
+Being a hobbyist on **Graphics Design** I also love to make cool things in Photoshop, Illustrator, Premiere and After effect. I always striving to learn and grow because I know there's always something more to learn in the world of graphics design. I'm all about making 
+cool things and being creative. I'm also love to play **PC game** in my spare time especially NFS Devil-May-Cry Far-Cry.
 
 **Photo Manipulation** Acknowledgement By Advance Graphics Designer [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/featured)
+
+
+Graph_One             |  Graph_Two           
+:-------------------------:|:-----------------------------:
+![](/images/graph_one.jpg)  |  ![](/images/graph_two.jpg)   
+
+[View on Web](https://www.flickr.com/photos/cosmic_plasma/sets/72157687263827040/with/37567324632/)
+
+
