@@ -65,10 +65,44 @@ One of the great thing that one can get is Community Support. One can share thei
 
 ## Control Raspberry Pi GPIO with Web-Sockets
 
-
-
 In this project we built a web based circuit controller system using Raspberry Pi in real time. Web-socket - can be run together with a normal HTTP server. We've tested two approaches - using Node ( server environment ) and also using Tornado ( Python web framework ).
 
 You can click a button in a web browser, and enable a GPIO on your Raspberry Pi which turns on a light in your house. All in real time, and with communication going both ways!
 
+---
 
+## Data Scraping
+
+This was just for Fun-type project to scrap data from various web site. Here we used Python and it's some powerful packages like selenium , beautiful soup , scrap , request etc.
+
+Selected Sites for data scraping were : 
+
+**Amazon**
+. Get-best-seller-book-list
+. Scrap-most-value-comment
+. Detail-information-for-one-book
+
+**IMDB**
+. Download_all_top_rated_movie_poster
+. List_of_top_rated_movies
+
+**Linked In**
+. Scrape-detail-information-for-one-people
+. Load-n-times-pages-at-a-time
+
+**Udemy**
+. Best_seller_courses
+
+---
+
+## MovieLens-IMDB-Analysis
+
+IMDB Movie Dataset. Our research question is What types of movies genres user viewed and rated most than other movies genres ? We take some general approach to solve it. We successfully find the relationship between genres and ratings value including average ratings value with concern launch year.
+
+We want find the most rated genres in the given movies data set. Our goal is to find what types of movies user like most and rated most as well. We have to merge two data set for this purpose and doing some operation on it to get the desire result.If we’re asked what genres people like most and vote them as well. Here we try to give the answer.
+
+We are using the following dataset : IMDB Movie Dataset This dataset describe 5-star ratings and free-text tagging activity from , a move recommendation service. It contains 20000263 ratings and 465564 tags applications across 27278 movies. These data were created by 138493 user between January 09 1995 and March 31 , 2015.
+
+The data are contained in six files links.csv , movies.csv , ratings.csv and tags.csv etc. In this project we will use only two but massive csv files which is movies.csv and ratings.csv.
+
+Data Set can be get from this site : [Data Sets](http://grouplens.org/datasets/)
