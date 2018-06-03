@@ -45,7 +45,6 @@ This is university level project and choose following component to build autonom
 - Deploy the model
 
 
----
 
 ## Tech Zone BD | E-Learning for Developer and Designer
 
@@ -61,7 +60,6 @@ Hardware & Software will be major focused. In the Code Section it will be the be
 One of the great thing that one can get is Community Support. One can share their creative work with others & let other know what he/she is cabale of.
 
 
----
 
 ## Control Raspberry Pi GPIO with Web-Sockets
 
@@ -69,7 +67,7 @@ In this project we built a web based circuit controller system using Raspberry P
 
 You can click a button in a web browser, and enable a GPIO on your Raspberry Pi which turns on a light in your house. All in real time, and with communication going both ways!
 
----
+
 
 ## Data Scraping
 
@@ -93,7 +91,7 @@ Selected Sites for data scraping were :
 **Udemy**
 . Best_seller_courses
 
----
+
 
 ## MovieLens-IMDB-Analysis
 
