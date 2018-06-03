@@ -3,6 +3,10 @@ layout: page
 permalink: /about/
 ---
 
+<a href="https://stackexchange.com/users/7424649">
+<img src="https://stackexchange.com/users/flair/7424649.png?theme=clean" width="208" height="58" alt="profile for iPhoton on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for iPhoton on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+</a><br>
+
 I’m an undergrad student and currently majoring in Electronics & Communication Engineering at Khulna University of Engineering & Technology, Khulna, Bangladesh.
 
 Data Science , Deep Learning , Chat Bot , Augmented Reality , Digital Image Processing are such technologies which attracts me most. When it comes down to coding, my choice are primarily Python , C++ , Swift and JavaScript. I enjoy coding and love to work on open source tech and also all of my work git hub repositories is open sourced and always will be.
