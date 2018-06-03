@@ -26,6 +26,8 @@ Graph_One             |  Graph_Two
 :-------------------------:|:-----------------------------:
 ![](/images/graph_one.jpg)  |  ![](/images/graph_two.jpg)   
 
+<img src="/images/graph_one.jpg" width="300"/> <img src="/images/graph_two.jpg" width="380"/>
+
 [View on Web](https://www.flickr.com/photos/cosmic_plasma/sets/72157687263827040/with/37567324632/)
 
 
