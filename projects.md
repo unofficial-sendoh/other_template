@@ -82,27 +82,27 @@ Selected Sites for data scraping were :
 
 **Amazon**
 
-- Get-best-seller-book-list
+- Scrap best seller book list
 
-- Scrap-most-value-comment
+- Scrap most valuable comment
 
-- Detail-information-for-one-book
+- Describing info for a book
 
 **IMDB**
 
-- Download_all_top_rated_movie_poster
+- Download all top rated movie poster
 
-- List_of_top_rated_movies
+- Scrap top rated movies
 
 **Linked In**
 
-- Scrape-detail-information-for-one-people
+- Scrap information of targt individual
 
-- Load-n-times-pages-at-a-time
+- Load n tinmes pages at a time
 
 **Udemy**
 
-- Best_seller_courses
+- Scrap list of best selling courses
 
 
 
