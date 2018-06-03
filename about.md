@@ -1,8 +1,8 @@
 ---
 layout: page
+title: About
 permalink: /about/
 ---
-
 <a href="https://stackoverflow.com/users/9215780/iphoton">
 <img src="https://stackoverflow.com/users/flair/9215780.png?theme=clean" width="208" height="58" alt="profile for iPhoton at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for iPhoton at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
 </a><br>
