@@ -3,8 +3,8 @@ layout: page
 permalink: /about/
 ---
 
-<a href="https://stackexchange.com/users/7424649">
-<img src="https://stackexchange.com/users/flair/7424649.png?theme=clean" width="208" height="58" alt="profile for iPhoton on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for iPhoton on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+<a href="https://stackoverflow.com/users/9215780/iphoton">
+<img src="https://stackoverflow.com/users/flair/9215780.png?theme=clean" width="208" height="58" alt="profile for iPhoton at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for iPhoton at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
 </a><br>
 
 I’m an undergrad student and currently majoring in Electronics & Communication Engineering at Khulna University of Engineering & Technology, Khulna, Bangladesh.
