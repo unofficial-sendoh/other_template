@@ -20,13 +20,8 @@ Being a hobbyist on **Graphics Design** I also love to make cool things in Photo
 cool things and being creative. I'm also love to play **PC game** in my spare time especially NFS Devil-May-Cry Far-Cry.
 
 **Photo Manipulation** Acknowledgement By Advance Graphics Designer [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/featured)
-
-
-Graph_One             |  Graph_Two           
-:-------------------------:|:-----------------------------:
-![](/images/graph_one.jpg)  |  ![](/images/graph_two.jpg)   
-
-<img src="/images/graph_one.jpg" width="300"/> <img src="/images/graph_two.jpg" width="380"/>
+ 
+<img src="/images/graph_one.jpg" width="300"/> <img src="/images/graph_two.jpg" width="380"/> 
 
 [View on Web](https://www.flickr.com/photos/cosmic_plasma/sets/72157687263827040/with/37567324632/)
 
