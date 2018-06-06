@@ -106,3 +106,4 @@ If you found yourself hard to understand Machine Learning and can’t catch inte
 - [I, Robot](https://www.imdb.com/title/tt0343818/)
 
 And last but not least — [Green Lantern Animated Series](https://www.imdb.com/title/tt1724587/) — Silly, right ? I know. But it was the most influential AI anime series was for me to get excited about Artificial Intelligence. A character named [Aya — Origin](https://www.youtube.com/watch?v=mqAmAqV1-Fs) which made me serious on AI technology.
+
