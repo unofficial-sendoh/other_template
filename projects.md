@@ -3,7 +3,7 @@
 
 ---
 
-Some necessary [GitHubGist](https://gist.github.com/iphton) 
+Some Necessary [GitHubGist](https://gist.github.com/iphton) 
 - [Installing OpenCV3 for Python3x](https://gist.github.com/iphton/4af8e9a3accfdcf2511ee4ced26a1d77)
 - [Create Anaconda Env with Necessary Packages](https://gist.github.com/iphton/ecf250c2d49af73fdeb92982723d7016)
 - [FFmpeg | Basic Operation on Subtitles](https://gist.github.com/iphton/7d5511941970e8b448453980f47f9ec3)
