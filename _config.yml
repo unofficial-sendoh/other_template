@@ -88,3 +88,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  
+plugins:
+  - jemoji
