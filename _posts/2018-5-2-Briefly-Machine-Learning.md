@@ -9,7 +9,7 @@ images:
 
 
 
-**Machine Learning**
+I give this plugin two :+1:!
 
 Machine Learning is a method of data analysis that automates analytical model building. Using algorithms that learn from data in iterative fashion. Machine Learning allows computer to find hidden insight without being explicitly programmed where to look.
 
