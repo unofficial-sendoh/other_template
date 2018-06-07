@@ -8,9 +8,6 @@ images:
 ---
 
 
-
-I give this plugin two :+1:!
-
 Machine Learning is a method of data analysis that automates analytical model building. Using algorithms that learn from data in iterative fashion. Machine Learning allows computer to find hidden insight without being explicitly programmed where to look.
 
 System are often called Model which can learn to perform a specific task by analyzing lots of examples for particular problems.
@@ -97,7 +94,7 @@ However this’s actually a vast topic and lots of things have to cover. To get 
 
 Also check [this out](http://web.mit.edu/tslvr/www/lessons_two_years.html) , good reading. This is form Tom Silver — on ‘My First Two Years of AI Research’.
 
-If someone found himself hard to understand Machine Learning and can’t catch interest, then it good to go first watch some movies on it, it might trigger his interest on it. However no one will learn ML from these of course but will get soft feels for sure :smile:
+If someone found himself hard to understand Machine Learning and can’t catch interest, then it good to go first watch some movies on it, it might trigger his interest on it. However no one will learn ML from these of course but will get soft feels for sure :smirk:
 
 - [Person of Interest](https://www.imdb.com/title/tt1839578/)
 - [Ex Machina](https://www.imdb.com/title/tt0470752/?ref_=nv_sr_1)
