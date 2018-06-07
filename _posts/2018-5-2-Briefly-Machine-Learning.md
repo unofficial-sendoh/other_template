@@ -88,7 +88,7 @@ Let’s take quick overview to some fileds where machine learning are applied -
 - Email spam filtering
 - Financial Modeling
 
-However this’s actually a vast topic and lots of things have to cover. To get more of this, i’d like to suggest you a few blogs followings -
+However this’s actually a vast topic and lots of things have to cover. To get more of this, a few blogs followings are worth to follow –
 
 - [AI](https://www.artificial-intelligence.blog/news/)
 - [Open AI](https://openai.com/)
@@ -97,7 +97,7 @@ However this’s actually a vast topic and lots of things have to cover. To get 
 
 Also check [this out](http://web.mit.edu/tslvr/www/lessons_two_years.html) , good reading. This is form Tom Silver — on ‘My First Two Years of AI Research’.
 
-If you found yourself hard to understand Machine Learning and can’t catch interest, then i suggest you to go first watch some movies on it, it might trigger your interest on it. You won’t learn ML from these of course but will get soft feels for sure :D
+If someone found himself hard to understand Machine Learning and can’t catch interest, then it good to go first watch some movies on it, it might trigger his interest on it. However no one will learn ML from these of course but will get soft feels for sure :smile:
 
 - [Person of Interest](https://www.imdb.com/title/tt1839578/)
 - [Ex Machina](https://www.imdb.com/title/tt0470752/?ref_=nv_sr_1)
@@ -105,5 +105,5 @@ If you found yourself hard to understand Machine Learning and can’t catch inte
 - [WALL-E](https://www.imdb.com/title/tt0910970/)
 - [I, Robot](https://www.imdb.com/title/tt0343818/)
 
-And last but not least — [Green Lantern Animated Series](https://www.imdb.com/title/tt1724587/) — Silly, right ? I know. But it was the most influential AI anime series was for me to get excited about Artificial Intelligence. A character named [Aya — Origin](https://www.youtube.com/watch?v=mqAmAqV1-Fs) which made me serious on AI technology.
+And last but not least — [Green Lantern Animated Series](https://www.imdb.com/title/tt1724587/) — Silly, right? But it was the most influential AI anime series so far to get excited about Artificial Intelligence. A character named [Aya — Origin](https://www.youtube.com/watch?v=mqAmAqV1-Fs) which enough to make someone serious on AI technology.
 
