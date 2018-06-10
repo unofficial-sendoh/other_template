@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Briefly Machine Learning
-excerpt: A brief introduction to Machine Learning in general
+title: Image Data Analysis Using Numpy & OpenCV - Part 1
+excerpt: Up and Running with basic Image processing in Python
 images:
   - url: /images/cover_brief_ml.jpg
 
