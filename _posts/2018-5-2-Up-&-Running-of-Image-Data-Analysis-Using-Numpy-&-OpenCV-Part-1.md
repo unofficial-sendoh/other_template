@@ -22,7 +22,7 @@ x = ('a', 1, False)
 {% endhighlight %}
 
 
-```
+```python
 from IPython.display import Image
 with open('F:/zom_pic.gif','rb') as img:
     display(Image(data = img.read(), format = 'png'))
