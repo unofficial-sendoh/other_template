@@ -18,23 +18,11 @@ In an RGB image, each pixel is represented by three 8 bit numbers associated to 
 Pixel together from far away, create an image and upfront they're just little lights that are ON and OFF. The combination of those create images and basically what we see on screen every single day.
 
 
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}
-
-
-
-{% highlight python %}
+```python
 from IPython.display import Image
 with open('F:/zom_pic.gif','rb') as img:
     display(Image(data = img.read(), format = 'png'))
-{% endhighlight %}
+```
 
 ![Pixel Zooming](/images/zom_pic.gif)
 
@@ -90,8 +78,6 @@ print('Image Width {}'.format(pic.shape[1]))
 print('Dimension of Image {}'.format(pic.ndim))
 ```
 
-> Output
-
 ```
 Type of the image :  <class 'imageio.core.util.Image'>
 
@@ -106,14 +92,13 @@ The shape of the ndarray show that it is a three layered matrix. The first two n
 ```python
 print('Image size {}'.format(pic.size))
 ```
-> Output
+
 `Image size 1618560`
 
 ```python
 print('Maximum RGB value in this image {}'.format(pic.max()))
 print('Minimum RGB value in this image {}'.format(pic.min()))
 ```
-> Output
 ```
 Maximum RGB value in this image 255
 Minimum RGB value in this image 0
@@ -129,7 +114,6 @@ And view the RGB value gradually.
 '''
 pic[ 100, 50 ]
 ```
-> Output
 `Image([109, 143,  46], dtype=uint8)`
 
 In these case: R = 109 ; G = 143 ; B = 46 and we can realize that this particular pixel has a lot of GREEN in it. And now we could have also selected one of this number specifically by giving the index value of these three channel. Now we know for this
@@ -147,7 +131,6 @@ print('Value of only R channel {}'.format(pic[ 100, 50, 0]))
 print('Value of only G channel {}'.format(pic[ 100, 50, 1]))
 print('Value of only B channel {}'.format(pic[ 100, 50, 2]))
 ```
-> Output
 ```
 Value of only R channel 109
 Value of only G channel 143
