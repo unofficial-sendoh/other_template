@@ -18,11 +18,24 @@ In an RGB image, each pixel is represented by three 8 bit numbers associated to 
 Pixel together from far away, create an image and upfront they're just little lights that are ON and OFF. The combination of those create images and basically what we see on screen every single day.
 
 
-```python
+{% highlight ruby %}
+def show
+  @widget = Widget(params[:id])
+  respond_to do |format|
+    format.html # show.html.erb
+    format.json { render json: @widget }
+  end
+end
+{% endhighlight %}
+
+
+
+{% highlight python %}
 from IPython.display import Image
 with open('F:/zom_pic.gif','rb') as img:
     display(Image(data = img.read(), format = 'png'))
-```
+{% endhighlight %}
+
 ![Pixel Zooming](/images/zom_pic.gif)
 
 Every photograph, in digital form, is made up of pixels. They are the smallest unit of information that makes up a picture. Usually round or square, they are typically arranged in a 2-dimensional grid.
