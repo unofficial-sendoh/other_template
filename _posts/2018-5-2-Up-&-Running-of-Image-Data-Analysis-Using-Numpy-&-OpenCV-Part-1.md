@@ -208,5 +208,314 @@ plt.show()
 ```
 ![red_chn](/images/three_chn.JPG)
 
+To make it more clear let's change the column section and this time we'll change the RGB channel simultaneously.
 
+```python
+# set value 200 of all channels to those pixels which turns them to white
+pic[ 50:450 , 400:600 , [0,1,2] ] = 200 
+plt.figure( figsize = (10,10))
+plt.imshow(pic)
+plt.show()
+```
+![red_chn](/images/mix_all_chn.JPG)
+
+
+## Splitting Layers
+
+Now, we know that each pixel of the image is represented by three integers. Splitting the image into seperate colour components is just a matter of pulling out the correct slice of the image array.
+
+```python
+import numpy as np
+pic = imageio.imread('F:/demo_2.jpg')
+
+fig, ax = plt.subplots(nrows = 1, ncols=3, figsize=(15,5))
+
+for c, ax in zip(range(3), ax):
+    
+    # create zero matrix
+    split_img = np.zeros(pic.shape, dtype="uint8") # 'dtype' by default: 'numpy.float64'
+    
+    # assing each channel 
+    split_img[ :, :, c] = pic[ :, :, c]
+    
+    # display each channel
+    ax.imshow(split_img)
+```
+![red_chn](/images/split_chns.JPG)
+
+## Greyscale
+
+Black and white images are stored in 2-Dimentional arrays. There're two types of Black and White images:
+
+- **Greyscale** : Ranges of shades of grey : `0` ~ `255`
+- **Binary** : Pixel are either black or white : `0` or `255`
+
+Now, Greyscaling is such process by which an image is converted from a full color to shades of grey. In image processing tools, for example: in OpenCV, many function uses greyscale images before porcessing and this is done because it simplifies the image, acting almost as a noise reduction and increasing processing time as there's less information in the images.
+
+There are a couple of ways to do this in python to [convert image to grayscale](https://stackoverflow.com/a/45338831/9215780). But a straight forward way using matplotlib is to take the weighted mean of the RGB value of original image using [this](http://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale) formula.
+
+`Y' = 0.299 R + 0.587 G + 0.114 B `
+
+```python
+pic = imageio.imread('F:/demo_2.jpg')
+
+gray = lambda rgb : np.dot(rgb[... , :3] , [0.299 , 0.587, 0.114]) 
+gray = gray(pic)  
+
+plt.figure( figsize = (10,10))
+plt.imshow(gray, cmap = plt.get_cmap(name = 'gray'))
+plt.show()
+```
+![red_chn](/images/gray_one.JPG)
+
+---
+
+However, the [GIMP](https://docs.gimp.org/2.6/en/gimp-tool-desaturate.html) converting color to grayscale image software has three algorithms to do the task.
+
+**Lightness**
+The graylevel will be calculated as
+
+`Lightness = ½ × (max(R,G,B) + min(R,G,B))`
+
+**Luminosity**
+The graylevel will be calculated as
+
+`Luminosity = 0.21 × R + 0.72 × G + 0.07 × B`
+
+**Average**
+The graylevel will be calculated as
+
+`Average Brightness = (R + G + B) ÷ 3`
+
+Let's give a try one of their algorithm, what about Luminosity.
+
+```python
+pic = imageio.imread('F:/demo_2.jpg')
+
+gray = lambda rgb : np.dot(rgb[... , :3] , [0.21 , 0.72, 0.07]) 
+gray = gray(pic)  
+
+plt.figure( figsize = (10,10))
+plt.imshow(gray, cmap = plt.get_cmap(name = 'gray'))
+plt.show()
+
+'''
+Let's take a quick overview some the changed properties now the color image.
+Like we observe some properties of color image, same statements are applying 
+now for gray scaled image.
+'''
+
+print('Type of the image : ' , type(gray))
+print()
+print('Shape of the image : {}'.format(gray.shape))
+print('Image Hight {}'.format(gray.shape[0]))
+print('Image Width {}'.format(gray.shape[1]))
+print('Dimension of Image {}'.format(gray.ndim))
+print()
+print('Image size {}'.format(gray.size))
+print('Maximum RGB value in this image {}'.format(gray.max()))
+print('Minimum RGB value in this image {}'.format(gray.min()))
+print('Random indexes [X,Y] : {}'.format(gray[100, 50]))
+```
+![red_chn](/images/gimp_gray_pic.JPG)
+![red_chn](/images/gimp_Info.JPG)
+
+## Use logical Operator To Process Pixel Values
+
+We can create a bullion ndarray in the same size by using a **logical operator**. However, this won't create any new array but it simply return `True` to its host variable. For example: let's consider we want to filter out some low value pixel or high value or (within any condition) in an RGB image and yes it would be great to convert RGB to gray scale but for now we won't go for that rather than deal with color image.
+
+Let's first load an image and show it on screen.
+
+```python
+pic = imageio.imread('F:/demo_1.jpg')
+plt.figure(figsize = (10,10))
+plt.imshow(pic)
+plt.show()
+```
+![red_chn](/images/logic_op_pic.JPG)
+
+OK, let's consider this dump image. Now, for any case we want to filter out all the pixel value which is below than, let's assume 20. For this we'll use logical operator to do this task which we'll return as a value of `True` for all the index.
+
+```python
+low_pixel = pic < 20
+
+# to ensure of it let's check if all values in low_pixel are True or not
+if low_pixel.any() == True:
+    print(low_pixel.shape)
+```
+`(1079, 1293, 3)`
+
+
+Now as we said, a host variable , well this name is not traditionally use but i refer it because it behaves. It just hold the True or False value and nothing else. So, if we see the `shape` of both `low_pixel` and `pic` , we'll find that both have the same `shape`.
+
+```python
+print(pic.shape)
+print(low_pixel.shape)
+
+(1079, 1293, 3)
+(1079, 1293, 3)
+```
+
+We generated that low value filter using a global comparison operator for all the values less than 200. However, we can use this `low_pixel` array as an index to set those low values to some specific values which may be higher than or lower than the previous pixel value.
+
+```python
+# randomly choose a value 
+import random
+
+# load the orginal image
+pic = imageio.imread('F:/demo_1.jpg')
+
+# set value randomly range from 25 to 225 - these value also randomly choosen
+pic[low_pixel] = random.randint(25,225)
+
+# display the image
+plt.figure( figsize = (10,10))
+plt.imshow(pic)
+plt.show()
+```
+![red_chn](/images/radn_logic_pic.JPG)
+
+
+## Masking
+
+Image masking is an image processing technique that is used to remove the background from which photographs those have blurred/fuzzy edges, transparent or hair portions. 
+
+Now, we'll create a mask that is in shape of a circular disc. First we'll measure distance from center of the image to every border pixel values. And we take a convenient radius value and then usng logical operator we'll create a circular disc. It's quite simple, let's see the code.
+
+```python
+if __name__ == '__main__':
+    
+    # load the image
+    pic = imageio.imread('F:/demo_1.jpg')
+    
+    # seperate the row and column values
+    total_row , total_col , layers = pic.shape
+    
+    '''
+    Create vector.
+    
+    Ogrid is a compact method of creating a multidimensional-
+    ndarray operations in single lines.
+    for ex:
+    
+    >>> ogrid[0:5,0:5]
+    output: [array([[0],
+                    [1],
+                    [2],
+                    [3],
+                    [4]]), 
+            array([[0, 1, 2, 3, 4]])]
+            
+    '''
+    x , y = np.ogrid[:total_row , :total_col]
+
+    # get the center values of the image
+    cen_x , cen_y = total_row/2 , total_col/2
+    
+    
+    '''
+    Measure distance value from center to each border pixel.
+    To make it easy, we can think it's like, we draw a line from center-
+    to each edge pixel value --> s**2 = (Y-y)**2 + (X-x)**2 
+    '''
+    distance_from_the_center = np.sqrt((x-cen_x)**2 + (y-cen_y)**2)
+
+    # Select convenient radius value
+    radius = (total_row/2)
+
+    # Using logical operator '>' 
+    '''
+    logical operator to do this task which will return as a value 
+    of True for all the index according to the given condition
+    '''
+    circular_pic = distance_from_the_center > radius
+
+    '''
+    let assign value zero for all pixel value that outside the cirular disc.
+    All the pixel value outside the circular disc, will be black now.
+    '''
+    pic[circular_pic] = 0
+    plt.figure(figsize = (10,10))
+    plt.imshow(pic) 
+    plt.show()
+```
+![red_chn](/images/mask_pic.JPG)
+
+
+## Satellite Image Processing
+
+One of my MOOC course on edX i've introduced with some the satellite images and very basic processing of it. It's very informative of course and much deep. Avoiding complexities let's do some very few analysis of it.
+
+```python
+# load the image
+pic = imageio.imread('F:\satimg.jpg')
+plt.figure(figsize = (10,10))
+plt.imshow(pic)
+plt.show()
+```
+![red_chn](/images/sat_img.JPG)
+
+Let's see some basic info of it.
+```python
+print(f'Shape of the image {pic.shape}')
+print(f'hieght {pic.shape[0]} pixels')
+print(f'width {pic.shape[1]} pixels')
+
+Shape of the image (3725, 4797, 3)
+hieght 3725 pixels
+width 4797 pixels
+```
+
+Now, There's something interesting about this image. Like many other visualizations, the colors in each rgb layer mean something. For example, the intensity of the red will be an indication of altitude of the geographical data point in the pixel. The intensity of blue will indicate a measure of aspect and the green will indicate slope. These colors will help to communicate this information in a quicker and more effective way rather than showing numbers.
+
+<ul>
+    
+<li><p style="font-family: Arial; font-size:1.15em;color:red; font-style:bold">
+Red pixel indicates: Altitude</p>
+<li><p style="font-family: Arial; font-size:1.15em;color:blue; font-style:bold">
+Blue pixel indicates: Aspect</p>
+<li><p style="font-family: Arial; font-size:1.15em;color:green; font-style:bold">Green pixel indicates: Slope</p>
+
+</ul>
+
+There is, by just looking at this colorful image, a trained eye can tell already what the altitude, what's the slope, what's the aspect. So that's the idea of loading some more meaning to these colors to indicate something more scientific.
+
+## Detecting High Pixel of Each Channel
+
+```python
+# Only Red Pixel value , higher than 180
+pic = imageio.imread('F:\satimg.jpg')
+red_mask = pic[:, :, 0] < 180
+
+pic[red_mask] = 0
+plt.figure(figsize=(15,15))
+plt.imshow(pic)
+
+
+# Only Green Pixel value , higher than 180
+pic = imageio.imread('F:\satimg.jpg')
+green_mask = pic[:, :, 1] < 180
+
+pic[green_mask] = 0
+plt.figure(figsize=(15,15))
+plt.imshow(pic)
+
+
+# Only Blue Pixel value , higher than 180
+pic = imageio.imread('F:\satimg.jpg')
+blue_mask = pic[:, :, 2] < 180
+
+pic[blue_mask] = 0
+plt.figure(figsize=(15,15))
+plt.imshow(pic)
+
+# Composite mask using logical_and
+pic = imageio.imread('F:\satimg.jpg')
+final_mask = np.logical_and(red_mask, green_mask, blue_mask)
+pic[final_mask] = 40
+plt.figure(figsize=(15,15))
+plt.imshow(pic)
+```
+
+![red_chn](/images/mered.png)
 
