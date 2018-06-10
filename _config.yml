@@ -91,6 +91,4 @@ exclude:
   
 gems:
   - jemoji
-  
-markdown: redcarpet
-extensions: [fenced_code_blocks]
+
