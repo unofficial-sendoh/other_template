@@ -23,6 +23,26 @@ from IPython.display import Image
 with open('F:/zom_pic.gif','rb') as img:
     display(Image(data = img.read(), format = 'png'))
 ```
-![Alt Text](/images/zom_pic.gif)
+![Pixel Zooming](/images/zom_pic.gif)
 
 Every photograph, in digital form, is made up of pixels. They are the smallest unit of information that makes up a picture. Usually round or square, they are typically arranged in a 2-dimensional grid.
+
+```python
+Image("F:/rgb_explain.png")
+```
+![RGB Explain](/images/rgb_explain.png)
+
+Now, if all three values are at full intensity, that means they're 255, it then shows as white and if all three colors are muted, or has the value of 0, the color shows as black. The combination of these three will, in turn, give us a specific shade of the pixel color. Since each number is an 8-bit number, the values range from 0-255.
+
+```python
+Image("F:/dec_to_bin.png")
+```
+![Dec to Bin](/images/dec_to_bin.png)
+
+Combination of these three color will posses tends to the hightest value among them. Since each value can have 256 different intesity or brightness value, it makes 16.8 million total shades.
+
+```python
+with open('F:/rig_gif.gif','rb') as f:
+    display(Image(data=f.read(), format='gif'))
+```
+![RGB_Gif](/images/rig_gif.gif)
