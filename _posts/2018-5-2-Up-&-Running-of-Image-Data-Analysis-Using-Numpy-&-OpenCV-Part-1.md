@@ -3,7 +3,7 @@ layout: post
 title: Image Data Analysis Using Numpy & OpenCV - Part 1
 excerpt: Basic overview of image processing in Python
 images:
-  - url: /images/rgb_explain.png
+  - url: /images/feature_img_pt_1.jpg
 
 ---
 
