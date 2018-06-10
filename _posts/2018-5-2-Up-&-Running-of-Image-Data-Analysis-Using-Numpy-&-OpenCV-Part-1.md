@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Image Data Analysis Using Numpy & OpenCV - Part 1
-excerpt: Up and Running with basic Image processing in Python
+excerpt: Basic overview of image processing in Python
 images:
-  - url: /images/cover_brief_ml.jpg
+  - url: /images/feature.jpg
 
 ---
 
