@@ -11,13 +11,13 @@ images:
 
 ## Introduction : A Little Bit About Pixel
 
-Computer store images as a mosaic of tiny squrares. This is like the ancient art form of tile mosaic, or the melting bead kits kids play with today. Now, if these square tiles are too big, it's then hard to make smooth edges and curves. The more and smaller tiles we use, the smoother or as we say less pixelated, image will be. These sometimes gets referred to as resoulution of the images.
+Computer store images as a mosaic of tiny squares. This is like the ancient art form of tile mosaic, or the melting bead kits kids play with today. Now, if these square tiles are too big, it's then hard to make smooth edges and curves. The more and smaller tiles we use, the smoother or as we say less pixelated, image will be. These sometimes gets referred to as resolution of the images.
 
-Vector graphics are somewhat different method of storing images that aims to avoid pixel related issues. But even vecotr images, in the end, are displayed as a mosaic of pixels. The word pixel means a picture element. A simple way to describe each pixel is using a combination of three colors, namely Red, Green, Blue. This is what we call an RGB image.
+Vector graphics are somewhat different method of storing images that aims to avoid pixel related issues. But even vector images, in the end, are displayed as a mosaic of pixels. The word pixel means a **picture element**. A simple way to describe each pixel is using a combination of three colors, namely **`Red, Green, Blue`**. This is what we call an `RGB` image.
 
-In an RGB image, each pixel is represented by three 8 bit numbers associated to the values for Red, Green, Blue respectively. Eventually using a magnifying glass, if we zoom a picture, we'll see the pictue is made up of tiny dots of little light or more specifically the pixels and what more interesting is to see that tose tiny dots of little light are actually multiple tiny dots of little light of different colors which are nothing but Red Green Blue channels.
+In an RGB image, each pixel is represented by three `8 bit` numbers associated to the values for **`Red, Green, Blue`** respectively. Eventually using a magnifying glass, if we zoom a picture, we'll see the picture is made up of tiny dots of little light or more specifically the pixels and what more interesting is to see that those tiny dots of little light are actually multiple tiny dots of little light of different colors which are nothing but **`Red, Green, Blue`** channels.
 
-Pixel together from far away, create an image and upfront they're just little lights that are ON and OFF. The combination of those create images and basically what we see on screen every single day.
+Pixel together from far away, create an image and upfront they're just little lights that are **ON and OFF**. The combination of those create images and basically what we see on screen every single day.
 
 
 ```python
@@ -28,21 +28,21 @@ with open('F:/zom_pic.gif','rb') as img:
 
 ![Pixel Zooming](/images/zom_pic.gif)
 
-Every photograph, in digital form, is made up of pixels. They are the smallest unit of information that makes up a picture. Usually round or square, they are typically arranged in a 2-dimensional grid.
+Every photograph, in digital form, is made up of pixels. They are the smallest unit of information that makes up a picture. Usually round or square, they are typically arranged in a 2-dimensional grid. 
 
 ```python
 Image("F:/rgb_explain.png")
 ```
 ![RGB Explain](/images/rgb_explain.png)
 
-Now, if all three values are at full intensity, that means they're 255, it then shows as white and if all three colors are muted, or has the value of 0, the color shows as black. The combination of these three will, in turn, give us a specific shade of the pixel color. Since each number is an 8-bit number, the values range from 0-255.
+Now, if all three values are at full intensity, that means they're 255, it then shows as white and if all three colors are muted, or has the value of 0, the color shows as black. The combination of these three will, in turn, give us a specific shade of the pixel color. Since each number is an **8-bit** number, the values range from **`0-255`**. 
 
 ```python
 Image("F:/dec_to_bin.png")
 ```
 ![Dec to Bin](/images/dec_to_bin.png)
 
-Combination of these three color will posses tends to the hightest value among them. Since each value can have 256 different intesity or brightness value, it makes 16.8 million total shades.
+Combination of these three color will posses tends to the highest value among them. Since each value can have 256 different intensity or brightness value, it makes **16.8** million total shades.
 
 ```python
 with open('F:/rig_gif.gif','rb') as f:
@@ -91,25 +91,23 @@ Image Width 960
 Dimension of Image 3
 ```
 
-The shape of the ndarray show that it is a three layered matrix. The first two numbers here are length and width, and the third number (i.e. 3) is for three layers: Red, Green, Blue. So, if we calculate the size of a RGB image, the total size will be counted as height x width x 3
+The shape of the ndarray show that it is a three layered matrix. The first two numbers here are length and width, and the third number (i.e. 3) is for three layers: **`Red, Green, Blue`**. So, if we calculate the size of a RGB image, the total size will be counted as **`height x width x 3`**
 
 ```python
 print('Image size {}'.format(pic.size))
-```
-
-`Image size 1618560`
-
-```python
 print('Maximum RGB value in this image {}'.format(pic.max()))
 print('Minimum RGB value in this image {}'.format(pic.min()))
+
 ```
 ```
+Image size 1618560
 Maximum RGB value in this image 255
 Minimum RGB value in this image 0
 ```
-These values are important to verify since the eight bit color intensity is, can not be outside of the 0 to 255 range.
 
-Now, using the picture assigned variable we can also access any particular pixel value of an image and further can access each RGB channel separetly.
+These values are important to verify since the eight bit color intensity is, can not be outside of the 0 to 255 range. 
+
+Now, using the picture assigned variable we can also access any particular pixel value of an image and further can access each **RGB** channel separately.
 
 ```python
 '''
@@ -118,7 +116,9 @@ And view the RGB value gradually.
 '''
 pic[ 100, 50 ]
 ```
-`Image([109, 143,  46], dtype=uint8)`
+```
+Image([109, 143,  46], dtype=uint8)
+```
 
 In these case: R = 109 ; G = 143 ; B = 46 and we can realize that this particular pixel has a lot of GREEN in it. And now we could have also selected one of this number specifically by giving the index value of these three channel. Now we know for this
 
@@ -182,9 +182,9 @@ plt.show()
 
 Now, here we can also able to change the number of RGB values. As an example, let's set the Red, Green, Blue layer for following Rows values to full intensity.
 
-- R channel: Row-  50 to 150
-- G channel: Row- 200 to 300
-- B channel: Row- 350 to 450
+- R channel: Row- 100 to 110
+- G channel: Row- 200 to 210
+- B channel: Row- 300 to 310
 
 We'll load the image once, so that we can visualize each change simultaneously.
 
@@ -223,7 +223,7 @@ plt.show()
 </p>
 
 
-To make it more clear let's change the column section and this time we'll change the RGB channel simultaneously.
+To make it more clear let's change the column section too and this time we'll change the RGB channel simultaneously.
 
 ```python
 # set value 200 of all channels to those pixels which turns them to white
@@ -240,7 +240,7 @@ plt.show()
 
 ## Splitting Layers
 
-Now, we know that each pixel of the image is represented by three integers. Splitting the image into seperate colour components is just a matter of pulling out the correct slice of the image array.
+Now, we know that each pixel of the image is represented by three integers. Splitting the image into separate color components is just a matter of pulling out the correct slice of the image array.
 
 ```python
 import numpy as np
@@ -272,7 +272,9 @@ Now, Greyscaling is such process by which an image is converted from a full colo
 
 There are a couple of ways to do this in python to [convert image to grayscale](https://stackoverflow.com/a/45338831/9215780). But a straight forward way using matplotlib is to take the weighted mean of the RGB value of original image using [this](http://en.wikipedia.org/wiki/Grayscale#Converting_color_to_grayscale) formula.
 
-`Y' = 0.299 R + 0.587 G + 0.114 B `
+```
+Y' = 0.299 R + 0.587 G + 0.114 B
+```
 
 ```python
 pic = imageio.imread('F:/demo_2.jpg')
@@ -327,11 +329,13 @@ now for gray scaled image.
 
 print('Type of the image : ' , type(gray))
 print()
+
 print('Shape of the image : {}'.format(gray.shape))
 print('Image Hight {}'.format(gray.shape[0]))
 print('Image Width {}'.format(gray.shape[1]))
 print('Dimension of Image {}'.format(gray.ndim))
 print()
+
 print('Image size {}'.format(gray.size))
 print('Maximum RGB value in this image {}'.format(gray.max()))
 print('Minimum RGB value in this image {}'.format(gray.min()))
@@ -357,7 +361,7 @@ Random indexes [X,Y] : 129.07
 
 ## Use logical Operator To Process Pixel Values
 
-We can create a bullion ndarray in the same size by using a **logical operator**. However, this won't create any new array but it simply return `True` to its host variable. For example: let's consider we want to filter out some low value pixel or high value or (within any condition) in an RGB image and yes it would be great to convert RGB to gray scale but for now we won't go for that rather than deal with color image.
+We can create a bullion ndarray in the same size by using a **logical operator**. However, this won't create any new array but it simply return `True` to its host variable. For example: let's consider we want to filter out some low value pixel or high value or (any condition) in an RGB image and yes it would be great to convert RGB to gray scale but for now we won't go for that rather than deal with color image.
 
 Let's first load an image and show it on screen.
 
@@ -384,7 +388,7 @@ if low_pixel.any() == True:
 `(1079, 1293, 3)`
 
 
-Now as we said, a host variable , well this name is not traditionally use but i refer it because it behaves. It just hold the True or False value and nothing else. So, if we see the `shape` of both `low_pixel` and `pic` , we'll find that both have the same `shape`.
+Now as we said, a host variable , well this name is not traditionally used but i refer it because it behaves. It just hold the True value and nothing else. So, if we see the `shape` of both `low_pixel` and `pic` , we'll find that both have the same `shape`.
 
 ```python
 print(pic.shape)
@@ -418,9 +422,9 @@ plt.show()
 
 ## Masking
 
-Image masking is an image processing technique that is used to remove the background from which photographs those have blurred/fuzzy edges, transparent or hair portions. 
+Image masking is an image processing technique that is used to remove the background from which photographs those have fuzzy edges, transparent or hair portions. 
 
-Now, we'll create a mask that is in shape of a circular disc. First we'll measure distance from center of the image to every border pixel values. And we take a convenient radius value and then usng logical operator we'll create a circular disc. It's quite simple, let's see the code.
+Now, we'll create a mask that is in shape of a circular disc. First we'll measure distance from center of the image to every border pixel values. And we take a convenient radius value and then using logical operator we'll create a circular disc. It's quite simple, let's see the code.
 
 ```python
 if __name__ == '__main__':
@@ -487,7 +491,7 @@ if __name__ == '__main__':
 
 ## Satellite Image Processing
 
-One of my MOOC course on edX i've introduced with some the satellite images and very basic processing of it. It's very informative of course and much deep. Avoiding complexities let's do some very few analysis of it.
+One of MOOC course on edX, we've introduced with some satellite images and its processing system. It's very informative of course.However, let's do a few analysis task on it.
 
 ```python
 # load the image
