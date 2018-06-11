@@ -314,7 +314,19 @@ print('Minimum RGB value in this image {}'.format(gray.min()))
 print('Random indexes [X,Y] : {}'.format(gray[100, 50]))
 ```
 ![red_chn](/images/gimp_gray_pic.JPG)
-![red_chn](/images/gimp_Info.JPG)
+```
+Type of the image : <class 'imageio.core.util.Image'>
+
+Shape of the image : (562,960)
+Image Height 562
+Image Widht 960
+Dimension of Image 2
+
+Image size 539520
+Maximum RGB value in this image 254.9999999997
+Minimum RGB value in this image 0.0
+Random indexes [X,Y] : 129.07
+```
 
 ## Use logical Operator To Process Pixel Values
 
@@ -329,6 +341,7 @@ plt.imshow(pic)
 plt.show()
 ```
 ![red_chn](/images/logic_op_pic.JPG)
+
 
 OK, let's consider this dump image. Now, for any case we want to filter out all the pixel value which is below than, let's assume 20. For this we'll use logical operator to do this task which we'll return as a value of `True` for all the index.
 
