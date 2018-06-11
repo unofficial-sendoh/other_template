@@ -66,7 +66,6 @@ if __name__ == '__main__':
 
     plt.imshow(pic)
 ```
-![Loaded Image](/images/demo_2.jpg)
 
 <p align="left">
   <img width="500" height="292" src="/images/demo_2.jpg">
@@ -152,7 +151,9 @@ plt.xlabel('Width {}'.format(pic.shape[1]))
 plt.imshow(pic[ : , : , 0])
 plt.show()
 ```
-![red_channel](/images/red_chn.JPG)
+<p align="left">
+  <img width="460" height="297" src="/images/red_chn.JPG">
+</p>
 
 ```python
 plt.title('G channel')
@@ -162,7 +163,9 @@ plt.xlabel('Width {}'.format(pic.shape[1]))
 plt.imshow(pic[ : , : , 1])
 plt.show()
 ```
-![red_channel](/images/green_chn.JPG)
+<p align="left">
+  <img width="460" height="297" src="/images/green_chn.JPG">
+</p>
 
 ```python
 plt.title('B channel')
@@ -172,7 +175,9 @@ plt.xlabel('Width {}'.format(pic.shape[1]))
 plt.imshow(pic[ : , : , 2])
 plt.show()
 ```
-![red_channel](/images/blue_chn.JPG)
+<p align="left">
+  <img width="460" height="297" src="/images/blue_chn.JPG">
+</p>
 
 
 Now, here we can also able to change the number of RGB values. As an example, let's set the Red, Green, Blue layer for following Rows values to full intensity.
@@ -191,7 +196,10 @@ plt.figure( figsize = (10,10))
 plt.imshow(pic)
 plt.show()
 ```
-![red_chn](/images/R_chn.JPG)
+<p align="left">
+  <img width="500" height="297" src="/images/R_chn.JPG">
+</p>
+
 
 ```python
 pic[200:300 , : , 1] = 255 # full intensity to those pixel's G channel
@@ -199,7 +207,10 @@ plt.figure( figsize = (10,10))
 plt.imshow(pic)
 plt.show()
 ```
-![red_chn](/images/red_grn_chn.JPG)
+<p align="left">
+  <img width="500" height="297" src="/images/red_grn_chn.JPG">
+</p>
+
 
 ```python
 pic[350:450 , : , 2] = 255 # full intensity to those pixel's B channel
@@ -207,7 +218,10 @@ plt.figure( figsize = (10,10))
 plt.imshow(pic)
 plt.show()
 ```
-![red_chn](/images/three_chn.JPG)
+<p align="left">
+  <img width="500" height="297" src="/images/three_chn.JPG">
+</p>
+
 
 To make it more clear let's change the column section and this time we'll change the RGB channel simultaneously.
 
@@ -218,7 +232,10 @@ plt.figure( figsize = (10,10))
 plt.imshow(pic)
 plt.show()
 ```
-![red_chn](/images/mix_all_chn.JPG)
+<p align="left">
+  <img width="500" height="297" src="/images/mix_all_chn.JPG">
+</p>
+
 
 
 ## Splitting Layers
@@ -267,7 +284,9 @@ plt.figure( figsize = (10,10))
 plt.imshow(gray, cmap = plt.get_cmap(name = 'gray'))
 plt.show()
 ```
-![red_chn](/images/gray_one.JPG)
+<p align="left">
+  <img width="500" height="300" src="/images/gray_one.JPG">
+</p>
 
 ---
 
@@ -318,7 +337,10 @@ print('Maximum RGB value in this image {}'.format(gray.max()))
 print('Minimum RGB value in this image {}'.format(gray.min()))
 print('Random indexes [X,Y] : {}'.format(gray[100, 50]))
 ```
-![red_chn](/images/gimp_gray_pic.JPG)
+<p align="left">
+  <img width="500" height="300" src="/images/gimp_gray_pic.JPG">
+</p>
+
 ```
 Type of the image : <class 'imageio.core.util.Image'>
 
@@ -345,7 +367,9 @@ plt.figure(figsize = (10,10))
 plt.imshow(pic)
 plt.show()
 ```
-![red_chn](/images/logic_op_pic.JPG)
+<p align="left">
+  <img width="500" height="407" src="/images/logic_op_pic.JPG">
+</p>
 
 
 OK, let's consider this dump image. Now, for any case we want to filter out all the pixel value which is below than, let's assume 20. For this we'll use logical operator to do this task which we'll return as a value of `True` for all the index.
@@ -387,7 +411,9 @@ plt.figure( figsize = (10,10))
 plt.imshow(pic)
 plt.show()
 ```
-![red_chn](/images/radn_logic_pic.JPG)
+<p align="left">
+  <img width="500" height="407" src="/images/radn_logic_pic.JPG">
+</p>
 
 
 ## Masking
@@ -453,7 +479,10 @@ if __name__ == '__main__':
     plt.imshow(pic) 
     plt.show()
 ```
-![red_chn](/images/mask_pic.JPG)
+<p align="left">
+  <img width="500" height="407" src="/images/mask_pic.JPG">
+</p>
+
 
 
 ## Satellite Image Processing
@@ -467,7 +496,9 @@ plt.figure(figsize = (10,10))
 plt.imshow(pic)
 plt.show()
 ```
-![red_chn](/images/sat_img.JPG)
+<p align="left">
+  <img width="600" height="450" src="/images/sat_img.JPG">
+</p>
 
 Let's see some basic info of it.
 ```python
@@ -526,6 +557,8 @@ pic[final_mask] = 40
 plt.figure(figsize=(15,15))
 plt.imshow(pic)
 ```
+<p align="left">
+  <img width="600" height="450" src="/images/sat_img.JPG">
+</p>
 
-![red_chn](/images/mered.png)
 
