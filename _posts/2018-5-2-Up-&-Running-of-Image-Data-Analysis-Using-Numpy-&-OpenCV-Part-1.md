@@ -17,10 +17,6 @@ In an RGB image, each pixel is represented by three 8 bit numbers associated to 
 
 Pixel together from far away, create an image and upfront they're just little lights that are ON and OFF. The combination of those create images and basically what we see on screen every single day.
 
-{% highlight python %}
-x = ('a', 1, False)
-{% endhighlight %}
-
 
 ```python
 from IPython.display import Image
