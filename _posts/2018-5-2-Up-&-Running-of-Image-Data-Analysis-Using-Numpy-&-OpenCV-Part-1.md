@@ -464,15 +464,11 @@ width 4797 pixels
 
 Now, There's something interesting about this image. Like many other visualizations, the colors in each rgb layer mean something. For example, the intensity of the red will be an indication of altitude of the geographical data point in the pixel. The intensity of blue will indicate a measure of aspect and the green will indicate slope. These colors will help to communicate this information in a quicker and more effective way rather than showing numbers.
 
-<ul>
-    
-<li><p style="font-family: Arial; font-size:1.15em;color:red; font-style:bold">
-Red pixel indicates: Altitude</p>
-<li><p style="font-family: Arial; font-size:1.15em;color:blue; font-style:bold">
-Blue pixel indicates: Aspect</p>
-<li><p style="font-family: Arial; font-size:1.15em;color:green; font-style:bold">Green pixel indicates: Slope</p>
 
-</ul>
+- Red pixel indicates: **Altitude**
+- Blue pixel indicates: **Aspect**
+- Green pixel indicates: **Slope**
+
 
 There is, by just looking at this colorful image, a trained eye can tell already what the altitude, what's the slope, what's the aspect. So that's the idea of loading some more meaning to these colors to indicate something more scientific.
 
