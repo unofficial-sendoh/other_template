@@ -558,7 +558,6 @@ plt.figure(figsize=(15,15))
 plt.imshow(pic)
 ```
 <p align="left">
-  <img width="600" height="450" src="/images/sat_img.JPG">
+  <img width="600" height="450" src="/images/mered.png">
 </p>
-
 
