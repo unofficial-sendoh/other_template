@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Data Analysis Using Numpy * OpenCV
+title: Image Data Analysis Using Numpy & OpenCV
 excerpt: Basic overview of image processing in Python
 images:
   - url: /images/feature_img_pt_1.jpg
@@ -68,6 +68,9 @@ if __name__ == '__main__':
 ```
 ![Loaded Image](/images/demo_2.jpg)
 
+<p align="left">
+  <img width="500" height="292" src="/images/demo_2.jpg">
+</p>
 
 ## Observe Basic Properties of Image
 
