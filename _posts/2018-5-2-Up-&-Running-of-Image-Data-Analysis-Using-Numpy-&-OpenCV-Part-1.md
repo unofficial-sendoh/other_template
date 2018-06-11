@@ -1,10 +1,13 @@
 ---
 layout: post
+title: Image Data Analysis Using Numpy * OpenCV
 excerpt: Basic overview of image processing in Python
 images:
   - url: /images/feature_img_pt_1.jpg
 
 ---
+
+![feature_img](/images/feature_img_pt_1.jpg)
 
 ## Introduction : A Little Bit About Pixel
 
