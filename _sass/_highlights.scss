@@ -1,7 +1,21 @@
 
+.highlight { 
+  background-color: #FAFAFA;
+  padding: 5px 10px;
+  margin: 20px 0;
+  border: 1px solid #DDDDDD;
+}
+
+.highlight pre {
+  /* overflow: scroll; Prefer no word wrap? Uncomment this line and comment out the 2 lines below. */
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
 
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-size: 15px;
 }
 
 .highlight .c { color: #586E75 } /* Comment */
