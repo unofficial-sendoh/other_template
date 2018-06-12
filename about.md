@@ -6,6 +6,7 @@ permalink: /about/
 <a href="https://stackoverflow.com/users/9215780/ipython">
 <img src="https://stackoverflow.com/users/flair/9215780.png?theme=clean" width="208" height="58" alt="profile for iPython at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for iPython at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
 </a><br>
+
 ---
 
 I’m an undergrad student and currently majoring in Electronics & Communication Engineering at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/) in short), Khulna, Bangladesh.
