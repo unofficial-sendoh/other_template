@@ -2,9 +2,10 @@
 layout: page
 permalink: /about/
 ---
+[**stack overflow**](https://stackoverflow.com/users/story/9215780)<br>
 <a href="https://stackoverflow.com/users/9215780/ipython">
 <img src="https://stackoverflow.com/users/flair/9215780.png?theme=clean" width="208" height="58" alt="profile for iPython at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for iPython at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-</a><br>
+</a><br><hr>
 
 I’m an undergrad student and currently majoring in Electronics & Communication Engineering at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/) in short), Khulna, Bangladesh.
 
@@ -25,4 +26,20 @@ cool things and being creative. I'm also love to play **PC game** in my spare ti
 
 [View on Web](https://www.flickr.com/photos/cosmic_plasma/sets/72157687263827040/with/37567324632/)
 
+---
+
+**Published Writing**
+* [Quora writing page](https://www.quora.com/profile/Mohammed-Innat)
+  - [AI Resources](http://qr.ae/TUpyGw)
+  - [Opportunities in Python](http://qr.ae/TUpyGU)
+  - [R vs Python](http://qr.ae/TUpyGS)
+  - [Reason for Multiple Programming Langugages](http://qr.ae/TUpyGl)
+  
+* [Linkedin Articles](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
+* [Medium Published](https://medium.com/@iphoton_x)
+* [Codementor Page](https://www.codementor.io/innat_2k14/posts)
+
+
+
+  
 
