@@ -16,12 +16,6 @@ Some Necessary [GitHubGist](https://gist.github.com/iphton)
 ## [Autonomous | Self-Driving Car ( In Progress )](https://github.com/iphton/Self-Driving-Car)
 **Tech Used**: Deep Learning - Python 3 - OpenCV - TensorFlow - Raspberry Pi 3 
 
-
-<p align="center">
-  <img width="700" height="393" src="https://www.israel21c.org/wp-content/uploads/2017/07/shutterstock_autodrive-1168x657.jpg">
-</p>
-
-  
 ### Motivation :
 When people think about self-driving cars, they naturally think about, well, cars. They imagine a future where they buy a new car that has a "self drive" button that takes them wherever they want to go.
 
