@@ -1,3 +1,4 @@
+"" Basic Image Data Analysis Using Numpy & OpenCV - Part 1  ""
 
 http://scikit-image.org/docs/dev/user_guide/numpy_images.html#a-crash-course-on-numpy-for-images
 http://www.scipy-lectures.org/advanced/image_processing/
