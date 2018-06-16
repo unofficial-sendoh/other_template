@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Image Data Analysis Using Numpy & OpenCV
+title: Basic Image Data Analysis Using Numpy & OpenCV - Part 1
 excerpt: Basic overview of image processing in Python
 images:
   - url: /images/feature_img_pt_1.jpg
@@ -565,3 +565,4 @@ plt.imshow(pic)
   <img width="600" height="450" src="/images/mered.png">
 </p>
 
+<a href = "/assets/Sources10.txt" target= "_blank">References</a>
