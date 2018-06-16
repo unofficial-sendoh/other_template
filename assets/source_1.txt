@@ -1,1 +1,6 @@
 
+http://scikit-image.org/docs/dev/user_guide/numpy_images.html#a-crash-course-on-numpy-for-images
+http://www.scipy-lectures.org/advanced/image_processing/
+http://www.degeneratestate.org/posts/2016/Oct/23/image-processing-with-numpy/
+https://www.cvl.isy.liu.se/education/undergraduate/tsbb15/computer-exercises/lektion_python.pdf
+https://www.researchgate.net/publication/281004703_NumPy_SciPy_Recipes_for_Image_Processing_Simple_Intensity_Transformations
