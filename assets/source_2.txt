@@ -1,0 +1,24 @@
+"" Soft Tools For Machine Learning ""
+
+http://www.jds-online.com/file_download/612/150%E5%AE%8C%E6%88%90V.pdf
+http://www.pyzo.org/python_vs_matlab.html
+http://www.pyzo.org/speed.html
+https://in.mathworks.com/products/matlab/matlab-vs-python.html
+https://www.reddit.com/r/MachineLearning/comments/1b82s4/requesting_proscons_of_python_vs_matlab_from/
+https://www.reddit.com/r/AskEngineers/comments/4wey9p/matlab_vs_python/
+https://stats.stackexchange.com/a/3070/209125
+http://qr.ae/TUpCEz
+http://qr.ae/TUpCEt
+http://qr.ae/TUpCEW
+https://stackoverflow.blog/2017/09/14/python-growing-quickly/
+https://www.datacamp.com/community/blog/python-scientific-computing-case
+https://agilescientific.com/blog/2016/4/6/why-python-beats-matlab
+https://medium.com/gradbunker/matlab-vs-python-for-scientific-computing-a-beginners-guide-a27f4dcbbc81
+https://medium.com/thorgate/why-choose-python-over-other-languages-abdf726565a3
+https://metarabbit.wordpress.com/2013/10/18/why-python-is-better-than-matlab-for-scientific-software/
+https://blog.thedataincubator.com/2017/10/matlab-vs-python-numpy-for-academics-transitioning-into-data-science/
+https://medium.freecodecamp.org/which-languages-should-you-learn-for-data-science-e806ba55a81f
+https://dzone.com/articles/which-are-the-popular-languages-for-data-science
+https://www.kdnuggets.com/2015/05/r-vs-python-data-science.html
+https://www.datascience.com/blog/r-vs-python-for-data-models-data-science
+https://www.kdnuggets.com/2017/06/top-15-python-libraries-data-science.html
