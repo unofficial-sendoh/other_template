@@ -564,5 +564,5 @@ plt.imshow(pic)
 <p align="left">
   <img width="600" height="450" src="/images/mered.png">
 </p>
-
+---
 <a href = "/assets/source_1.txt" target= "_blank">References</a>
