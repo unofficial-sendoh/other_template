@@ -1,0 +1,7 @@
+"" Briefly Machine Learning ""
+
+https://www.upwork.com/hiring/data/machine-learning-intro/
+https://dzone.com/articles/a-brief-introduction-to-machine-learning
+https://towardsdatascience.com/machine-learning-brief-introduction-51e5d0441d9a
+https://arxiv.org/abs/1709.02840
+https://www.kdnuggets.com/2016/10/machine-learning-complete-detailed-overview.html
