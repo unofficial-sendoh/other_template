@@ -223,3 +223,6 @@ In most cases developers port the language they were already using into machine 
 If someone first ever contact with programming is through machine learning, then he peers in global survey point to Python as the best option, given its wealth of libraries and ease of use. If, on the other hand, he’s dreaming of a job in an enterprise environment, be prepared to use Java.
 
 Whatever the case, these are exciting times for machine learning and the journey is guaranteed to be a mind-blowing one, irrespective of the language one opt for. Enjoy the ride!
+
+---
+<a href = "/assets/source_2.txt" target= "_blank">References</a>
