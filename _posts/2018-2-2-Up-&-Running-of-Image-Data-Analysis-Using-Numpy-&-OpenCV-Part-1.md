@@ -19,37 +19,32 @@ In an RGB image, each pixel is represented by three `8 bit` numbers associated t
 
 Pixel together from far away, create an image and upfront they're just little lights that are **ON and OFF**. The combination of those create images and basically what we see on screen every single day.
 
-
-```python
-from IPython.display import Image
-with open('F:/zom_pic.gif','rb') as img:
-    display(Image(data = img.read(), format = 'png'))
-```
-
 ![Pixel Zooming](/images/zom_pic.gif)
 
 Every photograph, in digital form, is made up of pixels. They are the smallest unit of information that makes up a picture. Usually round or square, they are typically arranged in a 2-dimensional grid. 
 
-```python
-Image("F:/rgb_explain.png")
-```
 ![RGB Explain](/images/rgb_explain.png)
 
 Now, if all three values are at full intensity, that means they're 255, it then shows as white and if all three colors are muted, or has the value of 0, the color shows as black. The combination of these three will, in turn, give us a specific shade of the pixel color. Since each number is an **8-bit** number, the values range from **`0-255`**. 
 
-```python
-Image("F:/dec_to_bin.png")
-```
+
 ![Dec to Bin](/images/dec_to_bin.png)
 
 Combination of these three color will posses tends to the highest value among them. Since each value can have 256 different intensity or brightness value, it makes **16.8** million total shades.
 
-```python
-with open('F:/rig_gif.gif','rb') as f:
-    display(Image(data=f.read(), format='gif'))
-```
 ![RGB_Gif](/images/rig_gif.gif)
 
+
+Here, we'll observe some of the following, which is very basic fundamental image data analysis with `Numpy` and some concern Python pacakges, like `imageio` , `matplotlib` etc.
+
+* Importing images and observe it's properties
+* Splitting the layers
+* Greyscale
+* Using Logical Operator on pixel values
+* Masking using Logical Operator
+* Satellite Image Data Analysis
+
+However, we'll do all the coding part on `Jupyter Notebook`. So for more convenient reading view check the Notebook [here](https://nbviewer.jupyter.org/github/iphton/Image-Data-Analysis-Using-Pythons/blob/gh-pages/notebook/Image%20Data%20Analysis%20Using%20Numpy%20%26%20OpenCV.ipynb).
 
 ## Importing Image
 
