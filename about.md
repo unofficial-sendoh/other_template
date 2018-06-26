@@ -38,6 +38,7 @@ cool things and being creative. I'm also love to play **PC game** in my spare ti
   - [Reason for Multiple Programming Langugages](http://qr.ae/TUpyGl)
   
 * [Linkedin Articles Page](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
+* [DZone Author Page](https://dzone.com/users/3338062/iphoton.html)
 * [Medium Blogging](https://medium.com/@iphoton_x)
 * [Codementor Published Page](https://www.codementor.io/innat_2k14/posts)
 * [GeeksForGeeks Articles Page](https://auth.geeksforgeeks.org/user/innat/articles)
