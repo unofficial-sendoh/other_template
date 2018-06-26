@@ -37,12 +37,11 @@ cool things and being creative. I'm also love to play **PC game** in my spare ti
   - [R vs Python](http://qr.ae/TUpyGS)
   - [Reason for Multiple Programming Langugages](http://qr.ae/TUpyGl)
   
-* [Linkedin Articles Page](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
 * [DZone Author Page](https://dzone.com/users/3338062/iphoton.html)
-* [Medium Blogging](https://medium.com/@iphoton_x)
-* [Codementor Published Page](https://www.codementor.io/innat_2k14/posts)
+* [Linkedin Articles Page](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
 * [GeeksForGeeks Articles Page](https://auth.geeksforgeeks.org/user/innat/articles)
-
+* [Codementor Published Page](https://www.codementor.io/innat_2k14/posts)
+* [Medium Blogging](https://medium.com/@iphoton_x)
 
 
   
