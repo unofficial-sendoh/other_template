@@ -41,8 +41,4 @@ cool things and being creative. I'm also love to play **PC game** in my spare ti
 * [Linkedin Articles Page](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
 * [GeeksForGeeks Articles Page](https://auth.geeksforgeeks.org/user/innat/articles)
 * [Codementor Published Page](https://www.codementor.io/innat_2k14/posts)
-* [Medium Blogging](https://medium.com/@iphoton_x)
-
-
-  
-
+* [Medium Blogging Page](https://medium.com/innats-blog)
