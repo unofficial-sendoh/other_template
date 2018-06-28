@@ -102,9 +102,9 @@ Selected Sites for data scraping were :
 
 **Linked In**
 
-- Scrap information of targt individual
+- Scrap information of target individual
 
-- Load n tinmes pages at a time
+- Load n times pages at a time
 
 **Udemy**
 
