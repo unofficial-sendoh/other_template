@@ -39,5 +39,5 @@ cool things and being creative. I'm also love to play **PC game** in my spare ti
   
 * [DZone Author Page](https://dzone.com/users/3338062/iphoton.html)
 * [Linkedin Articles Page](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
-* [GeeksForGeeks Articles Page]()
-* [Medium Blogging Page]()
+* [GeeksForGeeks Articles Page](https://auth.geeksforgeeks.org/user/innat/articles)
+* [Medium Blogging Page](https://medium.com/innats-blog)
