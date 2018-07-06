@@ -115,12 +115,7 @@ Selected Sites for data scraping were :
 ## [MovieLens-IMDB-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
 **Tech Used**: Data Analysis - Python 3 - Numpy - Pandas - Matplotlib - Machine Learning - Sckit-Learn
 
-IMDB Movie Dataset. Our research question is What types of movies genres user viewed and rated most than other movies genres ? We take some general approach to solve it. We successfully find the relationship between genres and ratings value including average ratings value with concern launch year.
+[GroupLens Movie Data Sets](http://grouplens.org/datasets/)
 
-We want find the most rated genres in the given movies data set. Our goal is to find what types of movies user like most and rated most as well. We have to merge two data set for this purpose and doing some operation on it to get the desire result.If we’re asked what genres people like most and vote them as well. Here we try to give the answer.
+This dataset describe 5-star ratings and free-text tagging activity from , a move recommendation service. It contains 20000263 ratings and **465564** tags applications across **27278** movies. These data were created by **138493** user between January 09 1995 and March 31 , 2015. The data are contained in six files `links.csv` , `movies.csv` , `ratings.csv` and `tags.csv` etc.
 
-We are using the following dataset : IMDB Movie Dataset This dataset describe 5-star ratings and free-text tagging activity from , a move recommendation service. It contains 20000263 ratings and 465564 tags applications across 27278 movies. These data were created by 138493 user between January 09 1995 and March 31 , 2015.
-
-The data are contained in six files links.csv , movies.csv , ratings.csv and tags.csv etc. In this project we will use only two but massive csv files which is movies.csv and ratings.csv.
-
-Data Set can be get from this site : [Data Sets](http://grouplens.org/datasets/)
