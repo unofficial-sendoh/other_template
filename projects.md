@@ -117,5 +117,5 @@ Selected Sites for data scraping were :
 
 [GroupLens Movie Data Sets](http://grouplens.org/datasets/)
 
-This dataset describe 5-star ratings and free-text tagging activity from , a move recommendation service. It contains 20000263 ratings and **465564** tags applications across **27278** movies. These data were created by **138493** user between January 09 1995 and March 31 , 2015. The data are contained in six files `links.csv` , `movies.csv` , `ratings.csv` and `tags.csv` etc.
+This dataset describe 5-star ratings and free-text tagging activity from , a move recommendation service. It contains **20000263** ratings and **465564** tags applications across **27278** movies. These data were created by **138493** user between January 09 1995 and March 31 , 2015. The data are contained in six files `links.csv` , `movies.csv` , `ratings.csv` and `tags.csv` etc.
 
