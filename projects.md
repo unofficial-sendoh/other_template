@@ -112,7 +112,7 @@ Selected Sites for data scraping were :
 
 
 
-## [MovieLens-IMDB-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
+## [MovieLens-IMDb-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
 **Tech Used**: Data Analysis - Python 3 - Numpy - Pandas - Matplotlib - Machine Learning - Sckit-Learn
 
 [GroupLens Movie Data Sets](http://grouplens.org/datasets/)
