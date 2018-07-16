@@ -13,7 +13,7 @@ I’m an undergrad student and currently majoring in Electronics & Communication
 
 Data Science, ChatBot, Augmented Reality, Deep Learning, Computer Vision are such technologies which attract me most. When it comes down to coding, my choice is primarily Python and C++, Swift, and JavaScript are following. I enjoy coding and love to work on open source tech.
 
-I’m passionate about applying my knowledge of data science and machine learning to areas in crime forecast and healthcare where we can really engineer some better solutions. I've a great interest in sharing my knowledge in my field of expertise.. I’ve been developing my skills since my sophomore year at the university. I'm a life long learner and always get thrilled to try something new.
+I’m passionate about applying my knowledge of data science and machine learning to areas in crime forecast and healthcare where we can really engineer some better solutions. I've a great interest in sharing my knowledge in my field of expertise. I’ve been developing my skills since my sophomore year at the university. I'm a life long learner and always get thrilled to try something new.
 
 If you’re working in the crime forecast or healthcare, don’t hesitate to reach out if you think there’s an opportunity for collaboration. Would love to discuss.
 
