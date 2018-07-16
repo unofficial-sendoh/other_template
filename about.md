@@ -31,12 +31,12 @@ cool things and being creative. I'm also love to play **PC game** in my spare ti
 ---
 
 **Published Writing**
+  
+* [DZone Author Page](https://dzone.com/users/3338062/iphoton.html)
+* [Linkedin Articles Page](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
+* [GeeksForGeeks Articles Page](https://auth.geeksforgeeks.org/user/innat/articles)
 * [Quora writing page](https://www.quora.com/profile/Mohammed-Innat)
   - [AI Resources](http://qr.ae/TUpyGw)
   - [Opportunities in Python](http://qr.ae/TUpyGU)
   - [R vs Python](http://qr.ae/TUpyGS)
   - [Reason for Multiple Programming Langugages](http://qr.ae/TUpyGl)
-  
-* [DZone Author Page](https://dzone.com/users/3338062/iphoton.html)
-* [Linkedin Articles Page](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
-* [GeeksForGeeks Articles Page](https://auth.geeksforgeeks.org/user/innat/articles)
