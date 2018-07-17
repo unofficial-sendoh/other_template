@@ -51,14 +51,13 @@ However, we'll do all the coding part on `Jupyter Notebook`. So for more conveni
 Now let's load an image and observe its various properties in general.
 
 ```python
-if __name__ == '__main__':
-    import imageio
-    import matplotlib.pyplot as plt
-    %matplotlib inline
+import imageio
+import matplotlib.pyplot as plt
+%matplotlib inline
 
+if __name__ == '__main__':
     pic = imageio.imread('F:/demo_2.jpg')
     plt.figure(figsize = (15,15))
-
     plt.imshow(pic)
 ```
 
@@ -92,7 +91,6 @@ The shape of the ndarray show that it is a three layered matrix. The first two n
 print('Image size {}'.format(pic.size))
 print('Maximum RGB value in this image {}'.format(pic.max()))
 print('Minimum RGB value in this image {}'.format(pic.min()))
-
 ```
 ```
 Image size 1618560
