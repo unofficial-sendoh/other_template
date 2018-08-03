@@ -29,7 +29,7 @@ This dataset describe 5-star ratings and free-text tagging activity from , a mov
 
 ---
 
-## [Autonomous | Self-Driving Car ( In Progress )](https://github.com/iphton/Self-Driving-Car)
+## [Self-Driving Car](https://github.com/iphton/Self-Driving-Car) ### In Progress
 **Tech Used**: Deep Learning - Python 3 - OpenCV - TensorFlow - Raspberry Pi 3 
 
 ### Motivation :
@@ -41,7 +41,7 @@ The advent of self-driving technology will transform the design possibilities fo
 
 ---
 
-## Short-Lenght Projects
+## Short-Length Projects
 
 ### [Tech Zone BD | E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone)
 **Tech Used**: ASP.net - C# - MS SQL
@@ -49,5 +49,5 @@ The advent of self-driving technology will transform the design possibilities fo
 ### [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket)
 **Tech Used**: Node.JS - Tornado - Web Socket - Raspberry Pi 3
 
-### [Data Scraping](https://github.com/iphton/Data-Scraping)
+### [Web Scraping](https://github.com/iphton/Data-Scraping)
 **Tech Used**: Python 3 - Selenium - Beautiful Soup - Scrapy
