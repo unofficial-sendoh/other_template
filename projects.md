@@ -29,18 +29,6 @@ This dataset describe 5-star ratings and free-text tagging activity from , a mov
 
 ---
 
-## [Self-Driving Car](https://github.com/iphton/Self-Driving-Car) ### In Progress
-**Tech Used**: Deep Learning - Python 3 - OpenCV - TensorFlow - Raspberry Pi 3 
-
-### Motivation :
-When people think about self-driving cars, they naturally think about, well, cars. They imagine a future where they buy a new car that has a "self drive" button that takes them wherever they want to go.
-
-That will happen eventually. But the impact of self-driving technology is likely to be much broader than that. Our roads are full of trucks, taxis, buses, shuttles, delivery vans, and more—all of these vehicles will have self-driving equivalents within a decade or two.
-
-The advent of self-driving technology will transform the design possibilities for all sorts of vehicles, giving rise to new vehicle categories that don't exist now and others that straddle the line between existing categories. It will also change the economics of transportation and delivery services, making on-demand delivery a much faster, cheaper, and more convenient option.
-
----
-
 ## Short-Length Projects
 
 ### [Tech Zone BD | E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone)
