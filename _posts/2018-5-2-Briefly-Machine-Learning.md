@@ -7,6 +7,9 @@ images:
 
 ---
 
+
+In this age, there is one resource that we've in abundance; a large amount of structured and unstructured data. Machine Learning evolved as a subfield of artificial intelligence that involved the development of self-learning algorithms to gain knowledge from that data in order to make predictions. Instead of requiring humans to manually derive rules and build models from analyzing large amounts of data, machine learning offers a more efficient alternative for capturing the knowledge in data to gradually improve the performance of predictive models, and make data-driven decisions.
+
 Arthur Samuel, a computer scientist who pioneered the study of Artificial Intelligence said that **Machine Learning is the study that gives computers the ability to learn without being explicitly programmed.**
 
 Machine Learning is the design and study of software artifacts that use past experience to make future decisions, a science and art of programming computers so they can learn from data. It's a method of data analysis that automates analytical model building. Using algorithms that learn from data in iterative fashion and find hidden insight without being explicitly programmed where to look.
@@ -36,6 +39,9 @@ As these criteria aren't exclusive, we can combine them in any way we like. Mach
 
 **Supervised learning algorithm** are trained using labeled examples, such as an input where the desire output is known. In supervised learning, the training data we feed to the algorithm icluded the desired solution, it's called labels. The learning algorithm receives a set of inputs along with the corresponding correct outputs, and the algorithm learns by comparing its actual output with correct outputs to find errors. It then modifies the model accordingly. 
 
+![supervised](https://github.com/iphton/iphton.github.io/blob/master/images/supervised.JPG)
+
+
 Through method like classification , regression , prediction , gradient boosting — Supervised learning uses patterns to predict the values of the label on additional unlabeled data. Supervised algorithm is commonly used in application where historical data predict likely future events. Some most popular supervised learning algorithms are listed below:
 
 - [K-Nearest Neighors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
@@ -49,6 +55,9 @@ Through method like classification , regression , prediction , gradient boosting
 ---
 
 **Unsupervised learning algorithm** is used against data that has no historical labels. The system is not told the right answer. The algorithm must figure out what is being shown. The goal is to explore the given data and find some structure within the data.
+
+![supervised](https://github.com/iphton/iphton.github.io/blob/master/images/unsupervised.JPG)
+
 
 Some of the most important unsupervised learning algorithms are listed below:
 
@@ -75,17 +84,20 @@ Most of the semisupervised learning algorithms are combination of unsupervised a
 
 ---
 
-**Reinforcement learning algorithm** is often used for robotics, gaming and navigation. With reinforcement learning , the algorithm discovers through trial and error which actions yield the greatest rewards.
+**Reinforcement learning algorithm** is often used for robotics, gaming and navigation. With reinforcement learning , the algorithm discovers through trial and error which actions yield the greatest rewards. The goal is to develop a system or agent that improves its performance based on iteractions with it environment.
 
 This type of learning has three primary components -
 
-**agent** — the learner or decision maker<br>
-**environment** — everything the agent interacts with<br>
-**action** — what the agent can do
+**Agent** — the learner or decision maker<br>
+**Environment** — everything the agent interacts with<br>
+**Action** — what the agent can do
+
+![supervised](https://github.com/iphton/iphton.github.io/blob/master/images/reinforcement.JPG)
+
 
 The objective is for the agent to choose actions that maximize the expected reward over a given amount of time. The agent will reach the goal much faster by following a good *policy*. So the goal in the reinforcement learning is to learn the **best policy**. A policy defines what action the agent should choose when it is in a given situation. 
 
-**DeepMind's AlphaGo** program is a good example of **Reinforcement Learning**; which beat the world champion Lee Sedol at the game of **Go**. AlphaGo was just applying the policy it had learned.
+A popular example of reinforcement learning is a chess engine. Here, the agent decides upon a series of moves depending on the state of the board and the reward can be defined as win or lose at the end of the game. **DeepMind's AlphaGo** program is a good example of **Reinforcement Learning**; which beat the world champion Lee Sedol at the game of **Go**. AlphaGo was just applying the policy it had learned. 
 
 ---
 
