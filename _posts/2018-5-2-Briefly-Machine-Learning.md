@@ -7,10 +7,98 @@ images:
 
 ---
 
+Arthur Samuel, a computer scientist who pioneered the study of Artificial Intelligence said that **Machine Learning is the study that gives computers the ability to learn without being explicitly programmed.**
 
-Machine Learning is a method of data analysis that automates analytical model building. Using algorithms that learn from data in iterative fashion. Machine Learning allows computer to find hidden insight without being explicitly programmed where to look.
+Machine Learning is the design and study of software artifacts that use past experience to make future decisions, a science and art of programming computers so they can learn from data. It's a method of data analysis that automates analytical model building. Using algorithms that learn from data in iterative fashion and find hidden insight without being explicitly programmed where to look.
 
-System are often called Model which can learn to perform a specific task by analyzing lots of examples for particular problems.
+A popular quote from Tom Mitchell define Machine Learning more engineering-oriented:
+
+> A computer program is said to learn from experience **E** with respect to some task **T** and some performance measure **P**, if its performance on **T**, as measured by **P**, improves with experience **E**.
+
+For example, a spam filter is a Machine Learning program that can learn to flag spam given example of spam emails and examples of regular emails. The examples that the system uses to learn are called **training set**. Each training example is called a **training instances**. In this case, the task **T** is to flag spam for new emails, the experience **E** is the training data, and the performance measure **P** needs to be defined; for example, we can use the ration of correctly classifed emails. This particular performance measure is called **accuracy** and it is often used in classification tasks. 
+
+An another example, assume that we have a collected of pictures. Each picture depicts either a dog or cat photos. A program could learn to perform this task by observing pictures that have already been sorted, and it could evaluate its performace by calculatinng the percentage of correctly classified pictures.
+
+---
+
+### Machine Learning Systems
+
+Machine Learning Systems can be classified based on three broad categories:
+
+**1. Model are trained with Human Supervision**
+
+As these criteria aren't exclusive, we can combine them in any way we like. Machine Learning systems can be classified according to the amount and type of supervision they get during training. There're four major categories:
+
+- Supervised learning
+- Unsupervised learning
+- Semi-Supervised learning
+- Reinforcement learning
+
+**Supervised learning algorithm** are trained using labeled examples, such as an input where the desire output is known. In supervised learning, the training data we feed to the algorithm icluded the desired solution, it's called labels. The learning algorithm receives a set of inputs along with the corresponding correct outputs, and the algorithm learns by comparing its actual output with correct outputs to find errors. It then modifies the model accordingly. 
+
+Through method like classification , regression , prediction , gradient boosting — Supervised learning uses patterns to predict the values of the label on additional unlabeled data. Supervised algorithm is commonly used in application where historical data predict likely future events. Some most popular supervised learning algorithms are listed below:
+
+- [K-Nearest Neighors](https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm)
+- [Linear Regression](https://en.wikipedia.org/wiki/Linear_regression)
+- [Logistic Regression](https://en.wikipedia.org/wiki/Logistic_regression)
+- [Support Vectore Machine](https://en.wikipedia.org/wiki/Support_vector_machine)
+- [Decision Tree](https://en.wikipedia.org/wiki/Decision_tree)
+- [Random Forests](https://en.wikipedia.org/wiki/Random_forest)
+- [Neural Network](https://en.wikipedia.org/wiki/Artificial_neural_network)
+
+---
+
+**Unsupervised learning algorithm** is used against data that has no historical labels. The system is not told the right answer. The algorithm must figure out what is being shown. The goal is to explore the given data and find some structure within the data.
+
+Some of the most important unsupervised learning algorithms are listed below:
+
+- Clustering
+  - [K-Means](https://en.wikipedia.org/wiki/K-means_clustering)
+  - [Hierarchical Cluster Analysis (HCA)](https://en.wikipedia.org/wiki/Hierarchical_clustering)
+  - [Expectation Maximization (EM)](https://en.wikipedia.org/wiki/Expectation%E2%80%93maximization_algorithm)
+- Visualization and Dimensionality reduction
+  - [Principal Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
+  - [Kernel PCA](https://en.wikipedia.org/wiki/Kernel_principal_component_analysis)
+  - [Locally-Linear Embedding (LLE)](https://en.wikipedia.org/wiki/Nonlinear_dimensionality_reduction)
+  - [t-distributed Stochastic Neighbor Embedding (t-SNE)](https://en.wikipedia.org/wiki/T-distributed_stochastic_neighbor_embedding)
+- Association rule learning
+  - [Apriori](https://en.wikipedia.org/wiki/Association_rule_learning)
+  - [Eclat](https://en.wikipedia.org/wiki/Association_rule_learning#Eclat_algorithm)
+
+Another good example of unsupervised learning algorithm is **Visualization algorithm**. We feed them a lot of complex and unlabeled data, and they give outputa 3D or 2D representation of our data that can easily be plotted.
+
+---
+
+**Semi-Supervised learning algorithm** can deal with partially labeled training data, usually a lot of unlabeled data and a little bit of labeled data. A good example is **Google Photo** hosting services. It automatically recognizes the same person on the photo gallery. All we need to do is to tell it who these people are. 
+
+Most of the semisupervised learning algorithms are combination of unsupervised and supervised algorithm. **Deep Belief Network** are based on unsupervised components called **Restricted Boltzmann machines** stacked on top of one another and the whole system is fine-tuned using supervised learning techniques.
+
+---
+
+**Reinforcement learning algorithm** is often used for robotics, gaming and navigation. With reinforcement learning , the algorithm discovers through trial and error which actions yield the greatest rewards.
+
+This type of learning has three primary components -
+
+**agent** — the learner or decision maker<br>
+**environment** — everything the agent interacts with<br>
+**action** — what the agent can do
+
+The objective is for the agent to choose actions that maximize the expected reward over a given amount of time. The agent will reach the goal much faster by following a good *policy*. So the goal in the reinforcement learning is to learn the **best policy**. A policy defines what action the agent should choose when it is in a given situation. 
+
+**DeepMind's AlphaGo** program is a good example of **Reinforcement Learning**; which beat the world champion Lee Sedol at the game of **Go**. AlphaGo was just applying the policy it had learned.
+
+---
+
+**2. Batch and Online Learning**
+In **Batch learning** the system is incapable of learning incrementally, it must be trained using all the available data. This will generally take a lot of time and computing resources, so it is typically done offline. At first the system is trained, and then it's launched into production and runs without learning anymore; it just performs what it has learned. For this reason, it's called **Offline Learning**
+
+In constrast, an **Online Learning**,  we train the system incrementally be feeding it data instances sequenctially, either single package or by groups called **mini-batches**. As each learning step is fast and cheap, so the system can learn about new data on the fly.
+
+---
+
+**3. Instance-Based VS Model-Based Learning**
+In Instance-Based, model just learns the examples by heart and use a similarity measure to *generalize* to new instances. On the other hand, in Model-Based approache, it tunes some parameter to fit the model to the training set and after that it hopefully will be able to make a good predictions n new cases as well.
+
 
 So in ML a Model which is ….
 
@@ -19,7 +107,6 @@ So in ML a Model which is ….
 - discovering hidden patterns
 - data driven decision
 
-ML algorithm is programmed to learn from the data that there’s nothing is the algorithm or program which directly aims to learn the given task.
 
 ### Machine Learning Process
 
@@ -42,29 +129,8 @@ Data preparation is very important for our models. Models are learned from the d
 
 ![ml_process](https://user-images.githubusercontent.com/17668390/40884042-0ca8b7f0-66c0-11e8-84be-1dbf6040050b.png)
 
-There are different types of Machine Learning technique out there for different types of problem. There’re main three types of ML algorithms
 
-- Supervised Algorithm
-- Unsupervised Algorithm
-- Reinforcement Algorithm
 
-**Supervised learning algorithm** are trained using labeled examples , such as an input where the desire output is known. The learning algorithm receives a set of inputs along with the corresponding correct outputs , and the algorithm learns by comparing its actual output with correct outputs to find errors. It then modifies the model accordingly.
-
-Through method like classification , regression , prediction , gradient boosting — Supervised learning uses patterns to predict the values of the label on additional unlabeled data. Supervised algorithm is commonly used in application where historical data predict likely future events.
-
-**Unsupervised learning algorithm** is used against data that has no historical labels. The system is not told the right answer. The algorithm must figure out what is being shown. The goal is to explore the given data and find some structure within the data.
-
-Popular technique include self-organizing maps , nearest-neighbor mapping , k-means clustering and singular value decomposition. These algorithm are also used to segment text topics , recommend items and identify data outliers
-
-**Reinforcement learning algorithm** is often used for robotics , gaming and navigation. With reinforcement learning , the algorithm discovers through trial and error which actions yield the greatest rewards.
-
-This type of learning has three primary components -
-
-**agent** — the learner or decision maker<br>
-**environment** — everything the agent interacts with<br>
-**action** — what the agent can do
-
-The objective is for the agent to choose actions that maximize the expected reward over a given amount of time. The agent will reach the goal much faster by following a good policy. So the goal in the reinforcement learning is to learn the best policy.
 
 ### Application field of ML
 
