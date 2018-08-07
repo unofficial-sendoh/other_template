@@ -30,14 +30,14 @@ Machine Learning Systems can be classified based on three broad categories:
 
 **1. Model are trained with Human Supervision**
 
-As these criteria aren't exclusive, we can combine them in any way we like. Machine Learning systems can be classified according to the amount and type of supervision they get during training. There're four major categories:
+Machine Learning systems can be classified according to the amount and type of supervision they get during training. There're four major categories:
 
 - Supervised learning
 - Unsupervised learning
 - Semi-Supervised learning
 - Reinforcement learning
 
-**Supervised learning algorithm** are trained using labeled examples, such as an input where the desire output is known. In supervised learning, the training data we feed to the algorithm icluded the desired solution, it's called labels. The learning algorithm receives a set of inputs along with the corresponding correct outputs, and the algorithm learns by comparing its actual output with correct outputs to find errors. It then modifies the model accordingly. 
+**Supervised learning algorithm** are trained using labeled examples, such as an input where the desire output is known. In supervised learning, the training data we feed to the algorithm icluded the desired solution is called labels. The learning algorithm receives a set of inputs along with the corresponding correct outputs, and the algorithm learns by comparing its actual output with correct outputs to find errors. It then modifies the model accordingly. 
 
 ![supervised](https://user-images.githubusercontent.com/17668390/43781233-47738fd0-9a7e-11e8-9f86-1905a6bb7973.png)
 
@@ -99,14 +99,14 @@ A popular example of reinforcement learning is a chess engine. Here, the agent d
 
 ---
 
-**2. Batch and Online Learning**
+**2. Batch and Online Learning**<br>
 In **Batch learning** the system is incapable of learning incrementally, it must be trained using all the available data. This will generally take a lot of time and computing resources, so it is typically done offline. At first the system is trained, and then it's launched into production and runs without learning anymore; it just performs what it has learned. For this reason, it's called **Offline Learning**
 
 In constrast, an **Online Learning**,  we train the system incrementally be feeding it data instances sequenctially, either single package or by groups called **mini-batches**. As each learning step is fast and cheap, so the system can learn about new data on the fly.
 
 ---
 
-**3. Instance-Based VS Model-Based Learning**
+**3. Instance-Based VS Model-Based Learning**<br>
 In Instance-Based, model just learns the examples by heart and use a similarity measure to *generalize* to new instances. On the other hand, in Model-Based approache, it tunes some parameter to fit the model to the training set and after that it hopefully will be able to make a good predictions n new cases as well.
 
 
