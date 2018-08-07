@@ -39,7 +39,7 @@ As these criteria aren't exclusive, we can combine them in any way we like. Mach
 
 **Supervised learning algorithm** are trained using labeled examples, such as an input where the desire output is known. In supervised learning, the training data we feed to the algorithm icluded the desired solution, it's called labels. The learning algorithm receives a set of inputs along with the corresponding correct outputs, and the algorithm learns by comparing its actual output with correct outputs to find errors. It then modifies the model accordingly. 
 
-![supervised](https://github.com/iphton/iphton.github.io/blob/master/images/supervised.JPG)
+![supervised](https://user-images.githubusercontent.com/17668390/43780897-83c5f1ea-9a7d-11e8-909f-b45c7fb121a8.JPG)
 
 
 Through method like classification , regression , prediction , gradient boosting — Supervised learning uses patterns to predict the values of the label on additional unlabeled data. Supervised algorithm is commonly used in application where historical data predict likely future events. Some most popular supervised learning algorithms are listed below:
@@ -56,8 +56,7 @@ Through method like classification , regression , prediction , gradient boosting
 
 **Unsupervised learning algorithm** is used against data that has no historical labels. The system is not told the right answer. The algorithm must figure out what is being shown. The goal is to explore the given data and find some structure within the data.
 
-![supervised](https://github.com/iphton/iphton.github.io/blob/master/images/unsupervised.JPG)
-
+![unsupervised](https://user-images.githubusercontent.com/17668390/43780920-962f563c-9a7d-11e8-9291-fb10c37b51cc.JPG)
 
 Some of the most important unsupervised learning algorithms are listed below:
 
@@ -92,7 +91,7 @@ This type of learning has three primary components -
 **Environment** — everything the agent interacts with<br>
 **Action** — what the agent can do
 
-![supervised](https://github.com/iphton/iphton.github.io/blob/master/images/reinforcement.JPG)
+![reinforcement](https://user-images.githubusercontent.com/17668390/43780958-a67ed206-9a7d-11e8-89c4-34822211163e.JPG)
 
 
 The objective is for the agent to choose actions that maximize the expected reward over a given amount of time. The agent will reach the goal much faster by following a good *policy*. So the goal in the reinforcement learning is to learn the **best policy**. A policy defines what action the agent should choose when it is in a given situation. 
