@@ -18,12 +18,22 @@ $A$ $AB$ $ABCDE$
 
 $$
 \begin{align}
-P(Y \mid do(X)) &= \sum_U P(Y \mid X, U=u) P(U=u) \tag{iff all back doors are shut} \\
-&= \mathbb E_{u\sim U}[P(Y \mid X, U=u)] \\
-P(Y \mid X, U=u) &=  \frac{\mathbb E_{(x, y)\sim X, Y, U=u} [(x -\mu_x)(y-\mu_y)]}{\sigma_x} \tag{correlation}  \\
-\\
-Y &= aX + bU + c \tag{assume linear relationships} \\
-a&= (Y-bU + c)X^{-1} \\
+\mu_0(t) & = \frac{\sum_{i=0}^{t-1}ip(i)}{w_0(t)} \\
+\mu_1(t) & = \frac{\sum_{i=t}^{L-1}ip(i)}{w_1(t)}
+\end{align}
+
+\begin{align}
+\sigma_b^2(t) & = \sigma^2(t) - \sigma_w^2(t) = w_0(\mu_0 - \mu_T)^2 + w_1(\mu_1 - \mu_T)^2 \tag{maximum variance} \\ 
+&= w_0(t)w_1(t)\left[\mu_0(t) - \mu_1(t)\right]^2
+\end{align}
+
+\begin{align}
+w_0(t) & = \sum_{i=0}^{t-1} p(i) \\
+w_1(t) & = \sum_{i=t}^{L-1} p(i)
+\end{align}
+
+\begin{align}
+\sigma_w^2(t) & = w_0(t)\sigma_0^2(t) + w_1(t)\sigma_1^2(t)
 \end{align}
 $$
 
