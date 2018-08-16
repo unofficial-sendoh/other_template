@@ -13,7 +13,9 @@ Some Necessary [GitHubGist](https://gist.github.com/iphton)
 
 ---
 
+$A$ $AB$ $ABCDE$
 
+$$
 \begin{align}
 \mu_0(t) & = \frac{\sum_{i=0}^{t-1}ip(i)}{w_0(t)} \\
 \mu_1(t) & = \frac{\sum_{i=t}^{L-1}ip(i)}{w_1(t)}
@@ -31,7 +33,7 @@ w_1(t) & = \sum_{i=t}^{L-1} p(i)
 \begin{align}
 \sigma_w^2(t) & = w_0(t)\sigma_0^2(t) + w_1(t)\sigma_1^2(t)
 \end{align}
-
+$$
 
 
 ## [MovieLens-IMDb-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
