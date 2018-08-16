@@ -36,6 +36,20 @@ w_1(t) & = \sum_{i=t}^{L-1} p(i)
 $$
 
 
+$$
+\begin{align}
+P(Y \mid do(X)) &= \sum_U P(Y \mid X, U=u) P(U=u) \tag{iff all back doors are shut} \\
+&= \mathbb E_{u\sim U}[P(Y \mid X, U=u)] \\
+P(Y \mid X, U=u) &=  \frac{\mathbb E_{(x, y)\sim X, Y, U=u} [(x -\mu_x)(y-\mu_y)]}{\sigma_x} \tag{correlation}  \\
+\\
+Y &= aX + bU + c \tag{assume linear relationships} \\
+a&= (Y-bU + c)X^{-1} \\
+\end{align}
+$$
+
+
+
+
 ## [MovieLens-IMDb-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
 **Tech Used**: Data Analysis - Python 3 - Machine Learning
 
