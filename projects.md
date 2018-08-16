@@ -18,22 +18,8 @@ $A$ $AB$ $ABCDE$
 
 $$
 \begin{align}
-\mu_0(t) & = \frac{\sum_{i=0}^{t-1}ip(i)}{w_0(t)} \\
-\mu_1(t) & = \frac{\sum_{i=t}^{L-1}ip(i)}{w_1(t)}
-\end{align}
-
-\begin{align}
 \sigma_b^2(t) & = \sigma^2(t) - \sigma_w^2(t) = w_0(\mu_0 - \mu_T)^2 + w_1(\mu_1 - \mu_T)^2 \tag{maximum variance} \\ 
 &= w_0(t)w_1(t)\left[\mu_0(t) - \mu_1(t)\right]^2
-\end{align}
-
-\begin{align}
-w_0(t) & = \sum_{i=0}^{t-1} p(i) \\
-w_1(t) & = \sum_{i=t}^{L-1} p(i)
-\end{align}
-
-\begin{align}
-\sigma_w^2(t) & = w_0(t)\sigma_0^2(t) + w_1(t)\sigma_1^2(t)
 \end{align}
 $$
 
