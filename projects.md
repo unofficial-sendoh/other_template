@@ -13,7 +13,7 @@ Some Necessary [GitHubGist](https://gist.github.com/iphton)
 
 ---
 
-$A$ $AB$ $ABCDE$
+$A$ $AB
 
 
 $$
