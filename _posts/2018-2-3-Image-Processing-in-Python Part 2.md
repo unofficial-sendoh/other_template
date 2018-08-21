@@ -698,16 +698,20 @@ Otsu threshold is used in many applications from medical imaging to low level co
 
 In Otsu's method we comprehensively search for the threshold that minimizes the **intra-class variance** - the variance within the class which defined as a **weighted sum of variances of the two classes**:
 
+$$
 \begin{align}
 \sigma_w^2(t) & = w_0(t)\sigma_0^2(t) + w_1(t)\sigma_1^2(t)
 \end{align}
+$$
 
 Weights $W_0$ adn $W_1$ are the probabilities of the two classes separated by a threshold $t$ , and $\sigma_0^2(t)$ and $\sigma_1^2(t)$ are variances of these two classes. Mathematically probabilities of the two classes are defined as 
 
+$$
 \begin{align}
 w_0(t) & = \sum_{i=0}^{t-1} p(i) \\ 
 w_1(t) & = \sum_{i=t}^{L-1} p(i)
 \end{align}
+$$
 
 Now, the Otsu's method involves the iterative fashion across all the possible threshold values and measuring the spread for the pixel levels for each side of the threshold or the pixels that either fall in background or foreground regions. The goal is to find the threshold value where the sum of the bacground and foreground spreads is at its minimum.
 
@@ -719,18 +723,18 @@ Now, let's calculate for finding variacne which is the measure of spread for a s
 
 ---
 
-
+$$
 \begin{align}
 Back, \ \mu_0(t) & = \frac{\sum_{i=0}^{t-1}ip(i)}{w_0(t)} \\
 Fore, \ \mu_1(t) & = \frac{\sum_{i=t}^{L-1}ip(i)}{w_1(t)}
 \end{align}
-
+$$
 
 **Background**
 
 ![png](/images/Image_Analysis_Part_2/back.png){:height="363px" width="300px"}
 
-
+$$
 \begin{align}
 Weight, \ \ \ \ W_0 &= \frac{10 + 8 + 6}{36} = 0.67 \\
 Mean, \ \ \ \ \mu_0 &= \frac{[(0*10) + (1*8) + (2*6)]}{24} = 0.83 \\
@@ -738,7 +742,7 @@ Variance \ \ \ \sigma_0^2 &= \frac{[(0-0.83)^2*10 + (1-0.83)^2*8 + (2-0.83)^2*6]
 &= \frac{6.89 + 0.23 + 8.21}{24} \\
 &= 0.64
 \end{align}
-
+$$
 
 ---
 
@@ -747,7 +751,7 @@ Variance \ \ \ \sigma_0^2 &= \frac{[(0-0.83)^2*10 + (1-0.83)^2*8 + (2-0.83)^2*6]
 ![png](/images/Image_Analysis_Part_2/fore.png){:height="363px" width="299px"}
 
 
-
+ $$
 \begin{align}
 Weight, \ \ \ \ W_1 &= \frac{8 + 4 + 2}{36} = 0.39 \\
 Mean, \ \ \ \ \mu_1 &= \frac{[(3x8) + (4x4) + (5x2)]}{14} = 3.57 \\
@@ -755,41 +759,45 @@ Variance \ \ \ \sigma_1^2 &= \frac{[(3-3.57)^2*8 + (4-3.57)^2*4 + (5-3.57)^2*2]}
 &= \frac{0.325*8 + 0.185*4 + 2.05*2}{14} \\
 &= 0.53
 \end{align}
-
+$$
 
 The next step is to calculate the **`Within-Class Variance`**. This is simply the sum of the two variances multiplied by their associated weights.
 
+$$
 \begin{align}
 \sigma_w^2(t) & = w_0(t)\sigma_0^2(t) + w_1(t)\sigma_1^2(t) \\
 &= 0.67*0.64 + 0.39*0.53 \\
 &= 0.64
 \end{align}
+$$
 
 This value is the **sum of weighted of intra-class variance** for the threshold value 3. 
 
 Otsu shows that minimizing the **intra-class variance** is the same as **maximizing inter-class variance**. Inter calss variance is mathematically defined as:
 
+$$
 \begin{align}
 \sigma_b^2(t) & = \sigma^2(t) - \sigma_w^2(t) \\
 &= w_0(\mu_0 - \mu_T)^2 + w_1(\mu_1 - \mu_T)^2 = w_0(t)w_1(t)\left[\mu_0(t) - \mu_1(t)\right]^2
 \end{align}
-
+$$
 
 As previously we randomly choose threshold value 3, let's calculate inter-class variance for this threshold value.
 
-
+$$
 \begin{align}
 \sigma_b^2(t) = 0.67*0.39*[0.83-3.57]^2 = 1.96
 \end{align}
-
+$$
 
 This same calculation needs to be performed for all the possible threshold values 0 to 5, which is 0 to 255 for real gray level practical image. 
 
-
+$$
 \begin{align}
 Within \ Class \ Variance: \ \ \sigma_w^2(t) & = w_0(t)\sigma_0^2(t) + w_1(t)\sigma_1^2(t) \\
 Between \ Class \ Variance: \ \ \sigma_b^2(t) & = w_0(t)w_1(t)\left[\mu_0(t) - \mu_1(t)\right]^2
 \end{align}
+$$
 
 ---
 
