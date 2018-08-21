@@ -970,7 +970,7 @@ Dmax is the diagonal length of the image.
 θ = angle from origin to the line. [-90° to 90°]
 ```
 
-<img src="https://opencv-python-tutroals.readthedocs.io/en/latest/_images/houghlines1.svg", width = 200, height = 200>
+<img src="https://opencv-python-tutroals.readthedocs.io/en/latest/_images/houghlines1.svg">
 
 
 Any line can be represented in these two terms, $(\rho, \theta)$. So first it creates a 2D array or accumulator (to hold values of two parameters) and it is set to 0 initially. 
