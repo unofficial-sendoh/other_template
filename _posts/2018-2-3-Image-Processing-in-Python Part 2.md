@@ -212,7 +212,7 @@ An image **kernel** or **filter** is a small matrix used to apply effects like t
 
 Now, let’s take the filter to the top left corner. As the filter is sliding, or **convolving**, around the input image, it is multiplying the values in the filter with the original pixel values of the image (aka computing element wise multiplications). These multiplications are all summed up. So now we have a single number. Remember, this number is just representative of when the filter is at the top left of the image. Now, we repeat this process for every location on the input volume. Next step would be moving the filter to the right by **stride** or **step** 1 unit, then right again by **stride** 1, and so on. Every unique location on the input volume produces a number. We can also choose stride or the step size 2 or more, but we have to carefull wheter it will fit or not on the input image. 
 
-<img src="/images/Image_Analysis_Part_2/convoving.gif", width = 200, height=200>
+![png](/images/Image_Analysis_Part_2/convoving.gif)
 
 After sliding the filter over all the locations, we will find out that, what we’re left with is a 30 x 30 x 1 array of numbers, which we call an **activation map** or **feature map**. The reason we get a 30 x 30 array is that there are 900 different locations that a 3 x 3 filter can fit on a 32 x 32 input image. These 900 numbers are mapped to a 30 x 30 array. We can calculate the convoled image by following:
 
