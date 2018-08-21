@@ -60,9 +60,11 @@ In previous article, we've gone through some of the following basic operation. T
 - [Image Compression](#10-bullet)
     - Stacked Autoencoder
 
+I'm so excited, let's began :smiley:
+
 ## Intensity Transformation<a class="anchor" id="A-bullet"></a>
 
-Let's begin with the Intensity Transformation. But first, load an image.
+Let's begin with importing an image.
 
 
 ```python
@@ -74,7 +76,7 @@ import warnings
 import matplotlib.cbook
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 
-pic = imageio.imread('img/r.jpg')
+pic = imageio.imread('img/parrot.jpg')
 
 plt.figure(figsize = (6,6))
 plt.imshow(pic);
@@ -85,11 +87,11 @@ plt.axis('off');
 ![png](/images/Image_Analysis_Part_2/output_1_0.png)
 
 ---
-#### Image Negative <a class="anchor" id="1-bullet"></a>
+### Image Negative <a class="anchor" id="1-bullet"></a>
 
 The intensity transformation function mathematically defined as:
 
-`s = T ( r )`
+$s = T ( r )$
 
 where **r** is the pixels of the input image and **s** is the pixels of the output image. **T** is a transformation function that maps each value of r to each value of s.
 
