@@ -1075,7 +1075,6 @@ Let's undserstand each of them intuitively. For more comprehensive overview, ple
 
 * First, apply **Gaussian filter**: to smooth the image in order to remove the noise. As the edge detection is susceptible to noise in the image, so we have to remove the noise in the image.
 
----
 * Find the **[intensity gradients](https://en.wikipedia.org/wiki/Image_gradient)**: of the image. Smoothened image is then filtered with a **Sobel kernel** in both horizontal and vertical direction to get first derivative in horizontal direction ($G_x$) and vertical direction ($G_y$). Gradient direction is always perpendicular to edges. It is rounded to one of four angles representing vertical, horizontal and two diagonal directions. From these two images, we can find edge gradient and direction for each pixel as follows:
 
 $$
@@ -1085,7 +1084,7 @@ $$
 \end{vmatrix} \\
 $$
 
-where:
+**where:**
 
 $\frac{\partial f}{\partial x}$ = is the derivative with respect to x (gradient in the x direction)
 
@@ -1101,7 +1100,7 @@ $$
 For demonstrate purpose, let's consider the following images: 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Intensity_image_with_gradient_images.png">
-(image courtesy to wiki)
+(image courtesy to [wiki](https://upload.wikimedia.org/wikipedia/commons/6/67/Intensity_image_with_gradient_images.png))
 
 On the left, an intensity image of a cat. In the center, a gradient image in the x direction measuring horizontal change in intensity. On the right, a gradient image in the y direction measuring vertical change in intensity.
 
@@ -1169,7 +1168,7 @@ plt.axes().set_aspect('equal')
 ---
 **Stacked Autoencoder**
 
-<img src="img/autoen.png", width = 500, height = 500>
+![png](/images/Image_Analysis_Part_2/autoen.png)
 
 We like to conclude with a briefly overview of Autoencoder. It's a data compression algorithm where the compression and decompression functions are 
 
