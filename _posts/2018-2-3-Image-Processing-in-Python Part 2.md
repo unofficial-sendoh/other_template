@@ -734,7 +734,7 @@ Let's demonstrate the process using the a simple 6:6 gray level image. The histo
 
 ![png](/images/Image_Analysis_Part_2/hist.png){:height="360px" width="300px"}
 
-Now, let's calculate for finding variacne which is the measure of spread for a single threshold. Let's assume, our threshold value is 3.
+Now, let's calculate for finding variacne which is the measure of spread for a single threshold. Let's assume, our threshold value is $3$.
 
 ---
 
@@ -776,7 +776,7 @@ Variance \ \ \ \sigma_1^2 &= \frac{[(3-3.57)^2*8 + (4-3.57)^2*4 + (5-3.57)^2*2]}
 \end{align}
 $$
 
-The next step is to calculate the **`Within-Class Variance`**. This is simply the sum of the two variances multiplied by their associated weights.
+The next step is to calculate the **Within-Class Variance**. This is simply the sum of the two variances multiplied by their associated weights.
 
 $$
 \begin{align}
@@ -786,7 +786,7 @@ $$
 \end{align}
 $$
 
-This value is the **sum of weighted of intra-class variance** for the threshold value 3. 
+This value is the **sum of weighted of intra-class variance** for the threshold value $3$. 
 
 Otsu shows that minimizing the **intra-class variance** is the same as **maximizing inter-class variance**. Inter calss variance is mathematically defined as:
 
@@ -797,7 +797,7 @@ $$
 \end{align}
 $$
 
-As previously we randomly choose threshold value 3, let's calculate inter-class variance for this threshold value.
+As previously we randomly choose threshold value $3$, let's calculate inter-class variance for this threshold value.
 
 $$
 \begin{align}
@@ -896,11 +896,11 @@ In a result, the possibly incorrect threshold determined by Otsu’s method resu
 
 ---
 
-## KMeans Clustering <a class="anchor" id="6-bullet"></a>
+### KMeans Clustering <a class="anchor" id="6-bullet"></a>
 
 k-means clustering is a method of [vector quantization](https://en.wikipedia.org/wiki/Vector_quantization), originally from signal processing, that is popular for [cluster analysis](https://en.wikipedia.org/wiki/Cluster_analysis) in [data mining](https://en.wikipedia.org/wiki/Data_mining). 
 
-In Otsu thresholding, we found the threshold which minimised the intra-segment pixel variance. So, rather then looking for a threshold from an gray level image, we can look for clusters in colour space, and by doing so we end up with the K-means clustering technique.
+In Otsu thresholding, we found the threshold which minimised the intra-segment pixel variance. So, rather then looking for a threshold from an gray level image, we can look for clusters in colour space, and by doing so we end up with the [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) technique.
 
 
 ```python
@@ -927,7 +927,7 @@ x, y, z = pic.shape
 pic_2d = pic.reshape(x*y, z)
 ```
 
-Next, we use `scikit-learn's` cluster method to create clusters. We pass `n_clusters` as 5 to form five clusters. The clusters appear in the resulting image, dividing it into five parts with distinct colors. 
+Next, we use [`scikit-learn's` cluster](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) method to create clusters. We pass `n_clusters` as 5 to form five clusters. The clusters appear in the resulting image, dividing it into five parts with distinct colors. 
 
 The clustering number 5 was chosen heuristically for this demonstration. One can change the number of clusters to visually validate image with different colors and decide that closely matches the required number of clusters.
 
@@ -957,9 +957,13 @@ plt.axis('off');
 
 ![png](/images/Image_Analysis_Part_2/output_36_0.png)
 
+Resources:
+
+- [1](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#Parameters) - [2](https://stackabuse.com/k-means-clustering-with-scikit-learn/) - [3](https://www.datacamp.com/community/tutorials/k-means-clustering-python) - [4](https://bigdatascienc.wordpress.com/2017/12/29/k-means-clustering-in-python/)
+
 
 # Line Detection
-**Hough Transform** <a class="anchor" id="7-bullet"></a>
+## Hough Transform<a class="anchor" id="7-bullet"></a>
 
 Hough Transform is a popular technique to detect any shape, if we can represent that shape in mathematical form. It can detect the shape even if it is broken or distorted a little bit. We won't go too deeper to analysis the mechanism of hough transform rather than giving intuitive mathematical description before implementing it on code and also provide some resource to understand it more in details.
 
@@ -1056,14 +1060,10 @@ def hough_line(img):
 I've provided full implementation Code of Hough Transform in this [github repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/blob/gh-pages/Segmentation/Object%20Detection/Hough%20Transform/hough_transform.py). 
 
 ---
-**Details on Hough Transform**:
 
-As We've told earlier, we won't go in details of Hough transform rather providing some honorable resources.
+Resources:
 
-- [Hough Line Transform](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html)
-- [Hough Tranform](http://homepages.inf.ed.ac.uk/amos/hough.html)
-- [Hough Transform Explained](https://www.youtube.com/watch?v=4zHbI-fFIlI)
-- [EGGN 512 - Lecture 13-1 Hough](https://www.youtube.com/watch?v=uDB2qGqnQ1g)
+- [1](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html) - [2](http://homepages.inf.ed.ac.uk/amos/hough.html) - [3](https://www.youtube.com/watch?v=4zHbI-fFIlI) - [4](https://www.youtube.com/watch?v=uDB2qGqnQ1g)
 
 ---
 
@@ -1091,7 +1091,7 @@ A multi-stage edge detection operation capable of detecting wide range of edges 
 4. Apply double threshold
 5. Track edge by hysteresis.
 
-Let's undserstand each of them intuitively. For more comprehensive overview, please check the given link at the end of this article. However, this article is already becoming too big, so we decide not to provide full implementation of code here rather than giving intuitive overview of algorithm of that code. But one can skip and jump to the [github repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/tree/gh-pages/Segmentation/Object%20Detection/Canny%20Edge%20Detector) for the code.
+Let's undserstand each of them intuitively. For more comprehensive overview, please check the given link at the end of this article. However, this article is already becoming too big, so we decide not to provide full implementation of code here rather than giving intuitive overview of algorithm of that code. But one can skip and jump to the [repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/tree/gh-pages/Segmentation/Object%20Detection/Canny%20Edge%20Detector) for the code : :thumbsup:
 
 
 ## Process
@@ -1135,18 +1135,13 @@ On the left, an intensity image of a cat. In the center, a gradient image in the
 
 ---
 
-**Canny Edge Detection**:
+**Resources:** 
 
-As We've told earlier, we won't go in details of **Canny Edge Detection** rather providing some honorable resources.
-
-- [Canny - Wiki](https://en.wikipedia.org/wiki/Canny_edge_detector#Process%20of%20Canny%20edge%20detection%20algorithm)
-- [JUSTIN LIANG](http://justin-liang.com/tutorials/canny/)
-- [Canny Edge Detector - Computerphile](https://www.youtube.com/watch?v=sRFM5IEqR2w&t=1s)
-- [AI Shack](http://www.aishack.in/tutorials/canny-edge-detector/)
+- [1](https://en.wikipedia.org/wiki/Canny_edge_detector#Process%20of%20Canny%20edge%20detection%20algorithm) - [2](http://justin-liang.com/tutorials/canny/) - [3](https://www.youtube.com/watch?v=sRFM5IEqR2w&t=1s) - [4](http://www.aishack.in/tutorials/canny-edge-detector/)
 
 # Vectorization <a class="anchor" id="9-bullet"></a>
 ---
-### Contour tracking
+## Contour tracking
 We can use a contour tracing algorithm from `Scikit-Image` to extract the paths around the object. This controls how accurately the path follows the original bitmap shape.
 
 
@@ -1189,7 +1184,7 @@ plt.axes().set_aspect('equal')
 
 # Image Compression<a class="anchor" id="10-bullet"></a>
 ---
-**Stacked Autoencoder**
+## Stacked Autoencoder
 
 ![png](/images/Image_Analysis_Part_2/autoen.png)
 
