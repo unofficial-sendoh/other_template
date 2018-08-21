@@ -3,7 +3,7 @@ layout: post
 title: Basic Image Data Analysis Using Python - Part 2
 excerpt: Basic overview of image processing in Python
 images:
-  - url: /images/feature_img_pt_1.jpg
+  - url: /images/Image_Analysis_Part_2/feature_img_pt_2.png
 
 ---
 
