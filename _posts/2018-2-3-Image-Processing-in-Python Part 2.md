@@ -1,6 +1,11 @@
+---
+layout: post
+title: Basic Image Data Analysis Using Python - Part 2
+excerpt: Basic overview of image processing in Python
+images:
+  - url: /images/feature_img_pt_1.jpg
 
-<p style="font-family: Arial; font-size:1.85em;color:purple; font-style:bold"><br>
-Image Data Analysis Using Python - Part 2</p>
+---
 
 ---
 [Part 1](https://iphton.github.io/iphton.github.io/Up-&-Running-of-Image-Data-Analysis-Using-Numpy-&-OpenCV-Part-1/)
@@ -75,8 +80,7 @@ plt.axis('off');
 ```
 
 
-![png](output_1_0.png)
-
+![png](/images/Image_Analysis_Part_2/output_1_0.png)
 
 ---
 #### Image Negative <a class="anchor" id="1-bullet"></a>
@@ -105,7 +109,7 @@ plt.axis('off');
 ```
 
 
-![png](output_3_0.png)
+![png](/images/Image_Analysis_Part_2/output_3_0.png)
 
 
 # Log transformation <a class="anchor" id="2-bullet"></a>
@@ -153,7 +157,7 @@ plt.axis('off');
 ```
 
 
-![png](output_5_0.png)
+![png](/images/Image_Analysis_Part_2/output_5_0.png)
 
 
 # Gamma Correction <a class="anchor" id="3-bullet"></a>
@@ -184,7 +188,7 @@ plt.axis('off');
 ```
 
 
-![png](output_7_0.png)
+![png](/images/Image_Analysis_Part_2/output_7_0.png)
 
 
 ## Reason of Gamma Correction
@@ -208,7 +212,7 @@ An image **kernel** or **filter** is a small matrix used to apply effects like t
 
 Now, let’s take the filter to the top left corner. As the filter is sliding, or **convolving**, around the input image, it is multiplying the values in the filter with the original pixel values of the image (aka computing element wise multiplications). These multiplications are all summed up. So now we have a single number. Remember, this number is just representative of when the filter is at the top left of the image. Now, we repeat this process for every location on the input volume. Next step would be moving the filter to the right by **stride** or **step** 1 unit, then right again by **stride** 1, and so on. Every unique location on the input volume produces a number. We can also choose stride or the step size 2 or more, but we have to carefull wheter it will fit or not on the input image. 
 
-<img src="img/convoving.gif", width = 200, height=200>
+<img src="/images/Image_Analysis_Part_2/convoving.gif", width = 200, height=200>
 
 After sliding the filter over all the locations, we will find out that, what we’re left with is a 30 x 30 x 1 array of numbers, which we call an **activation map** or **feature map**. The reason we get a 30 x 30 array is that there are 900 different locations that a 3 x 3 filter can fit on a 32 x 32 input image. These 900 numbers are mapped to a 30 x 30 array. We can calculate the convoled image by following:
 
@@ -247,7 +251,7 @@ $$
 $$ 
 
 let's take a look visuallly, 
-<img src="img/conv_gif.gif", width = 200, height=200>
+<img src="/images/Image_Analysis_Part_2/conv_gif.gif", width = 200, height=200>
 
 Moreover, we practically use more filters instead of one. Then our output volume would be `28 x 28 x n` (where n is the number of **activation map**). By using more filters, we are able to preserve the spatial dimensions better. 
 
@@ -293,7 +297,7 @@ for k, ax in zip(kernel_sizes, axs):
     
 
 
-![png](output_10_1.png)
+![png](/images/Image_Analysis_Part_2/output_10_1.png)
 
 
 ---
@@ -330,7 +334,7 @@ plt.axis('off');
     
 
 
-![png](output_12_1.png)
+![png](/images/Image_Analysis_Part_2/output_12_1.png)
 
 
 
@@ -355,14 +359,9 @@ edges_equalized = exposure.equalize_adapthist(edges/np.max(np.abs(edges)),
 plt.figure(figsize = (5,5))
 plt.imshow(edges_equalized, cmap='gray')    
 plt.axis('off');
-```
+```  
 
-    C:\Users\Mohammed Innat\Anaconda3\lib\site-packages\skimage\util\dtype.py:122: UserWarning: Possible precision loss when converting from float64 to uint16
-      .format(dtypeobj_in, dtypeobj_out))
-    
-
-
-![png](output_13_1.png)
+![png](/images/Image_Analysis_Part_2/output_13_1.png)
 
 
 Let's play around for a while with different types of other filters. Let's choose with **Sharpen Kernel**. The Sharpen Kernel emphasizes differences in adjacent pixel values. This makes the image look more vivid. 
@@ -426,7 +425,7 @@ plt.show()
     
 
 
-![png](output_15_1.png)
+![png](/images/Image_Analysis_Part_2/output_15_1.png)
 
 
     Wall time: 187 ms
@@ -480,12 +479,7 @@ plt.axis('off')
 plt.show()
 ```
 
-    C:\Users\Mohammed Innat\Anaconda3\lib\site-packages\skimage\util\dtype.py:122: UserWarning: Possible precision loss when converting from float64 to uint16
-      .format(dtypeobj_in, dtypeobj_out))
-    
-
-
-![png](output_17_1.png)
+![png](/images/Image_Analysis_Part_2/output_17_1.png)
 
 
     Wall time: 330 ms
@@ -565,7 +559,7 @@ plt.imshow(img_conv);
     
 
 
-![png](output_19_1.png)
+![png](/images/Image_Analysis_Part_2/output_19_1.png)
 
 
 To reduce noise. we generally use different filter. **Gaussain Gilter** which is a digital filtering technique which is often used to remove noise from an image. Here, by combining gaussain filtering and gradient finding operations together, we can generate some strange patterns that resemble the original image and being distorted in interesting ways.
@@ -623,8 +617,7 @@ plt.imshow(img_conv);
     Wall time: 499 ms
     
 
-
-![png](output_21_1.png)
+![png](/images/Image_Analysis_Part_2/output_21_1.png)
 
 
 Now, let's see using **Median filter**.
@@ -682,7 +675,7 @@ plt.imshow(img_conv);
     
 
 
-![png](output_23_1.png)
+![png](/images/Image_Analysis_Part_2/output_23_1.png)
 
 
 
@@ -819,7 +812,7 @@ plt.imshow(pic);
 ```
 
 
-![png](output_25_0.png)
+![png](/images/Image_Analysis_Part_2/output_25_0.png)
 
 
 
@@ -867,7 +860,7 @@ plt.axis('off');
     
 
 
-![png](output_27_1.png)
+![png](/images/Image_Analysis_Part_2/output_27_1.png)
 
 
 Nice but not Great. Otsu’s method exhibits the relatively good performance if the histogram can be assumed to have **bimodal distribution** and assumed to possess a deep and sharp valley between two peaks. 
@@ -898,7 +891,7 @@ plt.axis('off');
 ```
 
 
-![png](output_30_0.png)
+![png](/images/Image_Analysis_Part_2/output_30_0.png)
 
 
 For clustering the image, we need to convert it into a two-dimensional array.
@@ -938,7 +931,7 @@ plt.axis('off');
 ```
 
 
-![png](output_36_0.png)
+![png](/images/Image_Analysis_Part_2/output_36_0.png)
 
 
 
@@ -1172,7 +1165,7 @@ plt.axes().set_aspect('equal')
 ```
 
 
-![png](output_42_0.png)
+![png](/images/Image_Analysis_Part_2/output_42_0.png)
 
 
 # Image Compression
@@ -1306,7 +1299,7 @@ for i in range(num_test_images):
 ```
 
 
-![png](output_45_0.png)
+![png](/images/Image_Analysis_Part_2/output_45_0.png)
 
 
 Here, in the first row which is the loaded [MNIST](http://yann.lecun.com/exdb/mnist/) training set and the second row is the reconstructed those training set after encoding and decoding using autoencoder. Looks nice, but not great, there's a lots of information missing in the reconstructed images. So, autoencoder is not as good as other compression technique but as a part of fast growing promising technology, future advances might change this, who knows.  
