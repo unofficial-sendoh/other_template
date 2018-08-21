@@ -728,7 +728,7 @@ Fore, \ \mu_1(t) & = \frac{\sum_{i=t}^{L-1}ip(i)}{w_1(t)}
 
 **Background**
 
-![png](/images/Image_Analysis_Part_2/back.png){:height="606px" width="500px"}
+![png](/images/Image_Analysis_Part_2/back.png){:height="363px" width="300px"}
 
 \begin{align}
 Weight, \ \ \ \ W_0 &= \frac{10 + 8 + 6}{36} = 0.67 \\
@@ -742,7 +742,7 @@ Variance \ \ \ \sigma_0^2 &= \frac{[(0-0.83)^2*10 + (1-0.83)^2*8 + (2-0.83)^2*6]
 
 **Foreground**
 
-![png](/images/Image_Analysis_Part_2/fore.png){:height="700px" width="400px"}
+![png](/images/Image_Analysis_Part_2/fore.png){:height="363px" width="299px"}
 
 \begin{align}
 Weight, \ \ \ \ W_1 &= \frac{8 + 4 + 2}{36} = 0.39 \\
