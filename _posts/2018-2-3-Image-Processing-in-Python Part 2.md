@@ -51,8 +51,8 @@ In previous article, we've gone through some of the following basic operation. T
             - [Cany Edge Detection](#8-bullet)
   
 ---
-- Vectorization
-    - [Contour tracking](#9-bullet)
+- [Vectorization](#9-bullet)
+    - Contour tracking
     
 --- 
 - Image Compression
