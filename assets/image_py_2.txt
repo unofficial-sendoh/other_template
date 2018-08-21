@@ -1,0 +1,5 @@
+"" Basic Image Data Analysis Using Python - Part 2  ""
+
+https://upload.wikimedia.org/wikipedia/commons/6/67/Intensity_image_with_gradient_images.png
+https://opencv-python-tutroals.readthedocs.io/en/latest/_images/houghlines1.svg
+https://hackernoon.com/autoencoders-deep-learning-bits-1-11731e200694
