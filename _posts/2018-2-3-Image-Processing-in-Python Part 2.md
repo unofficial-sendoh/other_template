@@ -692,7 +692,7 @@ plt.imshow(img_conv);
 
 **Resources:** :books:
 
-- [1](https://la.mathworks.com/help/images/what-is-image-filtering-in-the-spatial-domain.html) - [2](http://machinelearninguru.com/computer_vision/basics/convolution/image_convolution_1.html) - [3](https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/convolution.html) - [4](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) - [5](http://cs231n.github.io/convolutional-networks/) [6](https://www.youtube.com/watch?v=umGJ30-15_A&t=13s) - [7](https://www.youtube.com/watch?v=2-Ol7ZB0MmU) - [8](https://www.youtube.com/watch?v=bNb2fEVKeEo&t=1696s) - [9](https://www.youtube.com/watch?v=AgkfIQ4IGaM&t=67s) - [10](https://medium.com/technologymadeeasy/the-best-explanation-of-convolutional-neural-networks-on-the-internet-fbb8b1ad5df8)
+- [1](https://la.mathworks.com/help/images/what-is-image-filtering-in-the-spatial-domain.html) - [2](http://machinelearninguru.com/computer_vision/basics/convolution/image_convolution_1.html) - [3](https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/convolution.html) - [4](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) - [5](http://cs231n.github.io/convolutional-networks/) - [6](https://www.youtube.com/watch?v=umGJ30-15_A&t=13s) - [7](https://www.youtube.com/watch?v=2-Ol7ZB0MmU) - [8](https://www.youtube.com/watch?v=bNb2fEVKeEo&t=1696s) - [9](https://www.youtube.com/watch?v=AgkfIQ4IGaM&t=67s) - [10](https://medium.com/technologymadeeasy/the-best-explanation-of-convolutional-neural-networks-on-the-internet-fbb8b1ad5df8)
 
 
 # Thresholding
