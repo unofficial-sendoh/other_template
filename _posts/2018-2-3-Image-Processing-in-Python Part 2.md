@@ -28,7 +28,7 @@ In previous article, we've gone through some of the following basic operation. T
 
 ### Table of Contents
 
-- Intensity Transformation
+- [Intensity Transformation](#A-bullet)
     - Basic Function
         - [Image Negative](#1-bullet)
         - [Log Transformation](#2-bullet)
@@ -45,21 +45,20 @@ In previous article, we've gone through some of the following basic operation. T
         - [Ostu's Method](#5-bullet)
         - [KMeans Clustering](#6-bullet)
     - Object Detection
-        - Line Detection
-            - [Hough transform](#7-bullet)
-        - Edge Detection
-            - [Cany Edge Detection](#8-bullet)
+        - [Line Detection](#7-bullet)
+            - Hough transform
+        - [Edge Detection](#8-bullet)
+            - Cany Edge Detection
   
 ---
 - [Vectorization](#9-bullet)
     - Contour tracking
     
 --- 
-- Image Compression
+- [Image Compression](#10-bullet)
     - Stacked Autoencoder
 
-
-## Intensity Transformation
+## Intensity Transformation<a class="anchor" id="A-bullet"></a>
 
 Let's begin with the Intensity Transformation. But first, load an image.
 
@@ -1169,7 +1168,7 @@ plt.axes().set_aspect('equal')
 ![png](/images/Image_Analysis_Part_2/output_42_0.png)
 
 
-# Image Compression
+# Image Compression<a class="anchor" id="10-bullet"></a>
 ---
 **Stacked Autoencoder**
 
