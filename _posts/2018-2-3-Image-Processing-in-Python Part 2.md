@@ -927,7 +927,7 @@ x, y, z = pic.shape
 pic_2d = pic.reshape(x*y, z)
 ```
 
-Next, we use [`scikit-learn's` cluster](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) method to create clusters. We pass `n_clusters` as 5 to form five clusters. The clusters appear in the resulting image, dividing it into five parts with distinct colors. 
+Next, we use [scikit-learn's cluster](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) method to create clusters. We pass `n_clusters` as 5 to form five clusters. The clusters appear in the resulting image, dividing it into five parts with distinct colors. 
 
 The clustering number 5 was chosen heuristically for this demonstration. One can change the number of clusters to visually validate image with different colors and decide that closely matches the required number of clusters.
 
