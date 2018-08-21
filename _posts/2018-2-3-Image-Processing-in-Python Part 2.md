@@ -251,7 +251,8 @@ $$
 $$ 
 
 let's take a look visuallly, 
-<img src="/images/Image_Analysis_Part_2/conv_gif.gif", width = 200, height=200>
+
+![png](/images/Image_Analysis_Part_2/conv_gif.gif)
 
 Moreover, we practically use more filters instead of one. Then our output volume would be `28 x 28 x n` (where n is the number of **activation map**). By using more filters, we are able to preserve the spatial dimensions better. 
 
@@ -712,7 +713,7 @@ Now, the Otsu's method involves the iterative fashion across all the possible th
 
 Let's demonstrate the process using the a simple 6:6 gray level image. The histogram for the image is drawn below. For simplification we choose only 6 levels grayscale.
 
-<img src="hist.png", width = 200, height = 200>
+![png](/images/Image_Analysis_Part_2/hist.png)
 
 Now, let's calculate for finding variacne which is the measure of spread for a single threshold. Let's assume, our threshold value is 3.
 
@@ -726,11 +727,8 @@ Fore, \ \mu_1(t) & = \frac{\sum_{i=t}^{L-1}ip(i)}{w_1(t)}
 
 
 **Background**
-<img src="img/back.png", width = 200, height = 200>
 
-
-
-
+![png](/images/Image_Analysis_Part_2/back.png)
 
 \begin{align}
 Weight, \ \ \ \ W_0 &= \frac{10 + 8 + 6}{36} = 0.67 \\
@@ -743,7 +741,8 @@ Variance \ \ \ \sigma_0^2 &= \frac{[(0-0.83)^2*10 + (1-0.83)^2*8 + (2-0.83)^2*6]
 ---
 
 **Foreground**
-<img src="img/fore.png", width = 200, height = 200>
+
+![png](/images/Image_Analysis_Part_2/fore.png)
 
 \begin{align}
 Weight, \ \ \ \ W_1 &= \frac{8 + 4 + 2}{36} = 0.39 \\
@@ -856,9 +855,6 @@ plt.imshow(threshold(gray(pic), otsu_threshold(pic)), cmap='Greys')
 plt.axis('off');
 ```
 
-    C:\Users\Mohammed Innat\Anaconda3\lib\site-packages\ipykernel_launcher.py:19: RuntimeWarning: overflow encountered in long_scalars
-    
-
 
 ![png](/images/Image_Analysis_Part_2/output_27_1.png)
 
@@ -930,9 +926,7 @@ plt.imshow(cluster_centers[cluster_labels].reshape(x, y, z))
 plt.axis('off');
 ```
 
-
 ![png](/images/Image_Analysis_Part_2/output_36_0.png)
-
 
 
 # Line Detection
@@ -958,7 +952,7 @@ $c = -xm + y$
 
 Let's consider a linear equation we've plotted in $x-y$ plane or the **Image Space**. This line has a lots of combinations of values of $x$ and $y$ . Now, instead of plane $x-y$, let's consider plane $m-c$ , here which is called **feature space** or **parameter space**. In this feature space, point **A** and **B**, defines a lots of possibilities. Now, the intersection point between two line in feature space, is the actual values of $m$ and $c$, for which the linear equation which plotted in image space is fulfilled.
 
-<img src="img/hough_transform_mx.png", width = 500, height = 500>
+![png](/images/Image_Analysis_Part_2/hough_transform_mx.png)
 
 We use re-arrange linear equation on feature space and find the all possible paired of $c,m$ for various $x,y$. All points on a line in **image space** intersect at a common point in **parameter space**. This common point $(m, c)$ represents the line in image space. 
 
