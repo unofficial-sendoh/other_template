@@ -5,24 +5,13 @@
 
 Some Necessary [GitHubGist](https://gist.github.com/iphton) 
 - [Installing OpenCV3 for Python3x](https://gist.github.com/iphton/4af8e9a3accfdcf2511ee4ced26a1d77)
-- [Create Anaconda Env with Necessary Packages](https://gist.github.com/iphton/ecf250c2d49af73fdeb92982723d7016)
+- [X11 Forwarding using Putty](https://gist.github.com/iphton/5f2d7e8b50d0e94341c745cb659a37b0)
 - [Most Used Raspberry Pi Commands](https://gist.github.com/iphton/92c29a45ffdd73b0e327301840e9b3b3)
-- [Play Store on GennyMotion](https://gist.github.com/iphton/dd4fcbf4e1c3fe809ba01cfe2d6a0892)
-- [Installing FFmpeg on Linux](https://gist.github.com/iphton/1a251a673a3eeb985930392ea4440f74)
+- [Include image or picture in jupyter notebook.](https://gist.github.com/iphton/794c466af5bbaa5c831edff39c6b2b87)
+- [Decent and Elegant Way To Highlight Code Syntax In Jekyll](https://gist.github.com/iphton/d4e607bfd4759f02ae6f68bd33fbca34)
 - [FFmpeg Basic Operation on Subtitles](https://gist.github.com/iphton/7d5511941970e8b448453980f47f9ec3)
 
 ---
-
-$A$ $AB
-
-
-$$
-\begin{align}
-\sigma_b^2(t) & = \sigma^2(t) - \sigma_w^2(t) = w_0(\mu_0 - \mu_T)^2 + w_1(\mu_1 - \mu_T)^2 \tag{maximum variance} \\ 
-&= w_0(t)w_1(t)\left[\mu_0(t) - \mu_1(t)\right]^2
-\end{align}
-$$
-
 
 
 ## [MovieLens-IMDb-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
