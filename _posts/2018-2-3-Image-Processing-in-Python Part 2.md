@@ -14,7 +14,7 @@ images:
 
 Previously we've seen some of the very basic image analysis operation in Python. In this last part of this basic image analysis we'll go through some of the following contents. 
 
-Following contents are the reflection of my completed academic image processing course in previous term. So, I am not planning on putting anything into production sphere. Instead the aim of this article is to try and realize the fundamentals of a few basic image processing techniques. For this reason, I am going to stick to using [`SciKit-Image`](https://scikit-image.org/) - [`numpy`](http://www.numpy.org/) mainly to preform most of the manipulations, although I will use other libraries now and then rather than using most wanted tools like [`OpenCV`](https://opencv.org/) :smiley:
+Following contents are the reflection of my completed academic image processing course in previous term. So, I am not planning on putting anything into production sphere. Instead the aim of this article is to try and realize the fundamentals of a few basic image processing techniques. For this reason, I am going to stick to using [`SciKit-Image`](https://scikit-image.org/) - [`numpy`](http://www.numpy.org/) mainly to preform most of the manipulations, although I will use other libraries now and then rather than using most wanted tools like [`OpenCV`](https://opencv.org/) : :smirk:
 
 In previous article, we've gone through some of the following basic operation. To keep pace with today's content, continuous reading is highly appreciated.
 
