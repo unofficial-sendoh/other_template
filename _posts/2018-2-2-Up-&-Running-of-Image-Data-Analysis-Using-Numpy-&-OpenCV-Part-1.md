@@ -37,16 +37,16 @@ Combination of these three color will posses tends to the highest value among th
 
 Here, we'll observe some of the following, which is very basic fundamental image data analysis with `Numpy` and some concern Python pacakges, like `imageio` , `matplotlib` etc.
 
-* Importing images and observe it's properties
-* Splitting the layers
-* Greyscale
-* Using Logical Operator on pixel values
-* Masking using Logical Operator
-* Satellite Image Data Analysis
+* [Importing images and observe it's properties](#1-bullet)
+* [Splitting the layers](#2-bullet)
+* [Greyscale]()
+* [Using Logical Operator on pixel values]()
+* [Masking using Logical Operator]()
+* [Satellite Image Data Analysis]()
 
 However, we'll do all the coding part on `Jupyter Notebook`. So for more convenient reading view check the Notebook [here](https://nbviewer.jupyter.org/github/iphton/Image-Data-Analysis-Using-Pythons/blob/gh-pages/notebook/Image%20Data%20Analysis%20Using%20Numpy%20%26%20OpenCV.ipynb).
 
-## Importing Image
+## Importing Image<a class="anchor" id="1-bullet"></a>
 
 Now let's load an image and observe its various properties in general.
 
@@ -231,7 +231,7 @@ plt.show()
 
 
 
-## Splitting Layers
+## Splitting Layers<a class="anchor" id="2-bullet"></a>
 
 Now, we know that each pixel of the image is represented by three integers. Splitting the image into separate color components is just a matter of pulling out the correct slice of the image array.
 
