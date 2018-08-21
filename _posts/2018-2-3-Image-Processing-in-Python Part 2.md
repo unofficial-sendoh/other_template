@@ -7,7 +7,9 @@ images:
 
 ---
 
----
+![feature_img](/images/Image_Analysis_Part_2/feature_img_pt_2.png)
+
+
 [Part 1](https://iphton.github.io/iphton.github.io/Up-&-Running-of-Image-Data-Analysis-Using-Numpy-&-OpenCV-Part-1/)
 
 Previously we've seen some of the very basic image analysis operation in Python. In this last part of this basic image analysis we'll go through some of the following contents. 
