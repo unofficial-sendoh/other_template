@@ -713,7 +713,7 @@ Now, the Otsu's method involves the iterative fashion across all the possible th
 
 Let's demonstrate the process using the a simple 6:6 gray level image. The histogram for the image is drawn below. For simplification we choose only 6 levels grayscale.
 
-![png](/images/Image_Analysis_Part_2/hist.png)
+![png](/images/Image_Analysis_Part_2/hist.png){:height="360px" width="300px"}
 
 Now, let's calculate for finding variacne which is the measure of spread for a single threshold. Let's assume, our threshold value is 3.
 
@@ -1092,17 +1092,15 @@ G = \sqrt{G_x^2 + G_y^2} \ \ \ \
 (\theta) = \tan^{-1}(\frac{G_y}{G_x})
 $$
 
-For demonstrate purpose, let's consider the following images: ( image courtesy to wiki )
+For demonstrate purpose, let's consider the following images: 
 
-https://upload.wikimedia.org/wikipedia/commons/6/67/Intensity_image_with_gradient_images.png
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Intensity_image_with_gradient_images.png">
+(image courtesy to wiki)
 
 On the left, an intensity image of a cat. In the center, a gradient image in the x direction measuring horizontal change in intensity. On the right, a gradient image in the y direction measuring vertical change in intensity.
 
----
-
 * **Apply non-maximum suppression**: to get rid of spurious response to edge detection. So, after getting gradient magnitude and direction, a full scan of image is done to remove any unwanted pixels which may not constitute the edge. For this, at every pixel, pixel is checked if it is a local maximum in its neighborhood in the direction of gradient.
 
----
 * **Apply double threshold**: to determine potential edges.
 
 * **Track edge by hysteresis**: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges. For this, we need two threshold values, *minVal* and *maxVal*. Any edges with intensity gradient more than *maxVal* are sure to be edges and those below *minVal* are sure to be non-edges, so discarded. Those who lie between these two thresholds are classified edges or non-edges based on their connectivity. 
