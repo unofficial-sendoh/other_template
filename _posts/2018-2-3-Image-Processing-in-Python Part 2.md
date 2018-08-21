@@ -60,7 +60,9 @@ In previous article, we've gone through some of the following basic operation. T
 - [Image Compression](#10-bullet)
     - Stacked Autoencoder
 
-I'm so excited, let's began :smiley:
+---
+
+I'm so excited, let's begin :simple_smile:
 
 ## Intensity Transformation<a class="anchor" id="A-bullet"></a>
 
@@ -93,13 +95,13 @@ The intensity transformation function mathematically defined as:
 
 $s = T ( r )$
 
-where **r** is the pixels of the input image and **s** is the pixels of the output image. **T** is a transformation function that maps each value of r to each value of s.
+where $r$ is the pixels of the input image and $s$ is the pixels of the output image. $T$ is a transformation function that maps each value of $r$ to each value of $s$.
 
-Negative transformation, which is invert of identity transformation. In negative transformation, each value of the input image is subtracted from the `L-1` and mapped onto the output image.
+Negative transformation, which is invert of identity transformation. In negative transformation, each value of the input image is subtracted from the $L-1$ and mapped onto the output image.
 
 In this case the following transition has been done.
 
-`s = (L – 1) – r`
+$s = (L – 1) – r$
 
 So each value is subtracted by **255**. So what happens is that, the lighter pixels become dark and the darker picture becomes light. And it results in image negative.
 
@@ -115,18 +117,22 @@ plt.axis('off');
 
 ![png](/images/Image_Analysis_Part_2/output_3_0.png)
 
+resources:
 
-# Log transformation <a class="anchor" id="2-bullet"></a>
+- [1](https://www.tutorialspoint.com/dip/gray_level_transformations.htm) - [2](http://archive.bespoke.co.uk/press-room?option=com_content&view=article&id=1921)
+
+
+### Log transformation <a class="anchor" id="2-bullet"></a>
 
 The log transformations can be defined by this formula
 
-`s = c log(r + 1)`.
+$s = c log(r + 1)$
 
-Where **s** and **r** are the pixel values of the output and the input image and **c** is a constant. The value 1 is added to each of the pixel value of the input image because if there is a pixel intensity of 0 in the image, then log (0) is equal to infinity. So 1 is added, to make the minimum value at least 1.
+Where $s$ and $r$ are the pixel values of the output and the input image and $c$ is a constant. The value 1 is added to each of the pixel value of the input image because if there is a pixel intensity of 0 in the image, then $log (0)$ is equal to infinity. So 1 is added, to make the minimum value at least 1.
 
 During log transformation, the dark pixels in an image are expanded as compare to the higher pixel values. The higher pixel values are kind of compressed in log transformation. This result in following image enhancement.
 
-The value of **c** in the log transform adjust the kind of enhancement we are looking for.
+The value of $c$ in the log transform adjust the kind of enhancement we are looking for.
 
 
 ```python
@@ -142,18 +148,17 @@ gray = gray(pic)
 
 '''
 log transform
-- s = c*log(1+r)
+-> s = c*log(1+r)
 
-So, we calculate c and r to estimate s
+So, we calculate constant c to estimate s
+-> c = (L-1)/log(1+|I_max|)
 
-- r = np.log(1+gray)
-- c = (L-1)/log(1+|I_max|)
 '''
 
 max_ = np.max(gray)
 
 def log_transform():
-    return 255/np.log(1+max_) * np.log(1+gray)
+    return (255/np.log(1+max_)) * np.log(1+gray)
 
 plt.figure(figsize = (5,5))
 plt.imshow(log_transform(), cmap = plt.get_cmap(name = 'gray'))
@@ -163,8 +168,11 @@ plt.axis('off');
 
 ![png](/images/Image_Analysis_Part_2/output_5_0.png)
 
+resources:
 
-# Gamma Correction <a class="anchor" id="3-bullet"></a>
+- [1](https://www.tutorialspoint.com/dip/gray_level_transformations.htm) - [2](https://homepages.inf.ed.ac.uk/rbf/HIPR2/pixlog.htm)
+
+### Gamma Correction <a class="anchor" id="3-bullet"></a>
  
 Gamma correction, or often simply gamma, is a nonlinear operation used to encode and decode luminance or tristimulus values in video or still image systems. Gamma correction is also known as the **Power Law Transform**. First, our image pixel intensities must be scaled from the range **0, 255** to **0, 1.0**. From there, we obtain our output gamma corrected image by applying the following equation:
 
@@ -203,16 +211,20 @@ There are some other linear transformation function. Listed below:
 - Intensity-Level Slicing
 - Bit-Plane Slicing
 
+Resources:
+
+- [1](https://www.siggraph.org/education/materials/HyperGraph/color/gamma_correction/gamma_intro.html) - [2](https://en.wikipedia.org/wiki/Gamma_correction) - [3](https://stackoverflow.com/questions/16521003/gamma-correction-formula-gamma-or-1-gamma) - [4](https://dsp.stackexchange.com/questions/45784/why-does-gamma-correction-of-image-use-two-different-definitions-of-gamma)
+
 # Convolution <a class="anchor" id="4-bullet"></a>
 ---
 
 We've discussed briefly in our previous [article](https://iphton.github.io/iphton.github.io/Up-&-Running-of-Image-Data-Analysis-Using-Numpy-&-OpenCV-Part-1/) is that, when a computer sees an image, it sees an array of pixel values. Now, Depending on the resolution and size of the image, it will see a 32 x 32 x 3 array of numbers where the 3 refers to RGB values or channels. Just to drive home the point, let's say we have a color image in PNG form and its size is 480 x 480. The representative array will be 480 x 480 x 3. Each of these numbers is given a value from 0 to 255 which describes the pixel intensity at that point. 
 
-Like we mentioned before, the input is a 32 x 32 x 3 array of pixel values. Now, the best way to explain a convolution is to imagine a flashlight that is shining over the top left of the image. Let’s say that the flashlight shines covers a 3 x 3 area. And now, let’s imagine this flashlight sliding across all the areas of the input image. In machine learning terms, this flashlight is called a **filter** or  **kernel** or sometimes refer to as **weights** or **mask** and the region that it is shining over is called the **receptive field**.
+Like we mentioned before, the input is a 32 x 32 x 3 array of pixel values. Now, the best way to explain a convolution is to imagine a flashlight that is shining over the top left of the image. Let’s say that the flashlight shines covers a 3 x 3 area. And now, let’s imagine this flashlight sliding across all the areas of the input image. In machine learning terms, this flashlight is called a **filter** or  [**kernel**](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Details) or sometimes refer to as **weights** or **mask** and the region that it is shining over is called the [**receptive field**](https://en.wikipedia.org/wiki/Receptive_field).
 
 Now this filter is also an array of numbers where the numbers are called weights or parameters. A very important note is that the depth of this filter has to be the same as the depth of the input, so the dimensions of this filter is 3 x 3 x 3. 
 
-An image **kernel** or **filter** is a small matrix used to apply effects like the ones we might find in Photoshop or Gimp, such as blurring, sharpening, outlining or embossing. They're also used in machine learning for **feature extraction**, a technique for determining the most important portions of an image. For more, have a look at Gimp's excellent documentation on using [Image kernel's](https://docs.gimp.org/en/plug-in-convmatrix.html). We can find a list of most common kernels [here](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Details)
+An image **kernel** or **filter** is a small matrix used to apply effects like the ones we might find in Photoshop or Gimp, such as blurring, sharpening, outlining or embossing. They're also used in machine learning for **feature extraction**, a technique for determining the most important portions of an image. For more, have a look at Gimp's excellent documentation on using [Image kernel's](https://docs.gimp.org/en/plug-in-convmatrix.html). We can find a list of most common kernels [here](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Details).
 
 Now, let’s take the filter to the top left corner. As the filter is sliding, or **convolving**, around the input image, it is multiplying the values in the filter with the original pixel values of the image (aka computing element wise multiplications). These multiplications are all summed up. So now we have a single number. Remember, this number is just representative of when the filter is at the top left of the image. Now, we repeat this process for every location on the input volume. Next step would be moving the filter to the right by **stride** or **step** 1 unit, then right again by **stride** 1, and so on. Every unique location on the input volume produces a number. We can also choose stride or the step size 2 or more, but we have to carefull wheter it will fit or not on the input image. 
 
@@ -258,9 +270,9 @@ let's take a look visuallly,
 
 ![png](/images/Image_Analysis_Part_2/conv_gif.gif)
 
-Moreover, we practically use more filters instead of one. Then our output volume would be `28 x 28 x n` (where n is the number of **activation map**). By using more filters, we are able to preserve the spatial dimensions better. 
+Moreover, we practically use more filters instead of one. Then our output volume would be $28 x 28 x n$ (where n is the number of **activation map**). By using more filters, we are able to preserve the spatial dimensions better. 
 
-However, For the pixels on the border of image matrix, some elements of the kernel might stands out of the image matrix and therefore does not have any corresponding element from the image matrix. In this case, we can eliminate the convolution operation for these position which end up an output matrix smaller than the input or we can apply **padding** to the input matrix 
+However, For the pixels on the border of image matrix, some elements of the kernel might stands out of the image matrix and therefore does not have any corresponding element from the image matrix. In this case, we can eliminate the convolution operation for these position which end up an output matrix smaller than the input or we can apply [**padding**](https://www.quora.com/What-are-the-roles-of-stride-and-padding-in-a-convolutional-neural-network) to the input matrix. 
 
 Now, I do realize that some of these topics are quite complex and could be made in whole posts by themselves. In an effort to remain concise yet retain comprehensiveness, I will provide links to resources where the topic is explained in more detail.
 
@@ -488,7 +500,7 @@ plt.show()
 
 ---
 
-By using more exotic windows, was can extract different kinds of information. The [**Sobel kernels**](https://en.wikipedia.org/wiki/Sobel_operator) are used to show only the differences in adjacent pixel values in a particular direction. It tries to approximate the gradients of the image along one direction using kernel functions of the form following. 
+By using more exotic windows, was can extract different kinds of information. The [**Sobel kernels**](https://en.wikipedia.org/wiki/Sobel_operator) are used to show only the differences in adjacent pixel values in a particular direction. It tries to approximate the [gradients of the image](https://en.wikipedia.org/wiki/Image_gradient) along one direction using kernel functions of the form following. 
 
 $$
 Right \ Sobel \  Kernel = \left(\begin{array}{cc} 
@@ -563,7 +575,7 @@ plt.imshow(img_conv);
 ![png](/images/Image_Analysis_Part_2/output_19_1.png)
 
 
-To reduce noise. we generally use different filter. **Gaussain Gilter** which is a digital filtering technique which is often used to remove noise from an image. Here, by combining gaussain filtering and gradient finding operations together, we can generate some strange patterns that resemble the original image and being distorted in interesting ways.
+To reduce noise. we generally use filter like, **Gaussain Gilter** which is a digital filtering technique which is often used to remove noise from an image. Here, by combining gaussain filtering and gradient finding operations together, we can generate some strange patterns that resemble the original image and being distorted in interesting ways.
 
 
 ```python
@@ -621,7 +633,7 @@ plt.imshow(img_conv);
 ![png](/images/Image_Analysis_Part_2/output_21_1.png)
 
 
-Now, let's see using **Median filter**.
+Now, let's see using **Median filter** to see what sort of effect it can make on image.
 
 
 ```python
@@ -678,6 +690,9 @@ plt.imshow(img_conv);
 
 ![png](/images/Image_Analysis_Part_2/output_23_1.png)
 
+Resources:
+
+- [1](https://la.mathworks.com/help/images/what-is-image-filtering-in-the-spatial-domain.html) - [2](http://machinelearninguru.com/computer_vision/basics/convolution/image_convolution_1.html) - [3](https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/convolution.html) - [4](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) - [5](http://cs231n.github.io/convolutional-networks/) [6](https://www.youtube.com/watch?v=umGJ30-15_A&t=13s) - [7](https://www.youtube.com/watch?v=2-Ol7ZB0MmU) - [8](https://www.youtube.com/watch?v=bNb2fEVKeEo&t=1696s) - [9](https://www.youtube.com/watch?v=AgkfIQ4IGaM&t=67s) - [10](https://medium.com/technologymadeeasy/the-best-explanation-of-convolutional-neural-networks-on-the-internet-fbb8b1ad5df8)
 
 
 # Thresholding
