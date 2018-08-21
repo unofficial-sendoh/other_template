@@ -53,6 +53,7 @@ In previous article, we've gone through some of the following basic operation. T
 ---
 - Vectorization
     - [Contour tracking](#9-bullet)
+    
 --- 
 - Image Compression
     - Stacked Autoencoder
