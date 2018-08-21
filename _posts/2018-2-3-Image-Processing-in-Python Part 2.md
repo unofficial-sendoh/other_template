@@ -728,7 +728,7 @@ Fore, \ \mu_1(t) & = \frac{\sum_{i=t}^{L-1}ip(i)}{w_1(t)}
 
 **Background**
 
-![png](/images/Image_Analysis_Part_2/back.png) <!-- .element height="50%" width="50%" -->
+![png](/images/Image_Analysis_Part_2/back.png){:height="50%" width="50%"}
 
 \begin{align}
 Weight, \ \ \ \ W_0 &= \frac{10 + 8 + 6}{36} = 0.67 \\
