@@ -39,10 +39,10 @@ Here, we'll observe some of the following, which is very basic fundamental image
 
 * [Importing images and observe it's properties](#1-bullet)
 * [Splitting the layers](#2-bullet)
-* [Greyscale]()
-* [Using Logical Operator on pixel values]()
-* [Masking using Logical Operator]()
-* [Satellite Image Data Analysis]()
+* [Greyscale](#3-bullet)
+* [Using Logical Operator on pixel values](#4-bullet)
+* [Masking using Logical Operator](#5-bullet)
+* [Satellite Image Data Analysis](#6-bullet)
 
 However, we'll do all the coding part on `Jupyter Notebook`. So for more convenient reading view check the Notebook [here](https://nbviewer.jupyter.org/github/iphton/Image-Data-Analysis-Using-Pythons/blob/gh-pages/notebook/Image%20Data%20Analysis%20Using%20Numpy%20%26%20OpenCV.ipynb).
 
@@ -254,7 +254,7 @@ for c, ax in zip(range(3), ax):
 ```
 ![red_chn](/images/split_chns.JPG)
 
-## Greyscale
+## Greyscale<a class="anchor" id="3-bullet"></a>
 
 Black and white images are stored in 2-Dimentional arrays. There're two types of Black and White images:
 
@@ -352,7 +352,7 @@ Minimum RGB value in this image 0.0
 Random indexes [X,Y] : 129.07
 ```
 
-## Use logical Operator To Process Pixel Values
+## Use logical Operator To Process Pixel Values<a class="anchor" id="4-bullet"></a>
 
 We can create a bullion ndarray in the same size by using a **logical operator**. However, this won't create any new array but it simply return `True` to its host variable. For example: let's consider we want to filter out some low value pixel or high value or (any condition) in an RGB image and yes it would be great to convert RGB to gray scale but for now we won't go for that rather than deal with color image.
 
@@ -413,7 +413,7 @@ plt.show()
 </p>
 
 
-## Masking
+## Masking<a class="anchor" id="5-bullet"></a>
 
 Image masking is an image processing technique that is used to remove the background from which photographs those have fuzzy edges, transparent or hair portions. 
 
@@ -482,7 +482,7 @@ if __name__ == '__main__':
 
 
 
-## Satellite Image Processing
+## Satellite Image Processing<a class="anchor" id="6-bullet"></a>
 
 One of MOOC course on edX, we've introduced with some satellite images and its processing system. It's very informative of course.However, let's do a few analysis task on it.
 
