@@ -3,7 +3,7 @@
 
 ---
 
-Some Necessary [GitHubGist](https://gist.github.com/iphton) 
+Some Necessary [Gist](https://gist.github.com/iphton) 
 - [Installing OpenCV3 for Python3x](https://gist.github.com/iphton/4af8e9a3accfdcf2511ee4ced26a1d77)
 - [X11 Forwarding using Putty](https://gist.github.com/iphton/5f2d7e8b50d0e94341c745cb659a37b0)
 - [Most Used Raspberry Pi Commands](https://gist.github.com/iphton/92c29a45ffdd73b0e327301840e9b3b3)
