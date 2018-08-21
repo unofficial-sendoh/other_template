@@ -1057,7 +1057,7 @@ def hough_line(img):
     return accumulator, thetas, rhos
 ```
 
-I've provided full implementation Code of Hough Transform in this [github repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/blob/gh-pages/Segmentation/Object%20Detection/Hough%20Transform/hough_transform.py). 
+I've provided full implementation Code of Hough Transform in this [repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/blob/gh-pages/Segmentation/Object%20Detection/Hough%20Transform/hough_transform.py). 
 
 ---
 
@@ -1318,4 +1318,11 @@ for i in range(num_test_images):
 
 Here, in the first row which is the loaded [MNIST](http://yann.lecun.com/exdb/mnist/) training set and the second row is the reconstructed those training set after encoding and decoding using autoencoder. Looks nice, but not great, there's a lots of information missing in the reconstructed images. So, autoencoder is not as good as other compression technique but as a part of fast growing promising technology, future advances might change this, who knows.  
 
-Find all on [GitHub.](https://github.com/iphton/Image-Data-Analysis-Using-Pythons)
+---
+
+At the ends of our 2 part series on Basic Image-Processing in Python, hope everyone was able to follow along, and if you feel that I have did something important mistake, please let me know in the comments! :relaxed:
+
+Source Code: [GitHub.](https://github.com/iphton/Image-Data-Analysis-Using-Pythons)
+
+---
+<a href = "/assets/image_py_2.txt" target= "_blank">Sources</a>
