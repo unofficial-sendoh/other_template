@@ -62,7 +62,7 @@ In previous article, we've gone through some of the following basic operation. T
 
 ---
 
-I'm so excited, let's begin :simple_smile:
+I'm so excited, let's begin. :snowman:
 
 ## Intensity Transformation<a class="anchor" id="A-bullet"></a>
 
@@ -126,7 +126,7 @@ plt.axis('off');
 
 The log transformations can be defined by this formula
 
-$s = c log(r + 1)$
+$s = c * log(r + 1)$
 
 Where $s$ and $r$ are the pixel values of the output and the input image and $c$ is a constant. The value 1 is added to each of the pixel value of the input image because if there is a pixel intensity of 0 in the image, then $log (0)$ is equal to infinity. So 1 is added, to make the minimum value at least 1.
 
