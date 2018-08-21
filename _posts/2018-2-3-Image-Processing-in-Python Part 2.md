@@ -162,15 +162,15 @@ plt.axis('off');
 
 # Gamma Correction <a class="anchor" id="3-bullet"></a>
  
-Gamma correction, or often simply gamma, is a nonlinear operation used to encode and decode luminance or tristimulus values in video or still image systems. Gamma correction is also known as the Power Law Transform. First, our image pixel intensities must be scaled from the range [0, 255] to [0, 1.0]. From there, we obtain our output gamma corrected image by applying the following equation:
+Gamma correction, or often simply gamma, is a nonlinear operation used to encode and decode luminance or tristimulus values in video or still image systems. Gamma correction is also known as the **Power Law Transform**. First, our image pixel intensities must be scaled from the range **0, 255** to **0, 1.0**. From there, we obtain our output gamma corrected image by applying the following equation:
 
-`V_out = V_in ^ (1 / G)`
+$V_o = V_i^\frac{1}{G}$
 
-Where **V_in** is our input image and **G** is our gamma value. The output image is then scaled back to the range [0, 255].
+Where **V_i** is our input image and **G** is our gamma value. The output image is then scaled back to the range **0-255**.
 
-A gamma value, **G < 1** is sometimes called an `encoding gamma`, and the process of encoding with this compressive power-law nonlinearity is called `gamma compression`; Gamma values < 1 will shift the image towards the darker end of the spectrum.
+A gamma value, **G < 1** is sometimes called an **encoding gamma**, and the process of encoding with this compressive power-law nonlinearity is called **gamma compression**; Gamma values < 1 will shift the image towards the darker end of the spectrum.
 
-Conversely a gamma value **G > 1** is called a `decoding gamma` and the application of the expansive power-law nonlinearity is called `gamma expansion.` Gamma values > 1 will make the image appear lighter. A gamma value of **G = 1** will have no affect on the input image:
+Conversely a gamma value **G > 1** is called a **decoding gamma** and the application of the expansive power-law nonlinearity is called **gamma expansion**. Gamma values > 1 will make the image appear lighter. A gamma value of **G = 1** will have no affect on the input image:
 
 
 ```python
@@ -208,7 +208,7 @@ Like we mentioned before, the input is a 32 x 32 x 3 array of pixel values. Now,
 
 Now this filter is also an array of numbers where the numbers are called weights or parameters. A very important note is that the depth of this filter has to be the same as the depth of the input, so the dimensions of this filter is 3 x 3 x 3. 
 
-An image **kernel** or **filter** is a small matrix used to apply effects like the ones we might find in Photoshop or Gimp, such as blurring, sharpening, outlining or embossing. They're also used in machine learning for `feature extraction`, a technique for determining the most important portions of an image. For more, have a look at Gimp's excellent documentation on using [Image kernel's](https://docs.gimp.org/en/plug-in-convmatrix.html). We can find a list of most common kernels [here](https://en.wikipedia.org/wiki/Kernel_(image_processing)
+An image **kernel** or **filter** is a small matrix used to apply effects like the ones we might find in Photoshop or Gimp, such as blurring, sharpening, outlining or embossing. They're also used in machine learning for **feature extraction**, a technique for determining the most important portions of an image. For more, have a look at Gimp's excellent documentation on using [Image kernel's](https://docs.gimp.org/en/plug-in-convmatrix.html). We can find a list of most common kernels [here](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Details)
 
 Now, let’s take the filter to the top left corner. As the filter is sliding, or **convolving**, around the input image, it is multiplying the values in the filter with the original pixel values of the image (aka computing element wise multiplications). These multiplications are all summed up. So now we have a single number. Remember, this number is just representative of when the filter is at the top left of the image. Now, we repeat this process for every location on the input volume. Next step would be moving the filter to the right by **stride** or **step** 1 unit, then right again by **stride** 1, and so on. Every unique location on the input volume produces a number. We can also choose stride or the step size 2 or more, but we have to carefull wheter it will fit or not on the input image. 
 
