@@ -7,7 +7,7 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 - [Installing OpenCV3 for Python3x](https://gist.github.com/iphton/4af8e9a3accfdcf2511ee4ced26a1d77)
 - [X11 Forwarding using Putty](https://gist.github.com/iphton/5f2d7e8b50d0e94341c745cb659a37b0)
 - [Most Used Raspberry Pi Commands](https://gist.github.com/iphton/92c29a45ffdd73b0e327301840e9b3b3)
-- [Include image or picture in jupyter notebook.](https://gist.github.com/iphton/794c466af5bbaa5c831edff39c6b2b87)
+- [Include Image in Jupyter Notebook.](https://gist.github.com/iphton/794c466af5bbaa5c831edff39c6b2b87)
 - [Decent and Elegant Way To Highlight Code Syntax In Jekyll](https://gist.github.com/iphton/d4e607bfd4759f02ae6f68bd33fbca34)
 - [FFmpeg Basic Operation on Subtitles](https://gist.github.com/iphton/7d5511941970e8b448453980f47f9ec3)
 
