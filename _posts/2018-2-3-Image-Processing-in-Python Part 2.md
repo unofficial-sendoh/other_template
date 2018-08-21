@@ -376,7 +376,7 @@ Sharpen \  Kernel = \left(\begin{array}{cc}
 $$ 
 
 
-Let's apply the edge detection kernel to the output of the sharpen kernel and also further [normalizing](https://en.wikipedia.org/wiki/Normalization_(image_processing) it with box blur filter.
+Let's apply the edge detection kernel to the output of the sharpen kernel and also further [normalizing](https://en.wikipedia.org/wiki/Normalization_(image_processing)) with box blur filter.
 
 
 ```python
