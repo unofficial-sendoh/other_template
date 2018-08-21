@@ -963,6 +963,7 @@ plt.axis('off');
 
 
 # Line Detection
+---
 ## Hough Transform<a class="anchor" id="7-bullet"></a>
 
 Hough Transform is a popular technique to detect any shape, if we can represent that shape in mathematical form. It can detect the shape even if it is broken or distorted a little bit. We won't go too deeper to analysis the mechanism of hough transform rather than giving intuitive mathematical description before implementing it on code and also provide some resource to understand it more in details.
@@ -1058,8 +1059,6 @@ def hough_line(img):
 ```
 
 I've provided full implementation Code of Hough Transform in this [repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/blob/gh-pages/Segmentation/Object%20Detection/Hough%20Transform/hough_transform.py). 
-
----
 
 **Resources:** :books:
 
