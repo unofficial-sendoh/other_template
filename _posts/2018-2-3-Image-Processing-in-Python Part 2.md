@@ -719,16 +719,17 @@ Now, let's calculate for finding variacne which is the measure of spread for a s
 
 ---
 
+
 \begin{align}
 Back, \ \mu_0(t) & = \frac{\sum_{i=0}^{t-1}ip(i)}{w_0(t)} \\
 Fore, \ \mu_1(t) & = \frac{\sum_{i=t}^{L-1}ip(i)}{w_1(t)}
 \end{align}
 
 
-
 **Background**
 
 ![png](/images/Image_Analysis_Part_2/back.png){:height="363px" width="300px"}
+
 
 \begin{align}
 Weight, \ \ \ \ W_0 &= \frac{10 + 8 + 6}{36} = 0.67 \\
@@ -738,11 +739,14 @@ Variance \ \ \ \sigma_0^2 &= \frac{[(0-0.83)^2*10 + (1-0.83)^2*8 + (2-0.83)^2*6]
 &= 0.64
 \end{align}
 
+
 ---
 
 **Foreground**
 
 ![png](/images/Image_Analysis_Part_2/fore.png){:height="363px" width="299px"}
+
+
 
 \begin{align}
 Weight, \ \ \ \ W_1 &= \frac{8 + 4 + 2}{36} = 0.39 \\
@@ -770,7 +774,9 @@ Otsu shows that minimizing the **intra-class variance** is the same as **maximiz
 &= w_0(\mu_0 - \mu_T)^2 + w_1(\mu_1 - \mu_T)^2 = w_0(t)w_1(t)\left[\mu_0(t) - \mu_1(t)\right]^2
 \end{align}
 
+
 As previously we randomly choose threshold value 3, let's calculate inter-class variance for this threshold value.
+
 
 \begin{align}
 \sigma_b^2(t) = 0.67*0.39*[0.83-3.57]^2 = 1.96
@@ -779,11 +785,11 @@ As previously we randomly choose threshold value 3, let's calculate inter-class 
 
 This same calculation needs to be performed for all the possible threshold values 0 to 5, which is 0 to 255 for real gray level practical image. 
 
+
 \begin{align}
 Within \ Class \ Variance: \ \ \sigma_w^2(t) & = w_0(t)\sigma_0^2(t) + w_1(t)\sigma_1^2(t) \\
 Between \ Class \ Variance: \ \ \sigma_b^2(t) & = w_0(t)w_1(t)\left[\mu_0(t) - \mu_1(t)\right]^2
 \end{align}
-
 
 ---
 
