@@ -421,10 +421,6 @@ plt.axis('off')
 plt.show()
 ```
 
-    C:\Users\Mohammed Innat\Anaconda3\lib\site-packages\skimage\util\dtype.py:122: UserWarning: Possible precision loss when converting from float64 to uint16
-      .format(dtypeobj_in, dtypeobj_out))
-    
-
 
 ![png](/images/Image_Analysis_Part_2/output_15_1.png)
 
