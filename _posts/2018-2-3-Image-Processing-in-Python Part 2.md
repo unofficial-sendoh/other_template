@@ -166,7 +166,7 @@ Gamma correction, or often simply gamma, is a nonlinear operation used to encode
 
 $V_o = V_i^\frac{1}{G}$
 
-Where **V_i** is our input image and **G** is our gamma value. The output image is then scaled back to the range **0-255**.
+Where $V_i$ is our input image and **G** is our gamma value. The output image, $V_o$ is then scaled back to the range **0-255**.
 
 A gamma value, **G < 1** is sometimes called an **encoding gamma**, and the process of encoding with this compressive power-law nonlinearity is called **gamma compression**; Gamma values < 1 will shift the image towards the darker end of the spectrum.
 
@@ -179,7 +179,7 @@ import matplotlib.pyplot as plt
 
 # Gamma encoding 
 pic = imageio.imread('img/parrot.jpg')
-gamma = 2.2
+gamma = 2.2 # Gamma < 1 ~ Dark  ;  Gamma > 1 ~ Bright
 
 gamma_correction = ((pic/255) ** (1/gamma)) 
 plt.figure(figsize = (5,5))
