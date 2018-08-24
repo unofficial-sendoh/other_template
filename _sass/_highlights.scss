@@ -4,6 +4,7 @@
   background-color: #ffffff;
   padding: 5px 10px;
   margin: 20px 0;
+  border: 100px solid black;
 }
 
 .highlight pre {
@@ -23,6 +24,7 @@ code {
 .highlight {
   background-color: #f6f8fa;
   margin-bottom: 1.5em;
+  border: 100px solid black;
   pre {
     overflow-y: auto;
     position: relative;
