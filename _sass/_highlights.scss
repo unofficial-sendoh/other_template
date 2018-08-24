@@ -23,13 +23,12 @@ code {
 .highlight {
   background-color: #f6f8fa;
   margin-bottom: 1.5em;
-  border: 1px solid black;
   pre {
     overflow-y: auto;
     position: relative;
     margin: 0;
     padding: 1em;
-    
+    border: 2px solid gray;
   }
   .lineno { padding-right: 24px; color: lighten(#333332,50);}
   .hll { background-color: #ffffcc }
