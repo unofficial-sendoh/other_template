@@ -12,7 +12,7 @@ images:
 
 [Part 1](https://iphton.github.io/iphton.github.io/Up-&-Running-of-Image-Data-Analysis-Using-Numpy-&-OpenCV-Part-1/)
 
-Previously we've seen some of the very basic image analysis operation in Python. In this last part of this basic image analysis we'll go through some of the following contents. 
+Previously we've seen some of the very basic image analysis operation in Python. In this last part of basic image analysis we'll go through some of the following contents. 
 
 Following contents are the reflection of my completed academic image processing course in previous term. So, I am not planning on putting anything into production sphere. Instead the aim of this article is to try and realize the fundamentals of a few basic image processing techniques. For this reason, I am going to stick to using [`SciKit-Image`](https://scikit-image.org/) - [`numpy`](http://www.numpy.org/) mainly to preform most of the manipulations, although I will use other libraries now and then rather than using most wanted tools like [`OpenCV`](https://opencv.org/) : :smirk:
 
@@ -50,7 +50,7 @@ In previous article, we've gone through some of the following basic operation. T
         - [Line Detection](#7-bullet)
             - Hough transform
         - [Edge Detection](#8-bullet)
-            - Cany Edge Detection
+            - Canny Edge Detection
   
 ---
 - [Vectorization](#9-bullet)
@@ -99,7 +99,7 @@ where $r$ is the pixels of the input image and $s$ is the pixels of the output i
 
 Negative transformation, which is invert of identity transformation. In negative transformation, each value of the input image is subtracted from the $L-1$ and mapped onto the output image.
 
-In this case the following transition has been done.
+In this case, the following transition has been done.
 
 $s = (L – 1) – r$
 
@@ -226,7 +226,7 @@ Now this filter is also an array of numbers where the numbers are called weights
 
 An image **kernel** or **filter** is a small matrix used to apply effects like the ones we might find in Photoshop or Gimp, such as blurring, sharpening, outlining or embossing. They're also used in machine learning for **feature extraction**, a technique for determining the most important portions of an image. For more, have a look at Gimp's excellent documentation on using [Image kernel's](https://docs.gimp.org/en/plug-in-convmatrix.html). We can find a list of most common kernels [here](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Details).
 
-Now, let’s take the filter to the top left corner. As the filter is sliding, or **convolving**, around the input image, it is multiplying the values in the filter with the original pixel values of the image (aka computing element wise multiplications). These multiplications are all summed up. So now we have a single number. Remember, this number is just representative of when the filter is at the top left of the image. Now, we repeat this process for every location on the input volume. Next step would be moving the filter to the right by **stride** or **step** 1 unit, then right again by **stride** 1, and so on. Every unique location on the input volume produces a number. We can also choose stride or the step size 2 or more, but we have to carefull wheter it will fit or not on the input image. 
+Now, let’s take the filter to the top left corner. As the filter is sliding, or **convolving**, around the input image, it is multiplying the values in the filter with the original pixel values of the image (aka computing element wise multiplications). These multiplications are all summed up. So now we have a single number. Remember, this number is just representative of when the filter is at the top left of the image. Now, we repeat this process for every location on the input volume. Next step would be moving the filter to the right by **stride** or **step** 1 unit, then right again by **stride** 1, and so on. Every unique location on the input volume produces a number. We can also choose stride or the step size 2 or more, but we have to carefull whether it will fit or not on the input image. 
 
 ![png](/images/Image_Analysis_Part_2/convoving.gif)
 
@@ -1193,13 +1193,13 @@ We like to conclude with a briefly overview of Autoencoder. It's a data compress
 - Lossy, and 
 - Learned automatically from **examples** rather than engineered by a human.
 
-As it's data specific and lossy, it's not good for image compression in general. The fact that autoencoders are data-specific which makes them generally impractical for real-world data compression problems. But there's a hope, future advances might change this. I find it interesting, though it's not good enoguh and also very poor performance compared to othr compression algorithm like **JPEG**, **MPEG** etc. [Check out](https://blog.keras.io/building-autoencoders-in-keras.html) this **keras** blog post regarding on this issue.
+As it's data specific and lossy, it's not good for image compression in general. The fact that autoencoders are data-specific which makes them generally impractical for real-world data compression problems. But there's a hope, future advances might change this. I find it interesting, though it's not good enoguh and also very poor performance compared to other compression algorithm like **JPEG**, **MPEG** etc. [Check out](https://blog.keras.io/building-autoencoders-in-keras.html) this **keras** blog post regarding on this issue.
 
-And also some fllowing stuff, in case if someone is interested too.
+And also some following stuff, in case if someone is interested too.
 
 - [1](https://arxiv.org/abs/1802.09371) - [2](https://arxiv.org/abs/1703.00395) - [3](https://www.irisa.fr/temics/demos/visualization_ae/visualizationAE.htm)
 
-Now, I do realize that these topics are quite complex and lots of stuff can take concern and can be made in whole posts by each of them. In an effort to remain concise and complex free, I will implement the code but will skip explaining in details that makes it happens and just showing the outcome of it.
+Now, I do realize that these topics are quite complex and lots of stuff can take concern and can be made in whole posts by each of them. In an effort to remain concise and complex free, I will implement the code but will skip explaining in details that what makes it happens and just showing the outcome of it.
 
 
 ```python
