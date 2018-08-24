@@ -12,11 +12,11 @@ images:
 
 [Part 1](https://iphton.github.io/iphton.github.io/Up-&-Running-of-Image-Data-Analysis-Using-Numpy-&-OpenCV-Part-1/)
 
-Previously we've seen some of the very basic image analysis operation in Python. In this last part of basic image analysis we'll go through some of the following contents. 
+Previously we've seen some of the very basic image analysis operations in Python. In this last part of basic image analysis, we'll go through some of the following contents. 
 
-Following contents are the reflection of my completed academic image processing course in previous term. So, I am not planning on putting anything into production sphere. Instead the aim of this article is to try and realize the fundamentals of a few basic image processing techniques. For this reason, I am going to stick to using [`SciKit-Image`](https://scikit-image.org/) - [`numpy`](http://www.numpy.org/) mainly to preform most of the manipulations, although I will use other libraries now and then rather than using most wanted tools like [`OpenCV`](https://opencv.org/) : :smirk:
+Following contents is the reflection of my completed academic image processing course in the previous term. So, I am not planning on putting anything into production sphere. Instead, the aim of this article is to try and realize the fundamentals of a few basic image processing techniques. For this reason, I am going to stick to using [`SciKit-Image`](https://scikit-image.org/) - [`numpy`](http://www.numpy.org/) mainly to perform most of the manipulations, although I will use other libraries now and then rather than using most wanted tools like [`OpenCV`](https://opencv.org/) : :smirk:
 
-In previous article, we've gone through some of the following basic operation. To keep pace with today's content, continuous reading is highly appreciated.
+In the previous article, we've gone through some of the following basic operation. To keep pace with today's content, continuous reading is highly appreciated.
 
 - [Importing images and observe it’s properties](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#1-bullet)
 - [Splitting the layers](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#2-bullet)
@@ -97,13 +97,13 @@ $s = T ( r )$
 
 where $r$ is the pixels of the input image and $s$ is the pixels of the output image. $T$ is a transformation function that maps each value of $r$ to each value of $s$.
 
-Negative transformation, which is invert of identity transformation. In negative transformation, each value of the input image is subtracted from the $L-1$ and mapped onto the output image.
+Negative transformation, which is the invert of identity transformation. In negative transformation, each value of the input image is subtracted from the $L-1$ and mapped onto the output image.
 
 In this case, the following transition has been done.
 
 $s = (L – 1) – r$
 
-So each value is subtracted by **255**. So what happens is that, the lighter pixels become dark and the darker picture becomes light. And it results in image negative.
+So each value is subtracted by **255**. So what happens is that the lighter pixels become dark and the darker picture becomes light. And it results in image negative.
 
 
 ```python
@@ -130,7 +130,7 @@ $s = c * log(r + 1)$
 
 Where $s$ and $r$ are the pixel values of the output and the input image and $c$ is a constant. The value 1 is added to each of the pixel value of the input image because if there is a pixel intensity of 0 in the image, then $log (0)$ is equal to infinity. So 1 is added, to make the minimum value at least 1.
 
-During log transformation, the dark pixels in an image are expanded as compare to the higher pixel values. The higher pixel values are kind of compressed in log transformation. This result in following image enhancement.
+During log transformation, the dark pixels in an image are expanded as compared to the higher pixel values. The higher pixel values are kind of compressed in log transformation. This result in the following image enhancement.
 
 The value of $c$ in the log transform adjust the kind of enhancement we are looking for.
 
@@ -182,7 +182,7 @@ Where $V_i$ is our input image and **G** is our gamma value. The output image, $
 
 A gamma value, **G < 1** is sometimes called an **encoding gamma**, and the process of encoding with this compressive power-law nonlinearity is called **gamma compression**; Gamma values < 1 will shift the image towards the darker end of the spectrum.
 
-Conversely a gamma value **G > 1** is called a **decoding gamma** and the application of the expansive power-law nonlinearity is called **gamma expansion**. Gamma values > 1 will make the image appear lighter. A gamma value of **G = 1** will have no affect on the input image:
+Conversely, a gamma value **G > 1** is called a **decoding gamma** and the application of the expansive power-law nonlinearity is called **gamma expansion**. Gamma values > 1 will make the image appear lighter. A gamma value of **G = 1** will have no effect on the input image:
 
 
 ```python
@@ -203,10 +203,10 @@ plt.axis('off');
 ![png](/images/Image_Analysis_Part_2/output_7_0.png)
 
 
-## Reason of Gamma Correction
-The reason we apply gamma correction is because our eyes perceive color and luminance differently than the sensors in a digital camera. When a sensor on a digital camera picks up twice the amount of photons, the signal is doubled. However, our eyes do not work like this. Instead, our eyes perceive double the amount of light as only a fraction brighter. Thus, while a digital camera has a linear relationship between brightness our eyes have a non-linear relationship. In order to account for this relationship we apply gamma correction.
+## The Reason of Gamma Correction
+The reason we apply gamma correction is that our eyes perceive color and luminance differently than the sensors in a digital camera. When a sensor on a digital camera picks up twice the amount of photons, the signal is doubled. However, our eyes do not work like this. Instead, our eyes perceive double the amount of light as only a fraction brighter. Thus, while a digital camera has a linear relationship between brightness our eyes have a non-linear relationship. In order to account for this relationship, we apply gamma correction.
 
-There are some other linear transformation function. Listed below:
+There is some other linear transformation function. Listed below:
 - Contrast Stretching
 - Intensity-Level Slicing
 - Bit-Plane Slicing
@@ -220,13 +220,13 @@ There are some other linear transformation function. Listed below:
 
 We've discussed briefly in our previous [article](https://iphton.github.io/iphton.github.io/Up-&-Running-of-Image-Data-Analysis-Using-Numpy-&-OpenCV-Part-1/) is that, when a computer sees an image, it sees an array of pixel values. Now, Depending on the resolution and size of the image, it will see a 32 x 32 x 3 array of numbers where the 3 refers to RGB values or channels. Just to drive home the point, let's say we have a color image in PNG form and its size is 480 x 480. The representative array will be 480 x 480 x 3. Each of these numbers is given a value from 0 to 255 which describes the pixel intensity at that point. 
 
-Like we mentioned before, the input is a 32 x 32 x 3 array of pixel values. Now, the best way to explain a convolution is to imagine a flashlight that is shining over the top left of the image. Let’s say that the flashlight shines covers a 3 x 3 area. And now, let’s imagine this flashlight sliding across all the areas of the input image. In machine learning terms, this flashlight is called a **filter** or  [**kernel**](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Details) or sometimes refer to as **weights** or **mask** and the region that it is shining over is called the [**receptive field**](https://en.wikipedia.org/wiki/Receptive_field).
+Like we mentioned before, the input is a 32 x 32 x 3 array of pixel values. Now, the best way to explain a convolution is to imagine a flashlight that is shining over the top left of the image. Let’s say that the flashlight shines covers a 3 x 3 area. And now, let’s imagine this flashlight sliding across all the areas of the input image. In machine learning terms, this flashlight is called a **filter** or  [**kernel**](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Details) or sometimes referred to as **weights** or **mask** and the region that it is shining over is called the [**receptive field**](https://en.wikipedia.org/wiki/Receptive_field).
 
-Now this filter is also an array of numbers where the numbers are called weights or parameters. A very important note is that the depth of this filter has to be the same as the depth of the input, so the dimensions of this filter is 3 x 3 x 3. 
+Now, this filter is also an array of numbers where the numbers are called weights or parameters. A very important note is that the depth of this filter has to be the same as the depth of the input, so the dimensions of this filter are 3 x 3 x 3. 
 
 An image **kernel** or **filter** is a small matrix used to apply effects like the ones we might find in Photoshop or Gimp, such as blurring, sharpening, outlining or embossing. They're also used in machine learning for **feature extraction**, a technique for determining the most important portions of an image. For more, have a look at Gimp's excellent documentation on using [Image kernel's](https://docs.gimp.org/en/plug-in-convmatrix.html). We can find a list of most common kernels [here](https://en.wikipedia.org/wiki/Kernel_(image_processing)#Details).
 
-Now, let’s take the filter to the top left corner. As the filter is sliding, or **convolving**, around the input image, it is multiplying the values in the filter with the original pixel values of the image (aka computing element wise multiplications). These multiplications are all summed up. So now we have a single number. Remember, this number is just representative of when the filter is at the top left of the image. Now, we repeat this process for every location on the input volume. Next step would be moving the filter to the right by **stride** or **step** 1 unit, then right again by **stride** 1, and so on. Every unique location on the input volume produces a number. We can also choose stride or the step size 2 or more, but we have to carefull whether it will fit or not on the input image. 
+Now, let’s take the filter to the top left corner. As the filter is sliding, or **convolving**, around the input image, it is multiplying the values in the filter with the original pixel values of the image (aka computing element-wise multiplications). These multiplications are all summed up. So now we have a single number. Remember, this number is just representative of when the filter is at the top left of the image. Now, we repeat this process for every location on the input volume. Next step would be moving the filter to the right by a **stride** or **step** 1 unit, then right again by **stride** 1, and so on. Every unique location on the input volume produces a number. We can also choose stride or the step size 2 or more, but we have to care whether it will fit or not on the input image. 
 
 ![png](/images/Image_Analysis_Part_2/convoving.gif)
 
@@ -266,19 +266,19 @@ $$
 \end{array}\right)
 $$ 
 
-let's take a look visuallly, 
+let's take a look visually,
 
 ![png](/images/Image_Analysis_Part_2/conv_gif.gif)
 
 Moreover, we practically use more filters instead of one. Then our output volume would be $28 x 28 x n$ (where n is the number of **activation map**). By using more filters, we are able to preserve the spatial dimensions better. 
 
-However, For the pixels on the border of image matrix, some elements of the kernel might stands out of the image matrix and therefore does not have any corresponding element from the image matrix. In this case, we can eliminate the convolution operation for these position which end up an output matrix smaller than the input or we can apply [**padding**](https://www.quora.com/What-are-the-roles-of-stride-and-padding-in-a-convolutional-neural-network) to the input matrix. 
+However, For the pixels on the border of the image matrix, some elements of the kernel might stand out of the image matrix and therefore does not have any corresponding element from the image matrix. In this case, we can eliminate the convolution operation for these positions which end up an output matrix smaller than the input or we can apply [**padding**](https://www.quora.com/What-are-the-roles-of-stride-and-padding-in-a-convolutional-neural-network) to the input matrix. 
 
 Now, I do realize that some of these topics are quite complex and could be made in whole posts by themselves. In an effort to remain concise yet retain comprehensiveness, I will provide links to resources where the topic is explained in more detail.
 
 ---
 
-Let's first apply some custom uniform window to the image. This has the effect of bluring the image, by averaging each pixel with those nearby
+Let's first apply some custom uniform window to the image. This has the effect of burning the image, by averaging each pixel with those nearby
 
 
 ```python
@@ -575,7 +575,7 @@ plt.imshow(img_conv);
 ![png](/images/Image_Analysis_Part_2/output_19_1.png)
 
 
-To reduce noise. we generally use filter like, **Gaussain Gilter** which is a digital filtering technique which is often used to remove noise from an image. Here, by combining gaussain filtering and gradient finding operations together, we can generate some strange patterns that resemble the original image and being distorted in interesting ways.
+To reduce noise. we generally use a filter like, **Gaussian Filter** which is a digital filtering technique which is often used to remove noise from an image. Here, by combining Gaussian filtering and gradient finding operations together, we can generate some strange patterns that resemble the original image and being distorted in interesting ways.
 
 
 ```python
@@ -633,7 +633,7 @@ plt.imshow(img_conv);
 ![png](/images/Image_Analysis_Part_2/output_21_1.png)
 
 
-Now, let's see using **Median filter** to see what sort of effect it can make on image.
+Now, let's see using a **Median filter** to see what sort of effect it can make on the image.
 
 
 ```python
@@ -701,11 +701,11 @@ plt.imshow(img_conv);
 
 Thresholding is a very basic operation in image processing. Converting a greyscale image to monochrome is a common image processing task. And, a good algorithm always begins with a good basis! 
 
-Otsu thresholding is a simple yet effective global automatic thresholding method for binarizing grayscale images such as foregrounds and backgrounds. In image processing, Otsu’s thresholding method (1979) is used for automatic **binarization** level decision, based on the shape of the **histogram**. It is based entirely on computation peformed on the histogram of an image.
+Otsu thresholding is a simple yet effective global automatic thresholding method for binarizing grayscale images such as foregrounds and backgrounds. In image processing, Otsu’s thresholding method (1979) is used for automatic **binarization** level decision, based on the shape of the **histogram**. It is based entirely on computation performed on the histogram of an image.
 
 The algorithm assumes that the image is composed of two basic classes: **Foreground** and **Background**. It then computes an optimal threshold value that minimizes the weighted within class variances of these two classes. 
 
-Otsu threshold is used in many applications from medical imaging to low level computer vision. It's many advantages and assumptions.
+Otsu threshold is used in many applications from medical imaging to low-level computer vision. It's many advantages and assumptions.
 
 ---
 
@@ -825,7 +825,7 @@ If we incorporate a little math into that simple step-wise algorithm, such an ex
 - Step through from threshold `t = 0` to `t = L-1`:
     - update: $w_i$ and $\mu_i$
     - compute: $\sigma_b^2(t)$
-- Desired threshold corresponds to the maximum value of $\sigma_b^2(t)$.
+- The Desired threshold corresponds to the maximum value of $\sigma_b^2(t)$.
 
 
 ```python
@@ -900,7 +900,7 @@ In a result, the possibly incorrect threshold determined by Otsu’s method resu
 
 k-means clustering is a method of [vector quantization](https://en.wikipedia.org/wiki/Vector_quantization), originally from signal processing, that is popular for [cluster analysis](https://en.wikipedia.org/wiki/Cluster_analysis) in [data mining](https://en.wikipedia.org/wiki/Data_mining). 
 
-In Otsu thresholding, we found the threshold which minimised the intra-segment pixel variance. So, rather then looking for a threshold from an gray level image, we can look for clusters in colour space, and by doing so we end up with the [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) technique.
+In Otsu thresholding, we found the threshold which minimized the intra-segment pixel variance. So, rather than looking for a threshold from a gray level image, we can look for clusters in color space, and by doing so we end up with the [K-means clustering](https://en.wikipedia.org/wiki/K-means_clustering) technique.
 
 
 ```python
@@ -927,7 +927,7 @@ x, y, z = pic.shape
 pic_2d = pic.reshape(x*y, z)
 ```
 
-Next, we use [scikit-learn's cluster](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) method to create clusters. We pass `n_clusters` as 5 to form five clusters. The clusters appear in the resulting image, dividing it into five parts with distinct colors. 
+Next, we use [scikit-learn's cluster](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) method to create clusters. We pass as `n_clusters` as 5 to form five clusters. The clusters appear in the resulting image, dividing it into five parts with distinct colors. 
 
 The clustering number 5 was chosen heuristically for this demonstration. One can change the number of clusters to visually validate image with different colors and decide that closely matches the required number of clusters.
 
@@ -966,12 +966,12 @@ plt.axis('off');
 ---
 ## Hough Transform<a class="anchor" id="7-bullet"></a>
 
-Hough Transform is a popular technique to detect any shape, if we can represent that shape in mathematical form. It can detect the shape even if it is broken or distorted a little bit. We won't go too deeper to analysis the mechanism of hough transform rather than giving intuitive mathematical description before implementing it on code and also provide some resource to understand it more in details.
+Hough Transform is a popular technique to detect any shape if we can represent that shape in mathematical form. It can detect the shape even if it is broken or distorted a little bit. We won't go too deeper to analyze the mechanism of Hough transform rather than giving intuitive mathematical description before implementing it on code and also provide some resource to understand it more in details.
 
 ---
 **Mathematical Formulation:**
 
-We all know that, a line in Cartesian form has the equation:
+We all know that a line in Cartesian form has the equation:
 
 $y = mx + c$
 
@@ -984,15 +984,15 @@ We re-arrange the above equation:
 
 $c = -xm + y$
 
-Let's consider a linear equation we've plotted in $x-y$ plane or the **Image Space**. This line has a lots of combinations of values of $x$ and $y$ . Now, instead of plane $x-y$, let's consider plane $m-c$ , here which is called **feature space** or **parameter space**. In this feature space, point **A** and **B**, defines a lots of possibilities. Now, the intersection point between two line in feature space, is the actual values of $m$ and $c$, for which the linear equation which plotted in image space is fulfilled.
+Let's consider a linear equation we've plotted in $x-y$ plane or the **Image Space**. This line has a lot of combinations of values of $x$ and $y$ . Now, instead of plane $x-y$, let's consider plane $m-c$ , here which is called **feature space** or **parameter space**. In this feature space, point **A** and **B**, define a lot of possibilities. Now, the intersection point between two line in feature space is the actual values of $m$ and $c$, for which the linear equation which plotted in image space is fulfilled.
 
 ![png](/images/Image_Analysis_Part_2/hough_transform_mx.png)
 
 We use re-arrange linear equation on feature space and find the all possible paired of $c,m$ for various $x,y$. All points on a line in **image space** intersect at a common point in **parameter space**. This common point $(m, c)$ represents the line in image space. 
 
-In other word, all points on a line in image space intersect at a common point in parameter space. This common point (m, b) represents the line in image space.
+In other words, all points on a line in image space intersect at a common point in parameter space. This common point (m, b) represents the line in image space.
 
-But, the slope, $m$ is undefined when the line is vertical. To overcome this problem we use polar co-ordinate system. A line in Polar coordinate system has the equation:
+But, the slope, $m$ is undefined when the line is vertical. To overcome this problem we use polar coordinatee system. A line in a Polar coordinate system has the equation:
 
 $ρ = x cos θ + y sin θ$
 
@@ -1009,9 +1009,9 @@ Dmax is the diagonal length of the image.
 
 Any line can be represented in these two terms, $(\rho, \theta)$. So first it creates a 2D array or accumulator (to hold values of two parameters) and it is set to 0 initially. 
 
-Let rows denote the $\rho$ and columns denote the $\theta$. Size of array depends on the accuracy we need. Suppose we want the accuracy of angles to be 1 degree, we need 180 columns. For $\rho$, the maximum distance possible is the diagonal length of the image. So taking one pixel accuracy, number of rows can be diagonal length of the image.
+Let rows denote the $\rho$ and columns denote the $\theta$. Size of the array depends on the accuracy we need. Suppose we want the accuracy of angles to be 1 degree, we need 180 columns. For $\rho$, the maximum distance possible is the diagonal length of the image. So taking one-pixel accuracy, a number of rows can be a diagonal length of the image.
 
-So the problem of detecting a line in an image becomes a problem of detecting a point in Hough space. Once we detect the points in Hough space, we can do inverse transform to get the corresponding line in image space.
+So the problem of detecting a line in an image becomes a problem of detecting a point in Hough space. Once we detect the points in Hough space, we can do an inverse transform to get the corresponding line in image space.
 
 ---
 
@@ -1026,7 +1026,7 @@ So the problem of detecting a line in an image becomes a problem of detecting a 
 - Voting in the accumulator
     -  For each edge point and for each θ value, find the nearest $ρ$ value and increment that index in the accumulator. 
 - Peak finding
-    - Local maxima in the accumulator indicates the parameters of the most prominent lines in the input image. 
+    - Local maxima in the accumulator indicate the parameters of the most prominent lines in the input image. 
 
 
 ```python
@@ -1076,13 +1076,13 @@ Edge detection is an image processing technique for finding the boundaries of ob
 - Roberts and  
 - fuzzy logic methods.
 
-Here, We'll cover one of the most popular method, which is the **Canny Edge Detection**.
+Here, We'll cover one of the most popular methods, which is the **Canny Edge Detection**.
 
 ---
 
 ### [Canny Edge Detection](https://en.wikipedia.org/wiki/Canny_edge_detector#Process_of_Canny_edge_detection_algorithm)
 
-A multi-stage edge detection operation capable of detecting wide range of edges in images. Now, the Process of Canny edge detection algorithm can be broken down to 5 different steps:
+A multi-stage edge detection operation capable of detecting a wide range of edges in images. Now, the Process of Canny edge detection algorithm can be broken down into 5 different steps:
 
 1. Apply Gaussian Filter
 2. Find the intensity gradients
@@ -1090,14 +1090,14 @@ A multi-stage edge detection operation capable of detecting wide range of edges 
 4. Apply double threshold
 5. Track edge by hysteresis.
 
-Let's undserstand each of them intuitively. For more comprehensive overview, please check the given link at the end of this article. However, this article is already becoming too big, so we decide not to provide full implementation of code here rather than giving intuitive overview of algorithm of that code. But one can skip and jump to the [repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/tree/gh-pages/Segmentation/Object%20Detection/Canny%20Edge%20Detector) for the code : :thumbsup:
+Let's understand each of them intuitively. For a more comprehensive overview, please check the given link at the end of this article. However, this article is already becoming too big, so we decide not to provide the full implementation of code here rather than giving an intuitive overview of an algorithm of that code. But one can skip and jump to the [repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/tree/gh-pages/Segmentation/Object%20Detection/Canny%20Edge%20Detector) for the code : :thumbsup:
 
 
 ## Process
 
-* First, apply **Gaussian filter**: to smooth the image in order to remove the noise. As the edge detection is susceptible to noise in the image, so we have to remove the noise in the image.
+* First, apply the **Gaussian filter**: to smooth the image in order to remove the noise. As the edge detection is susceptible to noise in the image, so we have to remove the noise in the image.
 
-* Find the **[intensity gradients](https://en.wikipedia.org/wiki/Image_gradient)**: of the image. Smoothened image is then filtered with a **Sobel kernel** in both horizontal and vertical direction to get first derivative in horizontal direction ($G_x$) and vertical direction ($G_y$). Gradient direction is always perpendicular to edges. It is rounded to one of four angles representing vertical, horizontal and two diagonal directions. From these two images, we can find edge gradient and direction for each pixel as follows:
+* Find the **[intensity gradients](https://en.wikipedia.org/wiki/Image_gradient)**: of the image.  The smoothened image is then filtered with a **Sobel kernel** in both the horizontal and vertical direction to get first derivative in horizontal direction ($G_x$) and vertical direction ($G_y$). Gradient direction is always perpendicular to edges. It is rounded to one of four angles representing vertical, horizontal and two diagonal directions. From these two images, we can find edge gradient and direction for each pixel as follows:
 
 $$
 \nabla f = {g_x \choose g_y} = \begin{vmatrix}
@@ -1124,13 +1124,13 @@ For demonstrate purpose, let's consider the following images:
 <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Intensity_image_with_gradient_images.png">
 (image courtesy to [wiki](https://upload.wikimedia.org/wikipedia/commons/6/67/Intensity_image_with_gradient_images.png))
 
-On the left, an intensity image of a cat. In the center, a gradient image in the x direction measuring horizontal change in intensity. On the right, a gradient image in the y direction measuring vertical change in intensity.
+On the left, an intensity image of a cat. In the center, a gradient image in the x-direction measuring a horizontal change in intensity. On the right, a gradient image in the y-direction measuring a vertical change in intensity.
 
-* **Apply non-maximum suppression**: to get rid of spurious response to edge detection. So, after getting gradient magnitude and direction, a full scan of image is done to remove any unwanted pixels which may not constitute the edge. For this, at every pixel, pixel is checked if it is a local maximum in its neighborhood in the direction of gradient.
+* **Apply non-maximum suppression**: to get rid of spurious response to edge detection. So, after getting gradient magnitude and direction, a full scan of an image is done to remove any unwanted pixels which may not constitute the edge. For this, at every pixel, a pixel is checked if it is a local maximum in its neighborhood in the direction of the gradient.
 
 * **Apply double threshold**: to determine potential edges.
 
-* **Track edge by hysteresis**: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges. For this, we need two threshold values, *minVal* and *maxVal*. Any edges with intensity gradient more than *maxVal* are sure to be edges and those below *minVal* are sure to be non-edges, so discarded. Those who lie between these two thresholds are classified edges or non-edges based on their connectivity. 
+* **Track edge by hysteresis**: Finalize the detection of edges by suppressing all the other edges that are weak and not connected to strong edges. For this, we need two threshold values, *minVal* and *maxVal*. Any edges with intensity gradient more than *maxVal* are sure to be edges and those below *minVal* are sure to be non-edges, so discarded. Those who lie between these two thresholds are classified as edges or non-edges based on their connectivity. 
 
 ---
 
@@ -1141,7 +1141,7 @@ On the left, an intensity image of a cat. In the center, a gradient image in the
 # Vectorization <a class="anchor" id="9-bullet"></a>
 ---
 ## Contour tracking
-We can use a contour tracing algorithm from `Scikit-Image` to extract the paths around the object. This controls how accurately the path follows the original bitmap shape.
+We can use a contour tracing algorithm `Scikit-Image` to extract the paths around the object. This controls how accurately the path follows the original bitmap shape.
 
 
 ```python
@@ -1193,7 +1193,7 @@ We like to conclude with a briefly overview of Autoencoder. It's a data compress
 - Lossy, and 
 - Learned automatically from **examples** rather than engineered by a human.
 
-As it's data specific and lossy, it's not good for image compression in general. The fact that autoencoders are data-specific which makes them generally impractical for real-world data compression problems. But there's a hope, future advances might change this. I find it interesting, though it's not good enoguh and also very poor performance compared to other compression algorithm like **JPEG**, **MPEG** etc. [Check out](https://blog.keras.io/building-autoencoders-in-keras.html) this **keras** blog post regarding on this issue.
+As it's data specific and lossy, it's not good for image compression in general. The fact that autoencoders are data-specific which makes them generally impractical for real-world data compression problems. But there's a hope, future advances might change this. I find it interesting, though it's not good enough and also very poor performance compared to another compression algorithm like **JPEG**, **MPEG** etc. [Check out](https://blog.keras.io/building-autoencoders-in-keras.html) this **keras** blog post regarding on this issue.
 
 And also some following stuff, in case if someone is interested too.
 
@@ -1315,11 +1315,11 @@ for i in range(num_test_images):
 ![png](/images/Image_Analysis_Part_2/output_45_0.png)
 
 
-Here, in the first row which is the loaded [MNIST](http://yann.lecun.com/exdb/mnist/) training set and the second row is the reconstructed those training set after encoding and decoding using autoencoder. Looks nice, but not great, there's a lots of information missing in the reconstructed images. So, autoencoder is not as good as other compression technique but as a part of fast growing promising technology, future advances might change this, who knows.  
+Here, in the first row which is the loaded [MNIST](http://yann.lecun.com/exdb/mnist/) training set and the second row is the reconstructed those training set after encoding and decoding using autoencoder. Looks nice, but not great, there's a lot of information missing in the reconstructed images. So, autoencoder is not as good as other compression technique but as a part of fast growing promising technology, future advances might change this, who knows.  
 
 ---
 
-At the ends of our 2 part series on Basic Image-Processing in Python, hope everyone was able to follow along, and if you feel that I have did something important mistake, please let me know in the comments! :relaxed:
+At the ends of our 2 part series on Basic Image-Processing in Python, hope everyone was able to follow along, and if you feel that I have done something important mistake, please let me know in the comments! :relaxed:
 
 Source Code: [GitHub.](https://github.com/iphton/Image-Data-Analysis-Using-Pythons)
 
