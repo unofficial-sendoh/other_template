@@ -19,11 +19,11 @@ Following contents are the reflection of my completed academic image processing 
 In previous article, we've gone through some of the following basic operation. To keep pace with today's content, continuous reading is highly appreciated.
 
 - [Importing images and observe it’s properties](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#1-bullet)
-- Splitting the layers
-- Greyscale
-- Using Logical Operator on pixel values
-- Masking using Logical Operator
-- Satellite Image Data Analysis
+- [Splitting the layers](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#2-bullet)
+- [Greyscale](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#3-bullet)
+- [Using Logical Operator on pixel values](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#4-bullet)
+- [Masking using Logical Operator](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#5-bullet)
+- [Satellite Image Data Analysis](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#6-bullet)
 
 ---
 
