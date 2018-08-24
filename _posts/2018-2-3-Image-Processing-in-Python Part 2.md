@@ -62,7 +62,7 @@ In previous article, we've gone through some of the following basic operation. T
 
 ---
 
-I'm so excited, let's begin. :simple_smile:
+I'm so excited, let's begin. :sweat_smile:
 
 ## Intensity Transformation<a class="anchor" id="A-bullet"></a>
 
