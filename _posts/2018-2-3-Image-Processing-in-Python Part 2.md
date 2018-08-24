@@ -62,7 +62,7 @@ In previous article, we've gone through some of the following basic operation. T
 
 ---
 
-I'm so excited, let's begin. :wink:
+I'm so excited, let's begin. :relieved:
 
 ## Intensity Transformation<a class="anchor" id="A-bullet"></a>
 
