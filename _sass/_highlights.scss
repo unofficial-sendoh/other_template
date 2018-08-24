@@ -4,7 +4,7 @@
   background-color: #ffffff;
   padding: 5px 10px;
   margin: 20px 0;
-  outline: 5px solid black;
+  
 }
 
 .highlight pre {
@@ -28,6 +28,7 @@ code {
     position: relative;
     margin: 0;
     padding: 1em;
+    border: 1px solid black;
   }
   .lineno { padding-right: 24px; color: lighten(#333332,50);}
   .hll { background-color: #ffffcc }
