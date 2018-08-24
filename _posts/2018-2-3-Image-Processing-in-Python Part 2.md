@@ -62,7 +62,7 @@ In previous article, we've gone through some of the following basic operation. T
 
 ---
 
-I'm so excited, let's begin. :snowman:
+I'm so excited, let's begin. :smiley:
 
 ## Intensity Transformation<a class="anchor" id="A-bullet"></a>
 
@@ -117,7 +117,7 @@ plt.axis('off');
 
 ![png](/images/Image_Analysis_Part_2/output_3_0.png)
 
-**Resources:** :books:
+:books: **Resources:** 
 
 - [1](https://www.tutorialspoint.com/dip/gray_level_transformations.htm) - [2](http://archive.bespoke.co.uk/press-room?option=com_content&view=article&id=1921)
 
@@ -168,7 +168,7 @@ plt.axis('off');
 
 ![png](/images/Image_Analysis_Part_2/output_5_0.png)
 
-**Resources:** :books:
+:books: **Resources:** 
 
 - [1](https://www.tutorialspoint.com/dip/gray_level_transformations.htm) - [2](https://homepages.inf.ed.ac.uk/rbf/HIPR2/pixlog.htm)
 
@@ -211,7 +211,7 @@ There are some other linear transformation function. Listed below:
 - Intensity-Level Slicing
 - Bit-Plane Slicing
 
-**Resources:** :books:
+:books: **Resources:** 
 
 - [1](https://www.siggraph.org/education/materials/HyperGraph/color/gamma_correction/gamma_intro.html) - [2](https://en.wikipedia.org/wiki/Gamma_correction) - [3](https://stackoverflow.com/questions/16521003/gamma-correction-formula-gamma-or-1-gamma) - [4](https://dsp.stackexchange.com/questions/45784/why-does-gamma-correction-of-image-use-two-different-definitions-of-gamma)
 
@@ -690,7 +690,7 @@ plt.imshow(img_conv);
 
 ![png](/images/Image_Analysis_Part_2/output_23_1.png)
 
-**Resources:** :books:
+:books: **Resources:** 
 
 - [1](https://la.mathworks.com/help/images/what-is-image-filtering-in-the-spatial-domain.html) - [2](http://machinelearninguru.com/computer_vision/basics/convolution/image_convolution_1.html) - [3](https://leonardoaraujosantos.gitbooks.io/artificial-inteligence/content/convolution.html) - [4](http://colah.github.io/posts/2014-07-Understanding-Convolutions/) - [5](http://cs231n.github.io/convolutional-networks/) - [6](https://www.youtube.com/watch?v=umGJ30-15_A&t=13s) - [7](https://www.youtube.com/watch?v=2-Ol7ZB0MmU) - [8](https://www.youtube.com/watch?v=bNb2fEVKeEo&t=1696s) - [9](https://www.youtube.com/watch?v=AgkfIQ4IGaM&t=67s) - [10](https://medium.com/technologymadeeasy/the-best-explanation-of-convolutional-neural-networks-on-the-internet-fbb8b1ad5df8)
 
@@ -957,7 +957,7 @@ plt.axis('off');
 
 ![png](/images/Image_Analysis_Part_2/output_36_0.png)
 
-**Resources:** :books:
+:books: **Resources:**
 
 - [1](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html#Parameters) - [2](https://stackabuse.com/k-means-clustering-with-scikit-learn/) - [3](https://www.datacamp.com/community/tutorials/k-means-clustering-python) - [4](https://bigdatascienc.wordpress.com/2017/12/29/k-means-clustering-in-python/)
 
@@ -1060,7 +1060,7 @@ def hough_line(img):
 
 I've provided full implementation Code of Hough Transform in this [repo](https://github.com/iphton/Image-Data-Analysis-Using-Pythons/blob/gh-pages/Segmentation/Object%20Detection/Hough%20Transform/hough_transform.py). 
 
-**Resources:** :books:
+:books: **Resources:** 
 
 - [1](https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_houghlines/py_houghlines.html) - [2](http://homepages.inf.ed.ac.uk/amos/hough.html) - [3](https://www.youtube.com/watch?v=4zHbI-fFIlI) - [4](https://www.youtube.com/watch?v=uDB2qGqnQ1g)
 
@@ -1134,7 +1134,7 @@ On the left, an intensity image of a cat. In the center, a gradient image in the
 
 ---
 
-**Resources:** :books:
+:books: **Resources:** 
 
 - [1](https://en.wikipedia.org/wiki/Canny_edge_detector#Process%20of%20Canny%20edge%20detection%20algorithm) - [2](http://justin-liang.com/tutorials/canny/) - [3](https://www.youtube.com/watch?v=sRFM5IEqR2w&t=1s) - [4](http://www.aishack.in/tutorials/canny-edge-detector/)
 
