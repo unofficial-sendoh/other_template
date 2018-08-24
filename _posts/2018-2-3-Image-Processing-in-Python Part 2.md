@@ -18,7 +18,7 @@ Following contents are the reflection of my completed academic image processing 
 
 In previous article, we've gone through some of the following basic operation. To keep pace with today's content, continuous reading is highly appreciated.
 
-- Importing images and observe it’s properties
+- [Importing images and observe it’s properties](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-1/#1-bullet)
 - Splitting the layers
 - Greyscale
 - Using Logical Operator on pixel values
