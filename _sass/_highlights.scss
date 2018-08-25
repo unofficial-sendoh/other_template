@@ -18,6 +18,7 @@ code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
   font-size: 15px;
   font-weight: bold;
+  border: 2px solid gray;
 }
 
 .highlight {
@@ -28,7 +29,7 @@ code {
     position: relative;
     margin: 0;
     padding: 1em;
-    border: 2px solid gray;
+    
   }
   .lineno { padding-right: 24px; color: lighten(#333332,50);}
   .hll { background-color: #ffffcc }
