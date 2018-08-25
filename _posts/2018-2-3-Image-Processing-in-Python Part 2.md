@@ -230,19 +230,19 @@ Now, let’s take the filter to the top left corner. As the filter is sliding, o
 
 ![png](/images/Image_Analysis_Part_2/convoving.gif)
 
-After sliding the filter over all the locations, we will find out that, what we’re left with is a 30 x 30 x 1 array of numbers, which we call an **activation map** or **feature map**. The reason we get a 30 x 30 array is that there are 900 different locations that a 3 x 3 filter can fit on a 32 x 32 input image. These 900 numbers are mapped to a 30 x 30 array. We can calculate the convoled image by following:
+After sliding the filter over all the locations, we will find out that, what we’re left with is a 30 x 30 x 1 array of numbers, which we call an **activation map** or **feature map**. The reason we get a 30 x 30 array is that there are 900 different locations that a 3 x 3 filter can fit on a 32 x 32 input image. These 900 numbers are mapped to a 30 x 30 array. We can calculate the convolved image by following:
 
 \begin{align}
 Convolved: \frac{N - F}{S} + 1
 \end{align}
 
-where, $N$ and $F$ represent Input image size and kernel size respectively and $S$ represent stride or step size. So, in this case the output would be
+where $N$ and $F$ represent Input image size and kernel size respectively and $S$ represent stride or step size. So, in this case, the output would be
 
 \begin{align}
 \frac{32 - 3}{1} + 1 &= 30
 \end{align}
 
-Let's say we've a following $3x3$ filter, convolving on a $5x5$ matrix and according to the equation we should get a $3x3$ matrix, technically called **activation map** or **feature map**.
+Let's say we've got a following $3x3$ filter, convolving on a $5x5$ matrix and according to the equation we should get a $3x3$ matrix, technically called **activation map** or **feature map**.
 
 $$
 \left(\begin{array}{cc} 
@@ -892,7 +892,7 @@ Nice but not Great. Otsu’s method exhibits the relatively good performance if 
 
 So, now if the object area is small compared with the background area, the histogram no longer exhibits bimodality And if the variances of the object and the background intensities are large compared to the mean difference, or the image is severely corrupted by additive noise, the sharp valley of the gray level histogram is degraded. 
 
-In a result, the possibly incorrect threshold determined by Otsu’s method results in the segmentation error. But we can further [improve Otsu's method](https://en.wikipedia.org/wiki/Otsu%27s_method#Improvements). 
+As a result, the possibly incorrect threshold determined by Otsu’s method results in the segmentation error. But we can further [improve Otsu's method](https://en.wikipedia.org/wiki/Otsu%27s_method#Improvements). 
 
 ---
 
@@ -927,7 +927,7 @@ x, y, z = pic.shape
 pic_2d = pic.reshape(x*y, z)
 ```
 
-Next, we use [scikit-learn's cluster](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) method to create clusters. We pass as `n_clusters` as 5 to form five clusters. The clusters appear in the resulting image, dividing it into five parts with distinct colors. 
+Next, we use [scikit-learn's cluster](http://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html) method to create clusters. We pass `n_clusters` as 5 to form five clusters. The clusters appear in the resulting image, dividing it into five parts with distinct colors. 
 
 The clustering number 5 was chosen heuristically for this demonstration. One can change the number of clusters to visually validate image with different colors and decide that closely matches the required number of clusters.
 
@@ -1141,7 +1141,7 @@ On the left, an intensity image of a cat. In the center, a gradient image in the
 # Vectorization <a class="anchor" id="9-bullet"></a>
 ---
 ## Contour tracking
-We can use a contour tracing algorithm `Scikit-Image` to extract the paths around the object. This controls how accurately the path follows the original bitmap shape.
+We can use a contour tracing algorithm to `Scikit-Image` to extract the paths around the object. This controls how accurately the path follows the original bitmap shape.
 
 
 ```python
@@ -1187,7 +1187,7 @@ plt.axes().set_aspect('equal')
 
 ![png](/images/Image_Analysis_Part_2/autoen.png)
 
-We like to conclude with a briefly overview of Autoencoder. It's a data compression algorithm where the compression and decompression functions are 
+We like to conclude with a brief overview of Autoencoder. It's a data compression algorithm where the compression and decompression functions are 
 
 - Data-specific, 
 - Lossy, and 
