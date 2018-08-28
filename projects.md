@@ -1,8 +1,6 @@
 
 > I don’t update this page as much, so head to my [GitHub](https://github.com/iphton) for the most recent projects
 
-<!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/iphton" data-size="large" aria-label="Follow @iphton on GitHub">Follow @iphton</a>
 
 ---
 
