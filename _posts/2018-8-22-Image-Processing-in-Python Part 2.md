@@ -1321,7 +1321,7 @@ Here, in the first row which is the loaded [MNIST](http://yann.lecun.com/exdb/mn
 
 At the ends of our 2 part series on Basic Image-Processing in Python, hope everyone was able to follow along, and if you feel that I have done something important mistake, please let me know in the comments! :relaxed:
 
----
+Source Code:
 
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/iphton/Image-Processing-in-Python/fork" data-size="large" aria-label="Fork iphton/Image-Processing-in-Python on GitHub">Fork</a>
