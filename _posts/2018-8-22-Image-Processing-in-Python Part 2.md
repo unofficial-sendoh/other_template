@@ -1325,7 +1325,6 @@ At the ends of our 2 part series on Basic Image-Processing in Python, hope every
 <!-- Place this tag where you want the button to render. -->
 <a class="github-button" href="https://github.com/iphton/Image-Processing-in-Python/fork" data-size="large" aria-label="Fork iphton/Image-Processing-in-Python on GitHub">Fork</a>
 
-l]
 
 ---
 <a href = "/assets/image_py_2.txt" target= "_blank">Sources</a>
