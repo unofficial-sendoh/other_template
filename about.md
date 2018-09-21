@@ -7,7 +7,7 @@ permalink: /about/
 </a><br>
 
 [**stack overflow**](https://stackoverflow.com/users/story/9215780)<br>
----
+
 
 I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh.
 
