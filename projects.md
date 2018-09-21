@@ -14,6 +14,11 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ---
 
+## [Kaggle Competitions](https://github.com/iphton/Kaggle-Competition)
+**Tech Used**: Data Analysis - Feature Engineering - Python 3 - Machine Learning
+
+- [Titanic: Machine Learning from Disaster](http://nbviewer.jupyter.org/github/iphton/Kaggle-Competition/blob/gh-pages/Titanic%20Competition/Notebook/Predict%20survival%20on%20the%20Titanic.ipynb#5-bullet): I barely remember first when exactly I watched Titanic movie but still now Titanic remains a discussion subject in the most diverse areas. In this kaggle challenge, we're asked to complete the analysis of what sorts of people were likely to survive. In particular, we're asked to apply the tools of machine learning to predict which passengers survived the tragedy. I've used cross-validation on the top 10 most popular classification models and based on scoring finally choose five most promising classifiers and fine-tuned the models. I used Voting Classifier to combine the predictions coming from classifiers. The model gets an accuracy of around 84%. 
+
 
 ## [MovieLens-IMDb-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
 **Tech Used**: Data Analysis - Python 3 - Machine Learning
@@ -21,12 +26,6 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 [GroupLens Movie Data Sets](http://grouplens.org/datasets/)
 
 This dataset describe 5-star ratings and free-text tagging activity from , a move recommendation service. It contains **20000263** ratings and **465564** tags applications across **27278** movies. These data were created by **138493** user between January 09 1995 and March 31 , 2015. The data are contained in six files `links.csv` , `movies.csv` , `ratings.csv` and `tags.csv` etc.
-
-
-## [Kaggle Competitions](https://github.com/iphton/Kaggle-Competition)
-**Tech Used**: Data Analysis - Feature Engineering - Python 3 - Machine Learning
-
-- [Titanic: Machine Learning from Disaster](http://nbviewer.jupyter.org/github/iphton/Kaggle-Competition/blob/gh-pages/Titanic%20Competition/Notebook/Predict%20survival%20on%20the%20Titanic.ipynb#5-bullet): I barely remember first when exactly I watched Titanic movie but still now Titanic remains a discussion subject in the most diverse areas. In this kaggle challenge, we're asked to complete the analysis of what sorts of people were likely to survive. In particular, we're asked to apply the tools of machine learning to predict which passengers survived the tragedy. I've used cross-validation on the top 10 most popular classification models and based on scoring finally choose five most promising classifiers and fine-tuned the models. I used Voting Classifier to combine the predictions coming from classifiers. The model gets an accuracy of around 84%. 
 
 ---
 
