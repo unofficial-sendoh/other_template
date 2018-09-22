@@ -24,7 +24,7 @@ cool things and being creative. I'm also love to play **PC game** in my spare ti
 
 **Photo Manipulation** Acknowledgement By Advance Graphics Designer [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/featured)
  
-<img src="/images/graph_one.jpg" width="300"/> <img src="/images/graph_two.jpg" width="380"/> 
+<img src="/images/show_case.png" width="300"/> <img src="/images/graph_two.jpg" width="380"/> 
 
 [View on Web](https://www.flickr.com/photos/cosmic_plasma/sets/72157687263827040/with/37567324632/)
 
