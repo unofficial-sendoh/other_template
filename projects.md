@@ -24,12 +24,10 @@ Some Necessary [Gist](https://gist.github.com/iphton)
   - [Convolutional Network](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/ConvNet): One of the most profoundly used feed forward neural net for image classification and massively well known for it's various types of implementation in computer vision spheres such as *AlexNet*, *VGGNet*, *ResNet*, *Xception*, *Inception* etc.
 
 
-## [MovieLens-IMDb-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
+## [MovieLens IMDb Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
 **Tech Used**: Data Analysis - Python 3 - Machine Learning
 
-[GroupLens Movie Data Sets](http://grouplens.org/datasets/)
-
-This dataset describe 5-star ratings and free-text tagging activity from , a move recommendation service. It contains **20000263** ratings and **465564** tags applications across **27278** movies. These data were created by **138493** user between January 09 1995 and March 31 , 2015. The data are contained in six files `links.csv` , `movies.csv` , `ratings.csv` and `tags.csv` etc.
+This [dataset](http://grouplens.org/datasets/) describe 5-star ratings and free-text tagging activity from , a move recommendation service. It contains **20000263** ratings and **465564** tags applications across **27278** movies. These data were created by **138493** user between January 09 1995 and March 31 , 2015. The data are contained in six files `links.csv` , `movies.csv` , `ratings.csv` and `tags.csv` etc.
 
 ---
 
