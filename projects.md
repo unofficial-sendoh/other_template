@@ -20,8 +20,8 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 - [Titanic: Machine Learning from Disaster](http://nbviewer.jupyter.org/github/iphton/Kaggle-Competition/blob/gh-pages/Titanic%20Competition/Notebook/Predict%20survival%20on%20the%20Titanic.ipynb#5-bullet): I barely remember first when exactly I watched Titanic movie but still now Titanic remains a discussion subject in the most diverse areas. In this kaggle challenge, we're asked to complete the analysis of what sorts of people were likely to survive. In particular, we're asked to apply the tools of machine learning to predict which passengers survived the tragedy. I've used cross-validation on the top 10 most popular classification models and based on scoring finally choose five most promising classifiers and fine-tuned the models. I used Voting Classifier to combine the predictions coming from classifiers. The model gets an accuracy of around 84%. 
 
 - [Digit Classification](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer): The goal in this competition is to take an image of a handwritten single digit, and determine what that digit is. For every **ImageId** in the test set, we should predict the correct label. We've implemented two architectures stated following and both has achieved **99%+** accuracy. 
-  - [**Capsule Network**](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/CapsuleNet): **Geoffrey Hinton** proposed this architecture that introduced a completely new type of neural network based on so-called **capsules**. Geoffrey Hinton - [Paper: Dynamic Routing Between Capsules](https://arxiv.org/abs/1710.09829). I found [this](https://www.oreilly.com/ideas/introducing-capsule-networks) blog post by **Aurélien Géron** well explained on this topic.
-  - [**Convolutional Network**](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/ConvNet): One of the most profoundly used feed forward neural net for image classification and massively well known for it's various types of implementation in computer vision spheres such as *AlexNet*, *VGGNet*, *ResNet*, *Xception*, *Inception* etc.
+  - [Capsule Network](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/CapsuleNet): **Geoffrey Hinton** proposed this architecture that introduced a completely new type of neural network based on so-called **capsules**. Geoffrey Hinton - [Paper: Dynamic Routing Between Capsules](https://arxiv.org/abs/1710.09829). I found [this](https://www.oreilly.com/ideas/introducing-capsule-networks) blog post by **Aurélien Géron** well explained on this topic.<br>
+  - [Convolutional Network](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/ConvNet): One of the most profoundly used feed forward neural net for image classification and massively well known for it's various types of implementation in computer vision spheres such as *AlexNet*, *VGGNet*, *ResNet*, *Xception*, *Inception* etc.
 
 
 ## [MovieLens-IMDb-Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis)
@@ -43,3 +43,15 @@ This dataset describe 5-star ratings and free-text tagging activity from , a mov
 
 #### [Web Scraping](https://github.com/iphton/Data-Scraping)
 **Tech Used**: Python 3 - Selenium - Beautiful Soup - Scrapy
+
+#### [Mimic Tensorflow](https://github.com/iphton/Manually-Create-Neural-Network)
+**Tech Used**: Python 3
+
+#### [Flowing-Drawer: Android](https://github.com/iphton/Flowing-Drawer)
+**Tech Used**: Java - Android SDK
+
+#### [Manual Recycler-View: Android](https://github.com/iphton/Recycler_View)
+**Tech Used**: Java - Android SDK
+
+#### [C-Sorting](https://github.com/iphton/C-Sorting)
+**Tech Used**: C++
