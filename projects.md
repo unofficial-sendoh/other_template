@@ -41,17 +41,17 @@ This dataset describe 5-star ratings and free-text tagging activity from , a mov
 #### [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket)
 **Tech Used**: Node.JS - Tornado - Web Socket - Raspberry Pi 3
 
-#### [Web Scraping](https://github.com/iphton/Data-Scraping)
-**Tech Used**: Python 3 - Selenium - Beautiful Soup - Scrapy
-
 #### [Mimic Tensorflow](https://github.com/iphton/Manually-Create-Neural-Network)
 **Tech Used**: Python 3
+
+#### [Web Scraping](https://github.com/iphton/Data-Scraping)
+**Tech Used**: Python 3 - Selenium - Beautiful Soup - Scrapy
 
 #### [Flowing-Drawer: Android](https://github.com/iphton/Flowing-Drawer)
 **Tech Used**: Java - Android SDK
 
-#### [Manual Recycler-View: Android](https://github.com/iphton/Recycler_View)
-**Tech Used**: Java - Android SDK
-
 #### [C-Sorting](https://github.com/iphton/C-Sorting)
 **Tech Used**: C++
+
+#### [Manual Recycler-View: Android](https://github.com/iphton/Recycler_View)
+**Tech Used**: Java - Android SDK
