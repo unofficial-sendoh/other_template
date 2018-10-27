@@ -6,11 +6,11 @@
 
 Some Necessary [Gist](https://gist.github.com/iphton) 
 - [Installing OpenCV-3x for Python-3x](https://gist.github.com/iphton/4af8e9a3accfdcf2511ee4ced26a1d77)
-- [Include Image in Jupyter Notebook](https://gist.github.com/iphton/794c466af5bbaa5c831edff39c6b2b87)
+- [Inclusion Images in Jupyter Notebook - Code Cell / Markdown Cell](https://gist.github.com/iphton/794c466af5bbaa5c831edff39c6b2b87)
 - [Highlight Code Syntax In Jekyll](https://gist.github.com/iphton/d4e607bfd4759f02ae6f68bd33fbca34)
-- [Awesome GitHub Extension](https://gist.github.com/iphton/a10be63dbe12a114a80dc354892836e5)
-- [Raspberry Pi Webcam Video Streaming | FFmpeg](https://gist.github.com/iphton/1a251a673a3eeb985930392ea4440f74)
-- [Raspberry Pi Headless Set-Up | PC/Laptop](https://gist.github.com/iphton/1ca109ba4a8ec5ccc83a229de45f9115)
+- [Awesome Productive GitHub Extension](https://gist.github.com/iphton/a10be63dbe12a114a80dc354892836e5)
+- [Raspberry Pi Usb Webcam Video Streaming - FFmpeg](https://gist.github.com/iphton/1a251a673a3eeb985930392ea4440f74)
+- [Raspberry Pi Headless Set Up - PC / Laptop](https://gist.github.com/iphton/1ca109ba4a8ec5ccc83a229de45f9115)
 
 ---
 
