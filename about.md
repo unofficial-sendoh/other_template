@@ -19,10 +19,10 @@ If you’re working in the crime forecast or healthcare, don’t hesitate to rea
 
 ---
 
-Being a hobbyist on **Graphics Design** I also love to make cool things in Photoshop, Illustrator, Premiere and After effect. I always striving to learn and grow because I know there's always something more to learn in the world of graphics design. I'm all about making 
-cool things and being creative. I'm also love to play **PC game** in my spare time especially NFS Devil-May-Cry Far-Cry.
+Being a hobbyist in **Graphics Design** I also love to make cool things in Adobe. I always striving to learn and grow because I know there's always something more to learn in the world of graphics design. I'm all about making 
+cool things and being creative. 
 
-**Photo Manipulation** Acknowledgement By Advance Graphics Designer [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/featured)
+**Photo Manipulation** Acknowledgement By [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/featured)
  
 <img src="/images/show_case.png" width="300"/> <img src="/images/graph_two.jpg" width="380"/> 
 
