@@ -9,9 +9,9 @@ permalink: /about/
 </a><br>
 
 
-I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh.
+I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. Currently doing my undergrad thesis under the supervision of [Prof Dr. Md Faruque Hossain](http://www.kuet.ac.bd/ece/fhossain/) on Disease Prediction using big data analytics with deep learning approach.
 
-Data Science, ChatBot, Augmented Reality, Deep Learning, Computer Vision are such technologies which attract me most. When it comes down to coding, my choice is primarily Python and C++, Swift, and JavaScript are following. I enjoy coding and love to work on open source tech.
+I enjoy coding and love to work on open source tech. Data Science and Deep Learning are such technologies which attract me most. When it comes down to coding, my choice is primarily Python and C++. Swift and JavaScript are following. 
 
 I’m passionate about applying my knowledge of data science and machine learning to areas in crime forecast and healthcare where we can really engineer some better solutions. I've a great interest in sharing my knowledge in my field of expertise. I’ve been developing my skills since my sophomore year at the university. I'm a life long learner and always get thrilled to try something new.
 
