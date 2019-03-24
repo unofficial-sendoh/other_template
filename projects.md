@@ -15,16 +15,6 @@ Some Necessary [Gist](https://gist.github.com/iphton)
   - [Convolutional Network](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/ConvNet): One of the most profoundly used feed forward neural net for image classification and massively well known for it's various types of implementation in computer vision spheres such as *AlexNet*, *VGGNet*, *ResNet*, *Xception*, *Inception* etc.
 
 
-## [Data Science Tutorials](https://github.com/iphton/Data-Science-In-Python)
-
-- [NumPy](https://github.com/iphton/NumPy-Tutorials)
-- [Matplotlib](https://github.com/iphton/Matplotlib-Tutorials)
-- Pandas
-- TensorFlow + Keras + PyTorch 
-- PySpark
-- Neo4j
-
-
 ---
 
 ## Short-Length Projects
@@ -47,3 +37,14 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 - [Manual Recycler-View: Android](https://github.com/iphton/Recycler_View) (**Tech Used**: Java - Android SDK)
 
+
+---
+
+## [Data Science Tutorials](https://github.com/iphton/Data-Science-In-Python)
+
+- [NumPy](https://github.com/iphton/NumPy-Tutorials)
+- [Matplotlib](https://github.com/iphton/Matplotlib-Tutorials)
+- Pandas
+- TensorFlow + Keras + PyTorch 
+- PySpark
+- Neo4j
