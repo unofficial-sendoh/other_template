@@ -1,8 +1,8 @@
 Some Necessary [Gist](https://gist.github.com/iphton) 
 - [Inclusion Images in Jupyter Notebook](https://gist.github.com/iphton/794c466af5bbaa5c831edff39c6b2b87)
-- [Set Up | Deep Learning On Spark Cluster](https://gist.github.com/iphton/b0ab252c954eb2a28a984774e3ee1f2d)
-- [Set Up | Raspberry Pi Usb Webcam Video Streaming - FFmpeg](https://gist.github.com/iphton/1a251a673a3eeb985930392ea4440f74)
-- [Set Up | Raspberry Pi Headless In PC / Laptop](https://gist.github.com/iphton/1ca109ba4a8ec5ccc83a229de45f9115)
+- [Set Up - Deep Learning On Spark Cluster](https://gist.github.com/iphton/b0ab252c954eb2a28a984774e3ee1f2d)
+- [Set Up - Raspberry Pi Usb Webcam Video Streaming - FFmpeg](https://gist.github.com/iphton/1a251a673a3eeb985930392ea4440f74)
+- [Set Up - Raspberry Pi Headless In PC / Laptop](https://gist.github.com/iphton/1ca109ba4a8ec5ccc83a229de45f9115)
 
 ---
 
