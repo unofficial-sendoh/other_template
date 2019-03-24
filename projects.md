@@ -17,8 +17,8 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ## [Data Science Tutorials](https://github.com/iphton/Data-Science-In-Python)
 
-- [NumPy]()
-- [Matplotlib]()
+- [NumPy](https://github.com/iphton/NumPy-Tutorials)
+- [Matplotlib](https://github.com/iphton/Matplotlib-Tutorials)
 - Pandas
 - TensorFlow + Keras + PyTorch 
 - PySpark
