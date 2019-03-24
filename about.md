@@ -8,11 +8,11 @@ permalink: /about/
 </a><br>
 
 
-I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. Currently doing my undergrad thesis under the supervision of [Prof Dr. Md Faruque Hossain](http://www.kuet.ac.bd/ece/fhossain/) on Disease Prediction using big data analytics with deep learning approach.
+I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. Currently successfully completed my undergrad thesis under the supervision of [Prof Dr. Md Faruque Hossain](http://www.kuet.ac.bd/ece/fhossain/) on disease detection using a proposed dense convolutional attention mapping artificial neural network. 
 
-I enjoy coding and love to work on open source tech. Data Science and Deep Learning are such technologies which attract me most.I’m passionate about applying my knowledge of data science and machine learning to areas in crime forecast and healthcare where we can really engineer some better solutions.
+I enjoy coding and love to work on open source tech. Big Data Analytics and Machine Learning are such technologies which attract me most.I’m passionate about applying my knowledge of data science and machine learning to the areas of crime forecast and healthcare where we can really engineer some better solutions.
 
-If you’re working in the crime forecast or healthcare, don’t hesitate to reach out if you think there’s an opportunity for collaboration. Would love to discuss.
+If you’re working on the crime forecast or healthcare, don’t hesitate to reach out if you think there’s an opportunity for collaboration. Would love to discuss.
 
 ---
 
