@@ -19,7 +19,7 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ## Short-Length Projects
 
-- [Tech Zone BD | E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone) (**Tech Used**: ASP.net - C# - MS SQL)
+- [Tech Zone BD-E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone) (**Tech Used**: ASP.net - C# - MS SQL)
 
 
 - [MovieLens IMDb Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis) (**Tech Used**: Data Analysis - Python 3 - Machine Learning)
