@@ -19,26 +19,21 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ## Short-Length Projects
 
+- [Web Scraping: Information Scraping with Python](https://github.com/iphton/Data-Scraping) (**Tech Used**: Python 3 - Selenium - Beautiful Soup - Scrapy)
+
 - [Tech Zone BD-E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone) (**Tech Used**: ASP.net - C# - MS SQL)
 
 
-- [MovieLens IMDb Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis) (**Tech Used**: Data Analysis - Python 3 - Machine Learning)
+- [MovieLens IMDb Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis) (**Tech Used**: Matplotlib - Pandas - Python 3)
 
 
 - [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket) (**Tech Used**: Node.JS - Tornado - Web Socket - Raspberry Pi 3)
 
 
-#### [Mimic Tensorflow: Manually-Create-Neural-Network](https://github.com/iphton/Manually-Create-Neural-Network)
-**Tech Used**: Python 3
+- [Mimic Tensorflow: Manually-Create-Neural-Network](https://github.com/iphton/Manually-Create-Neural-Network) (**Tech Used**: Pure Python 3)
 
-#### [Web Scraping: Information Scraping with Python](https://github.com/iphton/Data-Scraping)
-**Tech Used**: Python 3 - Selenium - Beautiful Soup - Scrapy
+- [Flowing-Drawer: Android](https://github.com/iphton/Flowing-Drawer) (**Tech Used**: Java - Android SDK)
 
-#### [Flowing-Drawer: Android](https://github.com/iphton/Flowing-Drawer)
-**Tech Used**: Java - Android SDK
 
-#### [C-Sorting: C++ with maximum efficiency way](https://github.com/iphton/C-Sorting)
-**Tech Used**: Basic C++
+- [Manual Recycler-View: Android](https://github.com/iphton/Recycler_View) (**Tech Used**: Java - Android SDK)
 
-#### [Manual Recycler-View: Android](https://github.com/iphton/Recycler_View)
-**Tech Used**: Java - Android SDK
