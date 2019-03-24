@@ -19,14 +19,14 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ## Short-Length Projects
 
-#### [Tech Zone BD | E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone) (**Tech Used**: ASP.net - C# - MS SQL)
+- [Tech Zone BD | E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone) (**Tech Used**: ASP.net - C# - MS SQL)
 
 
-#### [MovieLens IMDb Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis) **Tech Used**: Data Analysis - Python 3 - Machine Learning
+- [MovieLens IMDb Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis) (**Tech Used**: Data Analysis - Python 3 - Machine Learning)
 
 
-#### [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket)
-**Tech Used**: Node.JS - Tornado - Web Socket - Raspberry Pi 3
+- [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket) (**Tech Used**: Node.JS - Tornado - Web Socket - Raspberry Pi 3)
+
 
 #### [Mimic Tensorflow: Manually-Create-Neural-Network](https://github.com/iphton/Manually-Create-Neural-Network)
 **Tech Used**: Python 3
