@@ -16,7 +16,7 @@ If you’re working on the crime forecast or healthcare, don’t hesitate to rea
 
 ---
 
-I also love to make cool things in Adobe. I always striving to learn and grow. I'm all about making cool things and being creative. 
+I also love to make cool things in Adobe. Here is some few fancy manipulation :fire:
 
 Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/featured)
  
