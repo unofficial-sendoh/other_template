@@ -4,6 +4,22 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ---
 
+## [Cardio-XAttentionNet]()
+**Tech Used**: Python - Keras 
+A Dense Convolutional Attention Mapping Artificial Neural Network For Detecting Cardiomegaly Disease. A 112-Dense Conversational Proposed Deep Network.
+
+## [Deep Toxic Detector]()
+**Tech Used**: Apache Spark - NLP - Word-Embeddings - LSTM - GRU - Attention Mechanism - Capsule Layer
+An Ensemble Deep Neural Network of Capsule Network With Attention Mechanism. Distributed Deep Neural Network On Spark Cluster.
+
+## [Bangla-CapsNet]()
+**Tech Used**: Capsule Network
+A Deep Convolutional Dynamic Routing Algorithm In Capsule Network For Classification Of Bangla Handwritten Characters & Digits.
+
+## [Spam Mail Detector]()
+**Tech Used**: Feature Engineering - Machine Learning 
+Heavy Data Processing On The Text Data for Ensemble Machine Learning Models..
+
 ## [Kaggle](https://github.com/iphton/Kaggle-Competition)
 **Tech Used**: Data Analysis - Feature Engineering - Python 3 - Machine Learning
 
@@ -13,6 +29,12 @@ Some Necessary [Gist](https://gist.github.com/iphton)
   - [Capsule Network](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/CapsuleNet): **Geoffrey Hinton** proposed this architecture that introduced a completely new type of neural network based on so-called **Capsules**. Geoffrey Hinton - [Paper: Dynamic Routing Between Capsules](https://arxiv.org/abs/1710.09829). I found [this](https://www.oreilly.com/ideas/introducing-capsule-networks) blog post by **Aurélien Géron** well explained on this topic. <br>
   - [Convolutional Network](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/ConvNet): One of the most profoundly used feed forward neural net for image classification and massively well known for it's various types of implementation in computer vision spheres such as *AlexNet*, *VGGNet*, *ResNet*, *Xception*, *Inception* etc.
 
+- [Lung Opacity Detection](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
+- [Bone Age Detection](https://www.kaggle.com/kmader/rsna-bone-age)
+
+
+## [Self Driving Car]()
+(In Progress)
 
 ---
 
