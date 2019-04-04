@@ -6,18 +6,22 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ## [Cardio-XAttentionNet]()
 **Tech Used**: Python - Keras 
+
 A Dense Convolutional Attention Mapping Artificial Neural Network For Detecting Cardiomegaly Disease. A 112-Dense Conversational Proposed Deep Network.
 
 ## [Deep Toxic Detector]()
 **Tech Used**: Apache Spark - NLP - Word-Embeddings - LSTM - GRU - Attention Mechanism - Capsule Layer
+
 An Ensemble Deep Neural Network of Capsule Network With Attention Mechanism. Distributed Deep Neural Network On Spark Cluster.
 
 ## [Bangla-CapsNet]()
 **Tech Used**: Capsule Network
+
 A Deep Convolutional Dynamic Routing Algorithm In Capsule Network For Classification Of Bangla Handwritten Characters & Digits.
 
 ## [Spam Mail Detector]()
 **Tech Used**: Feature Engineering - Machine Learning 
+
 Heavy Data Processing On The Text Data for Ensemble Machine Learning Models..
 
 ## [Kaggle](https://github.com/iphton/Kaggle-Competition)
@@ -33,7 +37,7 @@ Heavy Data Processing On The Text Data for Ensemble Machine Learning Models..
 - [Bone Age Detection](https://www.kaggle.com/kmader/rsna-bone-age)
 
 
-## [Self Driving Car]()
+## [Self Driving Car]() 
 (In Progress)
 
 ---
