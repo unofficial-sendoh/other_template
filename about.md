@@ -3,11 +3,6 @@ layout: page
 permalink: /about/
 ---
 
-<a href="https://stackoverflow.com/users/9215780/ipython">
-<img src="https://stackoverflow.com/users/flair/9215780.png?theme=clean" width="208" height="58" alt="profile for iPython at Stack Overflow, Q&amp;A for professional and enthusiast programmers" title="profile for iPython at Stack Overflow, Q&amp;A for professional and enthusiast programmers">
-</a><br>
-
-
 I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. Currently successfully completed my undergrad thesis under the supervision of [Prof Dr. Md Faruque Hossain](http://www.kuet.ac.bd/ece/fhossain/) on disease detection using a proposed dense convolutional attention mapping artificial neural network. 
 
 I enjoy coding and love to work on open source tech. Big Data Analytics and Machine Learning are such technologies which attract me most.I’m passionate about applying my knowledge of data science and machine learning to the areas of crime forecast and healthcare where we can really engineer some better solutions.
