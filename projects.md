@@ -4,8 +4,14 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ---
 
+## [Datathon](https://axiata.com/datathon/bd/index.html)
+**Tech Used**: Apache Spark - Feature Engineering - GCP - Machine Learning - Big Data Analytics
+
+- Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving around the role of Big Data and Machine Learning in solving business problems organised by Robi Axiata Ltd. and supported by Axiata Analytics. We received a big data set related to fintech. The challenge revolves around data analytics, feature engineering, big data analytics, and applied data science algorithm.  
+
+
 ## [Kaggle](https://github.com/iphton/Kaggle-Competition)
-**Tech Used**: Data Analysis - Feature Engineering - Python 3 - Machine Learning
+**Tech Used**: Data Analysis - Feature Engineering - Python 3 - Deep Learning
 
 - [Titanic: Machine Learning from Disaster](http://nbviewer.jupyter.org/github/iphton/Kaggle-Competition/blob/gh-pages/Titanic%20Competition/Notebook/Predict%20survival%20on%20the%20Titanic.ipynb#5-bullet): I barely remember first when exactly I watched Titanic movie but still now Titanic remains a discussion subject in the most diverse areas. Here, we're asked to complete the analysis of what sorts of people were likely to survive. I've used cross-validation on the top 10 most popular classification models and based on scoring, finally choose five most promising classifiers and fine-tuned those models. I've further used Voting Classifier to combine the predictions coming from classifiers. The model gets an accuracy of around **84%**. 
 
