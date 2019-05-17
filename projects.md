@@ -13,9 +13,6 @@ Some Necessary [Gist](https://gist.github.com/iphton)
   - [Capsule Network](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/CapsuleNet): **Geoffrey Hinton** proposed this architecture that introduced a completely new type of neural network based on so-called **Capsules**. Geoffrey Hinton - [Paper: Dynamic Routing Between Capsules](https://arxiv.org/abs/1710.09829). I found [this](https://www.oreilly.com/ideas/introducing-capsule-networks) blog post by **Aurélien Géron** well explained on this topic. <br>
   - [Convolutional Network](https://github.com/iphton/Kaggle-Competition/tree/gh-pages/Digit%20Recognizer/ConvNet): One of the most profoundly used feed forward neural net for image classification and massively well known for it's various types of implementation in computer vision spheres such as *AlexNet*, *VGGNet*, *ResNet*, *Xception*, *Inception* etc.
 
-- [Lung Opacity Detection](https://www.kaggle.com/c/rsna-pneumonia-detection-challenge)
-- [Bone Age Detection](https://www.kaggle.com/kmader/rsna-bone-age)
-
 ---
 
 ## Short-Length Projects
