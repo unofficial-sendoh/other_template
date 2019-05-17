@@ -48,7 +48,3 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 - [NumPy](https://github.com/iphton/NumPy-Tutorials)
 - [Matplotlib](https://github.com/iphton/Matplotlib-Tutorials)
-- Pandas
-- TensorFlow + Keras + PyTorch 
-- PySpark
-- Neo4j
