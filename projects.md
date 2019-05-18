@@ -7,7 +7,7 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 ## [Datathon](https://axiata.com/datathon/bd/index.html)
 **Tech Used**: Apache Spark - Feature Engineering - GCP - Machine Learning - Big Data Analytics
 
-- Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving around the role of Big Data and Machine Learning in solving business problems organised by Robi Axiata Ltd. and supported by Axiata Analytics. We received a big data set related to fintech. The challenge revolves around data analytics, feature engineering, big data analytics, and applied data science algorithm.  
+Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving around the role of Big Data and Machine Learning in solving business problems organised by Robi Axiata Ltd. and supported by Axiata Analytics. We received a big data set related to fintech. The challenge revolves around data analytics, feature engineering, big data analytics, and applied data science algorithm.  
 
 
 ## [Kaggle](https://github.com/iphton/Kaggle-Competition)
