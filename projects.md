@@ -23,6 +23,12 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ## Short-Length Projects
 
+- [Bone Age Detection](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Transfer Learning - Deep Learning)
+
+- [Lung Opacity Detection](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Ensembling Learning - Transfer Deep Learning)
+
+- [Spam Mail Filtering](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Feature Engineering - Machine Learning - Ensemble Learning)
+
 - [Web Scraping: Information Scraping with Python](https://github.com/iphton/Data-Scraping) (**Tech Used**: Python 3 - Selenium - Beautiful Soup - Scrapy)
 
 - [Tech Zone BD-E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone) (**Tech Used**: ASP.net - C# - MS SQL)
