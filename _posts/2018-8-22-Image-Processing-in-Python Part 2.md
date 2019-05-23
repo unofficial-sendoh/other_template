@@ -290,9 +290,6 @@ for k, ax in zip(kernel_sizes, axs):
     ax.set_axis_off();
 ```
 
-    Wall time: 43.5 s
-    
-
 
 ![png](/images/Image_Analysis_Part_2/output_10_1.png)
 
@@ -326,9 +323,6 @@ plt.figure(figsize = (5,5))
 plt.imshow(pic)
 plt.axis('off');
 ```
-
-    Wall time: 34.9 ms
-    
 
 
 ![png](/images/Image_Analysis_Part_2/output_12_1.png)
@@ -421,8 +415,6 @@ plt.show()
 ![png](/images/Image_Analysis_Part_2/output_15_1.png)
 
 
-    Wall time: 187 ms
-    
 
 For blurring an image, there is a whole host of different windows and functions that can be used. The one of the most common is the **Gaussian window**. To get a feel what it is doing to an image, let's apply this filters to the image.
 
@@ -474,9 +466,6 @@ plt.show()
 
 ![png](/images/Image_Analysis_Part_2/output_17_1.png)
 
-
-    Wall time: 330 ms
-    
 
 ---
 
@@ -548,9 +537,6 @@ plt.axis('off')
 plt.imshow(img_conv);
 ```
 
-    Wall time: 402 ms
-    
-
 
 ![png](/images/Image_Analysis_Part_2/output_19_1.png)
 
@@ -607,8 +593,6 @@ plt.axis('off')
 plt.imshow(img_conv);
 ```
 
-    Wall time: 499 ms
-    
 
 ![png](/images/Image_Analysis_Part_2/output_21_1.png)
 
@@ -663,9 +647,6 @@ plt.figure(figsize=(7,7))
 plt.axis('off')
 plt.imshow(img_conv);
 ```
-
-    Wall time: 1min 6s
-    
 
 
 ![png](/images/Image_Analysis_Part_2/output_23_1.png)
@@ -922,9 +903,6 @@ kmeans_cluster.fit(pic_2d)
 cluster_centers = kmeans_cluster.cluster_centers_
 cluster_labels = kmeans_cluster.labels_
 ```
-
-    Wall time: 16.2 s
-    
 
 Once the clusters are formed, we can recreate the image with the cluster centers and labels to display the image with grouped patterns.
 
@@ -1270,18 +1248,13 @@ with tf.Session() as sess:
     results = output_layer.eval(feed_dict={X:mnist.test.images[:num_test_images]})
 ```
 
-    Extracting MNIST_data\train-images-idx3-ubyte.gz
-    Extracting MNIST_data\train-labels-idx1-ubyte.gz
-    Extracting MNIST_data\t10k-images-idx3-ubyte.gz
-    Extracting MNIST_data\t10k-labels-idx1-ubyte.gz
     Epoch 0 Complete. Training Loss: 0.023349963128566742
     Epoch 1 Complete. Training Loss: 0.022537199780344963
     Epoch 2 Complete. Training Loss: 0.0200303066521883
     Epoch 3 Complete. Training Loss: 0.021327141672372818
     Epoch 4 Complete. Training Loss: 0.019387174397706985
-    INFO:tensorflow:Restoring parameters from ./stacked_autoencoder.ckpt
-    
 
+    
 
 ```python
 # Compare original images with their reconstructions
