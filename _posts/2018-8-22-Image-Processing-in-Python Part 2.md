@@ -31,32 +31,12 @@ In the previous article, we've gone through some of the following basic operatio
 ### Table of Contents
 
 - [Intensity Transformation](#A-bullet)
-    - Basic Function
-        - [Image Negative](#1-bullet)
-        - [Log Transformation](#2-bullet)
-        - [Gamma Correction](#2-bullet)
-        
----
 - [Convolution](#4-bullet)
-    - Convolving Procedure 
-    - Implementation and Use Cases
-
----
-- Segmentation
+- [Segmentation](#5-bullet)
     - Thresholding
-        - [Ostu's Method](#5-bullet)
-        - [KMeans Clustering](#6-bullet)
     - Object Detection
-        - [Line Detection](#7-bullet)
-            - Hough transform
-        - [Edge Detection](#8-bullet)
-            - Canny Edge Detection
-  
----
 - [Vectorization](#9-bullet)
     - Contour tracking
-    
---- 
 - [Image Compression](#10-bullet)
     - Stacked Autoencoder
 
