@@ -1248,6 +1248,9 @@ with tf.Session() as sess:
     results = output_layer.eval(feed_dict={X:mnist.test.images[:num_test_images]})
 ```
 
+Training phase; loss decreases with epochs.
+
+
     Epoch 0 Complete. Training Loss: 0.023349963128566742
     Epoch 1 Complete. Training Loss: 0.022537199780344963
     Epoch 2 Complete. Training Loss: 0.0200303066521883
@@ -1255,6 +1258,7 @@ with tf.Session() as sess:
     Epoch 4 Complete. Training Loss: 0.019387174397706985
 
     
+Let's visualize some outcomes. 
 
 ```python
 # Compare original images with their reconstructions
