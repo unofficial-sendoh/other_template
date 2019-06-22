@@ -4,14 +4,25 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ---
 
+## [Cardio-XAttentionNet](https://iphton.github.io/iphton.github.io/projects/)*
+**Techs**: Image Processing - Deep Learning 
+
+We develop an robust deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. We propose a novel deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
+
+
 ## [Datathon](https://axiata.com/datathon/bd/index.html)
-**Tech Used**: Apache Spark - Feature Engineering - GCP - Machine Learning - Big Data Analytics
+**Techs**: Apache Spark - Feature Engineering - GCP - Machine Learning - Big Data Analytics
 
 Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving around the role of Big Data and Machine Learning in solving business problems organised by Robi Axiata Ltd. and supported by Axiata Analytics. We received a big data set related to fintech. The challenge revolves around data analytics, feature engineering, big data analytics, and applied data science algorithm.  
 
+## [Deep Toxic Detector](https://iphton.github.io/iphton.github.io/projects/)*
+**Techs**: Natural Language Processing - Deep Learning - Feature Engineering - Word Embeddings
+
+An Ensemble Deep Neural Networks of Capsule Network With Attention Mechanism.
+
 
 ## [Kaggle](https://github.com/iphton/Kaggle-Competition)
-**Tech Used**: Data Analysis - Feature Engineering - Python 3 - Deep Learning
+**Techs**: Data Analysis - Feature Engineering - Python 3 - Deep Learning
 
 - [Titanic: Machine Learning from Disaster](http://nbviewer.jupyter.org/github/iphton/Kaggle-Competition/blob/gh-pages/Titanic%20Competition/Notebook/Predict%20survival%20on%20the%20Titanic.ipynb#5-bullet): We're asked to complete the analysis of what sorts of people were likely to survive. I've used cross-validation on the top 10 most popular classification models and based on scoring, finally took top five most promising classifiers and fine-tuned those models. An end up with Voting Classifier to combine the predictions coming from the classifiers. The model gets an accuracy of around **84%**. 
 
