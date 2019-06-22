@@ -21,6 +21,7 @@ An Ensemble Deep Neural Networks of Capsule Network With Attention Mechanism. We
 
 Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving around the role of Big Data and Machine Learning in solving business problems organised by Robi Axiata Ltd. and supported by Axiata Analytics. We received a big data set related to fintech. The challenge revolves around data analytics, feature engineering, big data analytics, and applied data science algorithm.  
 
+
 ## [Kaggle](https://github.com/iphton/Kaggle-Competition)
 **Techs**: Data Analysis - Feature Engineering - Python 3 - Deep Learning
 
