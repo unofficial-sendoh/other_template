@@ -66,4 +66,5 @@ Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving 
 
 ---
 
-* [code and in depth details is not provided yet, will be avaialbe soon.]
+* 
+[code and in depth details is not provided yet, will be avaialbe soon.]
