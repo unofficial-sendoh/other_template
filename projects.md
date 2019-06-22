@@ -10,16 +10,16 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 We develop an robust deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. We propose a novel deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
 
 
+## [Deep Toxic Detector](https://iphton.github.io/iphton.github.io/projects/)*
+**Techs**: Natural Language Processing - Deep Learning - Feature Engineering - Word Embeddings
+
+An Ensemble Deep Neural Networks of Capsule Network With Attention Mechanism. We're worked on a large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The model predicts a probability the toxicity for each comment.
+
+
 ## [Datathon](https://axiata.com/datathon/bd/index.html)
 **Techs**: Apache Spark - Feature Engineering - GCP - Machine Learning - Big Data Analytics
 
 Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving around the role of Big Data and Machine Learning in solving business problems organised by Robi Axiata Ltd. and supported by Axiata Analytics. We received a big data set related to fintech. The challenge revolves around data analytics, feature engineering, big data analytics, and applied data science algorithm.  
-
-## [Deep Toxic Detector](https://iphton.github.io/iphton.github.io/projects/)*
-**Techs**: Natural Language Processing - Deep Learning - Feature Engineering - Word Embeddings
-
-An Ensemble Deep Neural Networks of Capsule Network With Attention Mechanism.
-
 
 ## [Kaggle](https://github.com/iphton/Kaggle-Competition)
 **Techs**: Data Analysis - Feature Engineering - Python 3 - Deep Learning
