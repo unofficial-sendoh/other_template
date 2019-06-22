@@ -4,13 +4,13 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ---
 
-## [Cardio-XAttentionNet](https://iphton.github.io/iphton.github.io/projects/)*
+## [Cardio-XAttentionNet*](https://iphton.github.io/iphton.github.io/projects/)
 **Techs**: Image Processing - Deep Learning 
 
 We develop an robust deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. We propose a novel deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
 
 
-## [Deep Toxic Detector](https://iphton.github.io/iphton.github.io/projects/)*
+## [Deep Toxic Detector*](https://iphton.github.io/iphton.github.io/projects/)*
 **Techs**: Natural Language Processing - Deep Learning - Feature Engineering - Word Embeddings
 
 An Ensemble Deep Neural Networks of Capsule Network With Attention Mechanism. We're worked on a large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The model predicts a probability the toxicity for each comment.
