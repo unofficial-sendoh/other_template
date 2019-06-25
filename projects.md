@@ -13,7 +13,7 @@ We develop an robust deep neural attention mechanism which can detect cardiomega
 ## [Deep Toxic Detector*](https://iphton.github.io/iphton.github.io/projects/)
 **Techs**: Natural Language Processing - Deep Learning - Feature Engineering - Word Embeddings
 
-An Ensemble Deep Neural Networks of Capsule Network With Attention Mechanism. We're worked on a large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The model predicts a probability the toxicity for each comment.
+An Ensemble of Deep Neural Networks of Capsule Layers With Attention Mechanism. We worked on a large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The model predicts the probability of the toxicity for each comment.
 
 
 ## [Datathon](https://axiata.com/datathon/bd/index.html)
