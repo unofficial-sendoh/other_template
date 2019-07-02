@@ -3,11 +3,11 @@ layout: page
 permalink: /about/
 ---
 
-I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. Currently successfully completed my undergrad thesis under the supervision of [Prof Dr. Md Faruque Hossain](http://www.kuet.ac.bd/ece/fhossain/) on disease detection using a proposed dense convolutional attention mapping artificial neural network. 
+I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. 
 
-I enjoy coding and love to work on open source tech. Big Data Analytics and Machine Learning are such technologies which attract me most.I’m passionate about applying my knowledge of data science and machine learning to the areas of crime forecast and healthcare where we can really engineer some better solutions.
+I enjoy coding and love to work on open source tech. Big Data analytics and Machine Learning are such technologies which attract me most. I’m passionate about applying my knowledge of data science and machine learning to the areas of healthcare where we can really engineer some better solutions.
 
-If you’re working on the crime forecast or healthcare, don’t hesitate to reach out if you think there’s an opportunity for collaboration. Would love to discuss.
+If you’re working on the healthcare, don’t hesitate to reach out if you think there’s an opportunity for collaboration. Would love to discuss.
 
 ---
 
@@ -31,4 +31,3 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
   - [AI Resources](http://qr.ae/TUpyGw)
   - [Opportunities in Python](http://qr.ae/TUpyGU)
   - [R vs Python](http://qr.ae/TUpyGS)
-  - [Reason for Multiple Programming Langugages](http://qr.ae/TUpyGl)
