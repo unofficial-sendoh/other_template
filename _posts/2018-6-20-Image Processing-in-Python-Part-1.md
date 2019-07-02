@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Basic Image Processing In Python - Part 1
-excerpt: Basic overview of image processing in Python
+excerpt: An intuitive overview of digital image analysis
 images:
   - url: /images/feature_img_pt_1.jpg
 
