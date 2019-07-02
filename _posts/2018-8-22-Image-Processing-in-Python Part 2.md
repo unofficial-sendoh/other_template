@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Image Data Analysis Using Python - Part 2
+title: Basic Image Processing In Python - Part 2
 excerpt: Basic overview of image processing in Python
 images:
   - url: /images/Image_Analysis_Part_2/feature_img_pt_2.png
@@ -14,7 +14,7 @@ images:
 
 Previously we've seen some of the very basic image analysis operations in Python. In this last part of basic image analysis, we'll go through some of the following contents. 
 
-Following contents is the reflection of my completed academic image processing course in the previous term. So, I am not planning on putting anything into production sphere. Instead, the aim of this article is to try and realize the fundamentals of a few basic image processing techniques. For this reason, I am going to stick to using [`SciKit-Image`](https://scikit-image.org/) - [`numpy`](http://www.numpy.org/) mainly to perform most of the manipulations, although I will use other libraries now and then rather than using most wanted tools like [`OpenCV`](https://opencv.org/) : :smirk:
+Following contents is the reflection of my completed academic image processing course in the previous term. So, I am not planning on putting anything into production sphere. Instead, the aim of this article is to try and realize the fundamentals of a few basic image processing techniques. For this reason, I am going to stick to using [`imageio`](https://imageio.github.io/) or [`numpy`](http://www.numpy.org/) mainly to perform most of the manipulations, although I will use other libraries now and then rather than using most wanted tools such as  [`OpenCV`](https://opencv.org/) : :smirk:
 
 In the previous article, we've gone through some of the following basic operations. To keep pace with today's content, continuous reading is highly appreciated.
 
@@ -1169,13 +1169,15 @@ from tensorflow.examples.tutorials.mnist import input_data
 mnist = input_data.read_data_sets("MNIST_data",one_hot=True)
 
 # Parameter
-num_inputs = 784 # 28*28
-neurons_hid1 = 392
-neurons_hid2 = 196
-neurons_hid3 = neurons_hid1 # Decoder Begins
-num_outputs = num_inputs
-
-learning_rate = 0.01
+neurons_hid3    = neurons_hid1 # Decoder Begins
+num_inputs      = 784 # 28*28
+num_outputs     = num_inputs
+learning_rate   = 0.01
+neurons_hid1    = 392
+neurons_hid2    = 196
+num_epochs      = 5
+batch_size      = 150
+num_test_images = 10 # Test Autoencoder output on Test Data
 
 # activation function
 actf = tf.nn.relu
@@ -1185,12 +1187,10 @@ X = tf.placeholder(tf.float32, shape=[None, num_inputs])
 
 # Weights
 initializer = tf.variance_scaling_initializer()
-
 w1 = tf.Variable(initializer([num_inputs, neurons_hid1]), dtype=tf.float32)
 w2 = tf.Variable(initializer([neurons_hid1, neurons_hid2]), dtype=tf.float32)
 w3 = tf.Variable(initializer([neurons_hid2, neurons_hid3]), dtype=tf.float32)
 w4 = tf.Variable(initializer([neurons_hid3, num_outputs]), dtype=tf.float32)
-
 
 # Biases
 b1 = tf.Variable(tf.zeros(neurons_hid1))
@@ -1201,9 +1201,9 @@ b4 = tf.Variable(tf.zeros(num_outputs))
 # Activation Function and Layers
 act_func = tf.nn.relu
 
-hid_layer1 = act_func(tf.matmul(X, w1) + b1)
-hid_layer2 = act_func(tf.matmul(hid_layer1, w2) + b2)
-hid_layer3 = act_func(tf.matmul(hid_layer2, w3) + b3)
+hid_layer1   = act_func(tf.matmul(X, w1) + b1)
+hid_layer2   = act_func(tf.matmul(hid_layer1, w2) + b2)
+hid_layer3   = act_func(tf.matmul(hid_layer2, w3) + b3)
 output_layer = tf.matmul(hid_layer3, w4) + b4
 
 # Loss Function
@@ -1211,38 +1211,28 @@ loss = tf.reduce_mean(tf.square(output_layer - X))
 
 # Optimizer
 optimizer = tf.train.AdamOptimizer(learning_rate)
-train = optimizer.minimize(loss)
+train     = optimizer.minimize(loss)
 
 # Intialize Variables
-init = tf.global_variables_initializer()
+init  = tf.global_variables_initializer()
 saver = tf.train.Saver() 
-
-num_epochs = 5
-batch_size = 150
 
 with tf.Session() as sess:
     sess.run(init)
     
     # Epoch == Entire Training Set
     for epoch in range(num_epochs):
-        
         num_batches = mnist.train.num_examples // batch_size
         
         # 150 batch size
         for iteration in range(num_batches):
-            
             X_batch, y_batch = mnist.train.next_batch(batch_size)
             sess.run(train, feed_dict={X: X_batch})
             
         training_loss = loss.eval(feed_dict={X: X_batch})   
-        
-        print("Epoch {} Complete. Training Loss: {}".format(epoch,training_loss))
-     
+        print("Epoch {} Complete Training Loss: {}".format(epoch,training_loss))
     saver.save(sess, "./stacked_autoencoder.ckpt")       
     
-# Test Autoencoder output on Test Data
-num_test_images = 10
-
 with tf.Session() as sess:
     saver.restore(sess,"./stacked_autoencoder.ckpt")
     results = output_layer.eval(feed_dict={X:mnist.test.images[:num_test_images]})
@@ -1251,13 +1241,9 @@ with tf.Session() as sess:
 Training phase; loss decreases with epochs.
 
 
-    Epoch 0 Complete. Training Loss: 0.023349963128566742
-    Epoch 1 Complete. Training Loss: 0.022537199780344963
-    Epoch 2 Complete. Training Loss: 0.0200303066521883
-    Epoch 3 Complete. Training Loss: 0.021327141672372818
-    Epoch 4 Complete. Training Loss: 0.019387174397706985
+    Epoch (0,1,2,3,4) Complete Training Loss: (0.02334, 0.02253, 0.02003, 0.02132, 0.01938)
 
-    
+  
 Let's visualize some outcomes. 
 
 ```python
@@ -1267,7 +1253,6 @@ for i in range(num_test_images):
     a[0][i].imshow(np.reshape(mnist.test.images[i], (28, 28)))
     a[1][i].imshow(np.reshape(results[i], (28, 28)))
 ```
-
 
 ![png](/images/Image_Analysis_Part_2/output_45_0.png)
 
