@@ -25,7 +25,7 @@ An Ensemble of Deep Neural Networks of Capsule Layers With Attention Mechanism. 
 ## Bangla-CapsNet
 **Techs**: Capsule Layers - Computer Vision
 
-A Deep convolutional dynamic routing algorithm in Capsule Layers which able to classify Bangla Handwritten Characters and Digits...(Details will be short future. Trust me, it's lit indeed!) 
+A Deep convolutional dynamic routing algorithm in Capsule Layers which able to classify Bangla Handwritten Characters and Digits...(*details are coming soon. Trust me, it's lit indeed!*) 
 
 
 ## [Datathon](https://axiata.com/datathon/bd/index.html)
