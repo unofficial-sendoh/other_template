@@ -4,16 +4,16 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 
 ---
 
-## [Cardio-XAttentionNet*](https://iphton.github.io/iphton.github.io/projects/)
+## Cardio-XAttentionNet
 **Techs**: Image Processing - Deep Learning 
 
-We develop an robust deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. We propose a novel deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
+A deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. A novel deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
 
 
-## [Deep Toxic Detector*](https://iphton.github.io/iphton.github.io/projects/)
+## Deep Toxic Detector
 **Techs**: Natural Language Processing - Deep Learning - Feature Engineering - Word Embeddings
 
-An Ensemble of Deep Neural Networks of Capsule Layers With Attention Mechanism. We worked on a large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The model predicts the probability of the toxicity for each comment.
+An Ensemble of Deep Neural Networks of Capsule Layers With Attention Mechanism. Model trained on a large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The model predicts the probability of the toxicity for each comment.
 
 
 ## [Datathon](https://axiata.com/datathon/bd/index.html)
@@ -33,30 +33,15 @@ Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving 
 
 ## Short-Length Projects
 
+We generally don't get time to update this page, so head to my [GitHub](https://github.com/iphton) for more recent projects.
+
 - [Bone Age Detection](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Transfer Learning - Deep Learning)
 
 - [Lung Opacity Detection](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Ensembling Learning - Transfer Deep Learning)
 
 - [Spam Mail Filtering](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Feature Engineering - Machine Learning - Ensemble Learning)
 
-- [Web Scraping: Information Scraping with Python](https://github.com/iphton/Data-Scraping) (**Tech Used**: Python 3 - Selenium - Beautiful Soup - Scrapy)
-
-- [Tech Zone BD-E-Learning for Developer and Designer](https://github.com/iphton/Tech-Zone) (**Tech Used**: ASP.net - C# - MS SQL)
-
-
-- [MovieLens IMDb Analysis](https://github.com/iphton/MovieLens-IMDB-Analysis) (**Tech Used**: Matplotlib - Pandas - Python 3)
-
-
 - [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket) (**Tech Used**: Node.JS - Tornado - Web Socket - Raspberry Pi 3)
-
-
-- [Mimic Tensorflow: Manually-Create-Neural-Network](https://github.com/iphton/Manually-Create-Neural-Network) (**Tech Used**: Pure Python 3)
-
-- [Flowing-Drawer: Android](https://github.com/iphton/Flowing-Drawer) (**Tech Used**: Java - Android SDK)
-
-
-- [Manual Recycler-View: Android](https://github.com/iphton/Recycler_View) (**Tech Used**: Java - Android SDK)
-
 
 ---
 
