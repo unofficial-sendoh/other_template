@@ -555,5 +555,6 @@ plt.imshow(pic)
 </p>
 
 [Part 2](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-2/)
+
 ---
 <a href = "/assets/source_1.txt" target= "_blank">References</a>
