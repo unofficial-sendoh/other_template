@@ -10,10 +10,22 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 A deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. A novel deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
 
 
-## Deep Toxic Detector
+## Transfer Learning With PySpark
+**Techs**: Apache Spark(PySpark), Spark Deep Learning Pipelines, Transfer Learning, Logistic Regression
+
+There are 10 different classes in Bangla digits. A **Spark App** on local system is developed that train a **InceptionV3**(weight: imagenet) model over 500 Bangla digits in distributed fashion and able to recognize Bangla handwritten digits.
+
+
+## Toxic Detector
 **Techs**: Natural Language Processing - Deep Learning - Feature Engineering - Word Embeddings
 
 An Ensemble of Deep Neural Networks of Capsule Layers With Attention Mechanism. Model trained on a large number of Wikipedia comments which have been labeled by human raters for toxic behavior. The model predicts the probability of the toxicity for each comment.
+
+
+## Bangla-CapsNet
+**Techs**: Capsule Layers - Computer Vision
+
+A Deep convolutional dynamic routing algorithm in Capsule Layers which able to classify Bangla Handwritten Characters and Digits...(Details will be short future. Trust me, it's lit indeed!) 
 
 
 ## [Datathon](https://axiata.com/datathon/bd/index.html)
