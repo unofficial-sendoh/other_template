@@ -26,7 +26,6 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
 * [DZone Author Page](https://dzone.com/users/3338062/iphoton.html)
 * [KDnuggets Author Page](https://www.kdnuggets.com/author/mohammed-innat)
 * [Linkedin Articles Page](https://www.linkedin.com/in/innat2k14/detail/recent-activity/posts/)
-* [GeeksForGeeks Contribution Page](https://auth.geeksforgeeks.org/user/innat/articles)
 * [Quora Writing Page](https://www.quora.com/profile/Mohammed-Innat)
   - [AI Resources](http://qr.ae/TUpyGw)
   - [Opportunities in Python](http://qr.ae/TUpyGU)
