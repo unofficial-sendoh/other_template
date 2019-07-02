@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Basic Image Data Analysis Using Python - Part 1
+title: Basic Image Processing In Python - Part 1
 excerpt: Basic overview of image processing in Python
 images:
   - url: /images/feature_img_pt_1.jpg
@@ -288,21 +288,16 @@ plt.show()
 However, the [GIMP](https://docs.gimp.org/2.6/en/gimp-tool-desaturate.html) converting color to grayscale image software has three algorithms to do the task.
 
 **Lightness**
-The graylevel will be calculated as
-
-`Lightness = ½ × (max(R,G,B) + min(R,G,B))`
+The graylevel will be calculated as: `Lightness = ½ × (max(R,G,B) + min(R,G,B))`
 
 **Luminosity**
-The graylevel will be calculated as
-
-`Luminosity = 0.21 × R + 0.72 × G + 0.07 × B`
+The graylevel will be calculated as: `Luminosity = 0.21 × R + 0.72 × G + 0.07 × B`
 
 **Average**
-The graylevel will be calculated as
+The graylevel will be calculated as: `Average = (R + G + B) ÷ 3`
 
-`Average Brightness = (R + G + B) ÷ 3`
 
-Let's give a try one of their algorithm, what about Luminosity.
+Let's give a try one of their algorithm, what about Luminosity!
 
 ```python
 pic = imageio.imread('F:/demo_2.jpg')
@@ -484,10 +479,10 @@ if __name__ == '__main__':
 
 ## Satellite Image Processing<a class="anchor" id="6-bullet"></a>
 
-One of MOOC course on edX, we've introduced with some satellite images and its processing system. It's very informative of course.However, let's do a few analysis task on it.
+One of a MOOC course on edX, we've introduced with some satellite images and its processing system. It's very informative. However, let's do a few analysis task on it.
 
 ```python
-# load the image
+# load the satellite image
 pic = imageio.imread('F:\satimg.jpg')
 plt.figure(figsize = (10,10))
 plt.imshow(pic)
@@ -502,7 +497,8 @@ Let's see some basic info of it.
 print(f'Shape of the image {pic.shape}')
 print(f'hieght {pic.shape[0]} pixels')
 print(f'width {pic.shape[1]} pixels')
-
+.
+.
 Shape of the image (3725, 4797, 3)
 hieght 3725 pixels
 width 4797 pixels
@@ -557,5 +553,7 @@ plt.imshow(pic)
 <p align="left">
   <img width="600" height="450" src="/images/mered.png">
 </p>
+
+[Part 2](https://iphton.github.io/iphton.github.io/Image-Processing-in-Python-Part-2/)
 ---
 <a href = "/assets/source_1.txt" target= "_blank">References</a>
