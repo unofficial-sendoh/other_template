@@ -7,13 +7,13 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 ## Cardio-XAttentionNet
 **Techs**: Image Processing - Deep Learning 
 
-A deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. A novel deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
+A deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. A robust deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
 
 
 ## Transfer Learning With PySpark
 **Techs**: Apache Spark(PySpark), Spark Deep Learning Pipelines, Transfer Learning, Logistic Regression
 
-There are 10 different classes in Bangla digits. A **Spark App** on local system is developed that train a **InceptionV3**(weight: imagenet) model over 500 Bangla digits in distributed fashion and able to recognize Bangla handwritten digits.
+There are 10 different classes in Bangla digits. A **Spark App** on local system is developed that uses pre-trained **InceptionV3**(weight: imagenet) model as a feature extractor with a logistic multinomial classifier on Bangla digits dataset, trained in a distributed fashion and able to achieve promising result to recognize Bangla handwritten digits.
 
 
 ## Toxic Detector
@@ -25,7 +25,7 @@ An Ensemble of Deep Neural Networks of Capsule Layers With Attention Mechanism. 
 ## Bangla-CapsNet
 **Techs**: Capsule Layers - Computer Vision
 
-A Deep convolutional dynamic routing algorithm in Capsule Layers which able to classify Bangla Handwritten Characters and Digits...(*details are coming soon. Trust me, it's lit indeed!*) 
+A Deep convolutional dynamic routing algorithm in Capsule Layers which able to classify Bangla Handwritten Characters and Digits...(*details are coming soon. trust me, it's lit indeed!* :p) 
 
 
 ## [Datathon](https://axiata.com/datathon/bd/index.html)
