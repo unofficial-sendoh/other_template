@@ -13,7 +13,7 @@ A deep neural attention mechanism which can detect cardiomegaly from the chest X
 ## Transfer Learning With PySpark
 **Techs**: Apache Spark(PySpark), Spark Deep Learning Pipelines, Transfer Learning, Logistic Regression
 
-There are 10 different classes in Bangla digits. A **Spark App** on local system is developed that uses pre-trained **InceptionV3**(weight: imagenet) model as a feature extractor with a logistic multinomial classifier on Bangla digits dataset, trained in a distributed fashion and able to achieve promising result to recognize Bangla handwritten digits.
+There are 10 different classes in Bangla digits. A **Spark App** on local system is developed that uses pre-trained **InceptionV3** (weight: imagenet) model as a feature extractor with a logistic multinomial classifier on Bangla digits dataset, trained in a distributed fashion and able to achieve promising result to recognize Bangla handwritten digits.
 
 
 ## Toxic Detector
