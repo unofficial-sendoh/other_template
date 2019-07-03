@@ -11,7 +11,7 @@ A deep neural attention mechanism which can detect cardiomegaly from the chest X
 
 
 ## Transfer Learning With PySpark
-**Techs**: Apache Spark(PySpark), Spark Deep Learning Pipelines, Transfer Learning, Logistic Regression
+**Techs**: Apache Spark(PySpark) - Spark Deep Learning Pipelines - Transfer Learning - Logistic Regression
 
 There are 10 different classes in Bangla digits. A **Spark App** on local system is developed that uses pre-trained **InceptionV3** (weight: imagenet) model as a feature extractor with a logistic multinomial classifier on Bangla digits dataset, trained in a distributed fashion and able to achieve promising result to recognize Bangla handwritten digits.
 
@@ -47,13 +47,13 @@ Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving 
 
 We generally don't get time to update this page, so head to my [GitHub](https://github.com/iphton) for more recent projects.
 
-- [Bone Age Detection](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Transfer Learning - Deep Learning)
+- [Bone Age Prediction](https://iphton.github.io/iphton.github.io/projects/) (**Techs**: Transfer Learning - Deep Learning)
 
-- [Lung Opacity Detection](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Ensembling Learning - Transfer Deep Learning)
+- [Lung Opacity Detection](https://iphton.github.io/iphton.github.io/projects/) (**Techs**: Computer Vision - Transfer Deep Learning)
 
-- [Spam Mail Filtering](https://iphton.github.io/iphton.github.io/projects/) (**Tech Used**: Feature Engineering - Machine Learning - Ensemble Learning)
+- [Spam Mail Filtering](https://iphton.github.io/iphton.github.io/projects/) (**Techs**: Feature Engineering - Machine Learning - Ensemble Learning)
 
-- [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket) (**Tech Used**: Node.JS - Tornado - Web Socket - Raspberry Pi 3)
+- [Control Raspberry Pi GPIO with Web-Sockets](https://github.com/iphton/Raspberry-Pi-WebSocket) (**Techs**: Node.JS - Tornado - Web Socket - Raspberry Pi 3)
 
 ---
 
