@@ -10,10 +10,10 @@ Some Necessary [Gist](https://gist.github.com/iphton)
 A deep neural attention mechanism which can detect cardiomegaly from the chest X-ray. A robust deep learning model (**Cardio-XAttentionNet**) trained on ChestX-Ray14 which is publicly available chest X-ray dataset that contains over 100,000 X-ray images, each of which annotated with almost 14 diseases.
 
 
-## Transfer Learning With PySpark
-**Techs**: Apache Spark(PySpark) - Spark Deep Learning Pipelines - Transfer Learning - Logistic Regression
+## [Transfer Learning With PySpark](https://github.com/iphton/Transfer-Learning-With-PySpark)
+**Techs**: Apache Spark(PySpark) - Spark Deep Learning Pipelines - Transfer Learning 
 
-There are 10 different classes in Bangla digits. A **Spark App** on local system is developed that uses pre-trained **InceptionV3** (weight: imagenet) model as a feature extractor with a logistic multinomial classifier on Bangla digits dataset, trained in a distributed fashion and able to achieve promising result to recognize Bangla handwritten digits.
+A demonstrates on a Computer Vision problem with the power of combining two state-of-the-art technologies: Deep Learning with Apache Spark. With leveraging the power of Deep Learning Pipelines for a Multi-Class Image Classification problem on Spark Cluster.
 
 
 ## Toxic Detector
