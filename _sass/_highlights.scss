@@ -5,8 +5,21 @@
   background-color: #f8f8f8;
   @extend %vertical-rhythm !optional;
 
+ code {
+  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+  font-size: 15px;
+  font-weight: bold;
+  }
+  
   .highlighter-rouge & {
     background-color: #f8f8f8;
+    margin-bottom: 1.5em;
+    pre {
+      overflow-y: auto;
+      position: relative;
+      margin: 0;
+      padding: 1em;
+      border: 2px solid gray;
   }
 
   .cm    { color: #727262; font-style: italic } // Comment.Multiline
