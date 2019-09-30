@@ -30,3 +30,7 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
   - [AI Resources](http://qr.ae/TUpyGw)
   - [Opportunities in Python](http://qr.ae/TUpyGU)
   - [R vs Python](http://qr.ae/TUpyGS)
+
+
+![image](/images/graph_two.jpg){: style="float: left"; margin-right: 1em;"}
+Some Text On Left!
