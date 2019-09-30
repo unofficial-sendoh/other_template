@@ -8,6 +8,12 @@
   .highlighter-rouge & {
   background-color: #f8f8f8;
   }
+  
+  code {
+      font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+      font-size: 15px;
+      font-weight: bold;
+  }
 
   .cm    { color: #727262; font-style: italic } // Comment.Multiline
   .cp    { color: #727272; font-weight: bold } // Comment.Preproc
