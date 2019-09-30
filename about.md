@@ -32,5 +32,5 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
   - [R vs Python](http://qr.ae/TUpyGS)
 
 
-![image](/images/graph_two.jpg){: style="float: left"; margin-right: 3em;"}
+![image](/images/graph_two.jpg){: style="float: left"; margin-right: 10em;"}
 Some Text On Left!
