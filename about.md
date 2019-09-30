@@ -33,4 +33,4 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
 
 
 ![IMG](/images/show_case.png){: style="float: left"}
-SOME TEXT---------------------
+   I enjoy coding and love to work on open source tech. Big Data analytics and Machine Learning are such technologies which attract me most. I’m passionate about applying my knowledge of data science and machine learning to the areas of healthcare where we can really engineer some better solutions.
