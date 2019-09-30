@@ -4,8 +4,10 @@
 
 .highlight {
   background-color: #f8f8f8;
-  padding: 7px 7px 7px 10px;
 
+  .highlighter-rouge & {
+  background-color: #f8f8f8;
+  }
 
   .cm    { color: #727262; font-style: italic } // Comment.Multiline
   .cp    { color: #727272; font-weight: bold } // Comment.Preproc
