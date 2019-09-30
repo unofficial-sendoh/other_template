@@ -32,5 +32,4 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
   - [R vs Python](http://qr.ae/TUpyGS)
 
 
-![image](/images/graph_two.jpg){: style="float: left"; margin-right: 10em; height="25%" width="25%"}
-Some Text On Left! I enjoy coding and love to work on open source tech. Big Data analytics and Machine Learning are such technologies which attract me most. I’m passionate about applying my knowledge of data science and machine learning to the areas of healthcare where we can really engineer some better solutions.
+![image](/images/graph_two.jpg){: style="float: left"; margin-right: 10em; height="25%" width="25%"} Some Text On Left! I enjoy coding and love to work on open source tech. Big Data analytics and Machine Learning are such technologies which attract me most. I’m passionate about applying my knowledge of data science and machine learning to the areas of healthcare where we can really engineer some better solutions.
