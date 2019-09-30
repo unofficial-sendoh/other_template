@@ -33,3 +33,4 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
 
 {% include module.html image_path="/images/graph_two.jpg" title="Some title text" description="Some more text that will appear to the left of the image." %}
 
+{% include module.html image_path="/images/graph_two.jpg" title="Some title text" description="Some more text that will appear to the left of the image." %}
