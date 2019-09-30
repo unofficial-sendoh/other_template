@@ -32,7 +32,7 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
   - [R vs Python](http://qr.ae/TUpyGS)
 
 
-![image](/images/graph_two.jpg){: style="float: left"; margin-right: 10em; height="25%" width="25%"} **Some Text On Left!**<br>Some Text On Left!<br)Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!
+![image](/images/graph_two.jpg){: style="float: left"; margin-right: 10em; height="25%" width="25%"} ## Some Text On Left!<br>Some Text On Left!<br><br>Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!
 
 
-![image](/images/graph_two.jpg){: style="float: left"; margin-right: 10em; height="25%" width="25%"} Some Text On Left! Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!<br>Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!
+![image](/images/graph_two.jpg){: style="float: left"; margin-right: 10em; height="25%" width="25%"} ## Some Text On Left!<br>Some Text On Left!<br><br>Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!Some Text On Left!
