@@ -32,5 +32,5 @@ Inspired from [Kevin Roodhorst](https://www.youtube.com/user/KevinRoodhorst/feat
   - [R vs Python](http://qr.ae/TUpyGS)
 
 
-![70194648_4886440901684655_2083603624449015808_o](https://user-images.githubusercontent.com/17668390/65879744-51594700-e3b2-11e9-9526-ee0cbfcdf754.jpg){: style="float: left"}
+![IMG](/images/show_case.png){: style="float: left"}
 SOME TEXT---------------------
