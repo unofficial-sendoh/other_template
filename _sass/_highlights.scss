@@ -1,20 +1,36 @@
-/**
- * Syntax highlighting styles
- */
-.highlight {
-  background-color: #f8f8f8;
-  @extend %vertical-rhythm !optional;
+// /**
+//  * Syntax highlighting styles
+//  */
+// .highlight {
+//   background-color: #f8f8f8;
+//   @extend %vertical-rhythm !optional;
 
- code {
-    font-family:'Bitstream Vera Sans Mono','Courier', monospace;
-    font-size: 15px;
-    font-weight: bold;
-  }
+//  code {
+//     font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+//     font-size: 15px;
+//     font-weight: bold;
+//   }
   
-  .highlighter-rouge & {
-    background-color: #f8f8f8;
-    margin-bottom: 1.5em;
+//   .highlighter-rouge & {
+//     background-color: #f8f8f8;
+//     margin-bottom: 1.5em;
+// }
+
+.highlight {
+  background-color: #efefef;
+  padding: 7px 7px 7px 10px;
+  border: 1px solid #ddd;
+  -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 3px 3px rgba(0,0,0,0.1);
+  box-shadow: 3px 3px rgba(0,0,0,0.1);
+  margin: 20px 0 20px 0;
+  overflow: scroll;
 }
+
+code {
+  font-family:'Bitstream Vera Sans Mono','Courier', monospace;
+}
+
 
   .cm    { color: #727262; font-style: italic } // Comment.Multiline
   .cp    { color: #727272; font-weight: bold } // Comment.Preproc
