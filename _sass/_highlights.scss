@@ -4,6 +4,8 @@
 
 .highlight {
   background-color: #f8f8f8;
+  padding: 5px 10px;
+  margin: 20px 0;
 
   .highlighter-rouge & {
   background-color: #f8f8f8;
@@ -13,9 +15,6 @@
     font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
     font-size: 15px;
     font-weight: bold;
-    background-color: #f8f8f8;
-    padding: 1px 5px;
-    border: 1px solid
   }
 
   .cm    { color: #727262; font-style: italic } // Comment.Multiline
