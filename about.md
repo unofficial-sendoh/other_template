@@ -2,7 +2,6 @@
 layout: page
 permalink: /about/
 ---
-<p align="justify">
 
 I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. 
 
