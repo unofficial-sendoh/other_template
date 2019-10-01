@@ -5,6 +5,9 @@
 .highlight {
   background-color: #f8f8f8;
   padding: 1px 5px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background-color: #f8f8f8;
 
   .highlighter-rouge & {
   background-color: #f8f8f8;
@@ -13,14 +16,10 @@
 /**
  * Code formatting
  */
-pre,
   code {
     font-family: Monaco, Consolas;
     font-size: 17px;
     font-weight: bold;
-    border: 1px solid #ccc;
-    border-radius: 0;
-    background-color: #f8f8f8;
   }
 
   .cm    { color: #727262; font-style: italic } // Comment.Multiline
