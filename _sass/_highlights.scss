@@ -15,6 +15,10 @@
     font-size: 17px;
     font-weight: bold;
   }
+  
+  pre {
+    border: 1px solid #ccc;
+  }
 
   .cm    { color: #727262; font-style: italic } // Comment.Multiline
   .cp    { color: #727272; font-weight: bold } // Comment.Preproc
