@@ -37,5 +37,5 @@ Datathon Bangladesh 2019 is Bangladesh’s first and biggest datathon revolving 
 
 ## Refreshing Notes
 
-- [NumPy](https://github.com/innat/NumPy-Tutorials)
-- [Matplotlib](https://github.com/innat/Matplotlib-Tutorials)
+- [NumPy](https://nbviewer.jupyter.org/github/innat/NumPy-Note/blob/master/Numerical%20Python%20%7C%20NumPy.ipynb)
+- [Matplotlib](https://nbviewer.jupyter.org/github/innat/Matplotlib-Tutorials/blob/master/Matplotlib.ipynb)
