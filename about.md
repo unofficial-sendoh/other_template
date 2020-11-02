@@ -3,7 +3,11 @@ layout: page
 permalink: /about/
 ---
 
-> We couldn't manage time to update our site for almost 2 years. Please refer [here](https://www.linkedin.com/in/innat2k14/). 
+
+> NOTE: We couldn't manage time to update our site for almost 2 years. Please refer [here](https://www.linkedin.com/in/innat2k14/). 
+
+
+---
 
 I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. 
 
