@@ -3,6 +3,8 @@ layout: page
 permalink: /about/
 ---
 
+> We couldn't manage time to update our site for almost 2 years. Please refer [here](https://www.linkedin.com/in/innat2k14/). 
+
 I’m an undergrad student and currently majoring in Electronics & Communication at Khulna University of Engineering & Technology ([KUET](http://www.kuet.ac.bd/)), Khulna, Bangladesh. 
 
 I enjoy coding and love to work on open source tech. Big Data analytics and Machine Learning are such technologies which attract me most. I’m passionate about applying my knowledge of data science and machine learning to the areas of healthcare where we can really engineer some better solutions.
