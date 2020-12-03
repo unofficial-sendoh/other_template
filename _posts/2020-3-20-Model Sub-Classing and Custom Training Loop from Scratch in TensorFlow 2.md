@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Model Sub-Classing and Custom Training Loop from Scratch in TensorFlow 2
+title: Model-Sub-Classing-and-Custom-Training-Loop-from-Scratch-in-TensorFlow 2
 excerpt: A comprehensive introduction of model subclassing and custom modeling in tensorflow 
 
 ---
