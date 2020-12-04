@@ -9,33 +9,33 @@ In this article, we will try to understand the Model Sub-Classing API and Custom
 It may not be a beginner or advance introduction but aim to get rough intuition of what they are all about. 
 The post is divided into three parts:
 
-- Comparable Modelling Strategies in TensorFlow 2
-- Build an Inception Network with Model Sub-Classing API
-- End-to-End Training with Custom Training Loop from Scratch
+- *Comparable Modelling Strategies in TensorFlow 2*
+- *Build an Inception Network with Model Sub-Classing API*
+- *End-to-End Training with Custom Training Loop from Scratch*
 
 So, at first, we will see how many ways to define models using TensorFlow 2 and how they differ from each other. Next, 
-we will see how feasible it is to build a complex neural architecture using the model subclassing API which is introduced in TF 2. 
-And then we will implement a custom training loop and train these subclassing model end-to-end from scratch. We will also use Tensorboard 
+we will see how feasible it is to build a complex neural architecture using the model subclassing API which is introduced in **TF 2**. 
+And then we will implement a custom training loop and train these subclassing model end-to-end from scratch. We will also use *Tensorboard* 
 in our custom training loop to track the model performance for each batch. We will also see how to save and load the model after training. 
 In the end, we will measure the model performance via the confusion matrix and 
 classification report, etc.
 
-# Comparable Modelling Strategies in TensorFlow 2
+## Comparable Modelling Strategies in TensorFlow 2
 
 In `TF.Keras` there are basically three-way we can define a neural network, namely
-- Sequential API
-- Functional API
-- Model Subclassing API
+- *Sequential API*
+- *Functional API*
+- *Model Subclassing API*
 
-Among them, Sequential API is the easiest way to implement but comes with certain limitations. For example, with this API, we can’t 
+Among them, *Sequential API* is the easiest way to implement but comes with certain limitations. For example, with this API, we can’t 
 create a model that shares feature information to another layer except to its subsequent layer. In addition, multiple input and output 
-are not possible to implement either. In this point, Functional API does solve these issues greatly. A model like Inception or ResNet 
-is feasible to implement in Functional API. But often deep learning researcher wants to have more control over every nuance of the 
-network and on the training pipelines and that’s exactly what Model Subclassing API serves. Model Sub-Classing is a fully customizable 
+are not possible to implement either. In this point, *Functional API* does solve these issues greatly. A model like **Inception** or **ResNet** 
+is feasible to implement in *Functional API*. But often deep learning researcher wants to have more control over every nuance of the 
+network and on the training pipelines and that’s exactly what *Model Subclassing API* serves. Model Sub-Classing is a fully customizable 
 way to implement the feed-forward mechanism for our custom-designed deep neural network in an object-oriented fashion.
 
 Let’s create a very basic neural network using these three API. It will be the same neural architecture and will see what are the 
-implementation differences. This of course will not demonstrate the full potential, especially for Functional and Model Sub-Classing API.
+implementation differences. This of course, however, will not demonstrate the full potential, especially for Functional and Model Sub-Classing API.
 The architecture will be as follows:
 
 ```python
@@ -44,7 +44,7 @@ Input - > Conv - > MaxPool - > BN - > Conv -> BN - > Droput - > GAP -> Dense
 
 Simple enough. As mentioned, let’s create the neural nets with Sequential, Functional, and Model Sub-Classing respectively.
 
-## Sequential API
+### Sequential API
 
 ```python
 # declare input shape 
@@ -68,7 +68,7 @@ seq_model.add(tf.keras.layers.GlobalMaxPooling2D())
 seq_model.add(tf.keras.layers.Dense(output_dim))
 ```
 
-## Functional API
+### Functional API
 
 ```python
 # declare input shape 
@@ -94,7 +94,7 @@ output = tf.keras.layers.Dense(output_dim)(gap)
 func_model = tf.keras.Model(input, output)
 ```
 
-## Model Sub-Classing API
+### Model Sub-Classing API
 
 ```python
 class ModelSubClassing(tf.keras.Model):
@@ -132,9 +132,9 @@ class ModelSubClassing(tf.keras.Model):
         return self.dense(x)
 ```
 
-In Model Sub-Classing there are two most important functions `__init__` and call. Basically, we will define all the `tf.keras layers` or 
-custom implemented layers inside the `__init__` method and call those layers based on our network design inside the call method which is 
-used to perform a forward propagation. It’s quite the same as the forward method that is used to build the model in `PyTorch` anyway.
+In Model Sub-Classing there are two most important functions `__init__` and `call`. Basically, we will define all the `tf.keras layers` or 
+custom implemented layers inside the `__init__` method and call those layers based on our network design inside the `call` method which is 
+used to perform a forward propagation. It’s quite the same as the `forward` method that is used to build the model in `PyTorch` anyway.
 
 
 Let’s run these models on the MNIST data set. We will load from `tf.keras.datasets`. However, the input image is `28` by `28` and in
@@ -210,10 +210,10 @@ Model Sub-Classing API
 469/469 [==============================] - 2s 3ms/step - loss: 5.2695 - categorical_accuracy: 0.1731
 ```
 
-# Build an Inception Network with Model Sub-Classing API
+## Build an Inception Network with Model Sub-Classing API
 
 The core data structures in `TF.Keras` is layers and model classes. A layer encapsulates both state (weight) and the transformation 
-from inputs to outputs, i.e. the call method that is used to define the forward pass. However, these layers are also recursively 
+from inputs to outputs, i.e. the `call` method that is used to define the forward pass. However, these layers are also recursively 
 composable. It means if we assign a `tf.keras.layers.Layer` instances as an attribute of another `tf.keras.layers.Layer`, the outer 
 layer will start tracking the weights matrix of the inner layer. So, each layer will track the weights of its sublayers, both trainable 
 and non-trainable. Such functionality is required when we need to build such a layer of a higher level of abstraction.
@@ -228,24 +228,24 @@ special modules, namely:
 
 ![](https://miro.medium.com/max/1400/0*CAFo0A-z6w7xn8Le)
 
-## Conv Module
+### Conv Module
 
 From the diagram we can see, it consists of one convolutional network, one batch normalization, and one relu activation. Also, 
 it produces C times feature maps with `K` x `K` filters and `S` x `S` strides. Now, it would be very inefficient if we simply go with the 
 sequential modeling approach because we will be re-using this module many times in the complete network. So, define a functional 
 block would be efficient and simple enough. But this time, we will prefer layer subclassing which is more pythonic and more efficient. 
-To do that, we will create a class object that will inherit the `tf.keras.layers.Layer`classes.
+To do that, we will create a class object that will inherit the `tf.keras.layers.Layer` classes.
 
 ```python
 class ConvModule(tf.keras.layers.Layer):
 	def __init__(self, kernel_num, kernel_size, strides, padding='same'):
 		super(ConvModule, self).__init__()
-        # conv layer
+                # conv layer
 		self.conv = tf.keras.layers.Conv2D(kernel_num, 
                         kernel_size=kernel_size, 
                         strides=strides, padding=padding)
 
-        # batch norm layer
+                # batch norm layer
 		self.bn   = tf.keras.layers.BatchNormalization()
 
 
@@ -272,10 +272,10 @@ weights: 6
 trainable weights: 4
 ```
 
-## Inception Module
+### Inception Module
 
 Next comes the **Inception** module. According to the above graph, it consists of two **convolutional modules** and then merges together. 
-Now as we know to merge, here we need to ensure that the output feature maps dimension ( height and width ) needs to be the same.
+Now as we know to merge, here we need to ensure that the output feature maps dimension ( **height** and **width** ) needs to be the same.
 
 ```python
 class InceptionModule(tf.keras.layers.Layer):
@@ -296,14 +296,14 @@ class InceptionModule(tf.keras.layers.Layer):
 ```
 
 Here you may notice that we are now hard-coded exact `kernel size` and `strides` number for both convolutional layers according to the 
-network (diagram). And also in ConvModule, we have already set padding to the ‘same’, so that the dimension of the feature maps will be 
+network (diagram). And also in **ConvModule**, we have already set padding to the `same`, so that the dimension of the feature maps will be 
 the same for both (`self.conv1` and `self.conv2`); which is required in order to concatenate them to the end.
 
 Again, in this module, two variable performs as the placeholder, **kernel_size1x1**, and **kernel_size3x3**. This is on the purpose of course. 
 Because we will need different numbers of feature maps to the different stages of the entire model. If we look into the diagram of the model,
-we will see that InceptionModule takes a different number of filters at different stages in the model.
+we will see that **InceptionModule** takes a different number of filters at different stages in the model.
 
-## Downsample Module
+### Downsample Module
 
 Lastly the downsampling module. The main intuition for downsampling is that we hope to get more relevant feature information that highly 
 represents the inputs to the model. As it tends to remove the unwanted feature so that model can focus on the most relevant. There are many 
@@ -311,9 +311,9 @@ ways we can reduce the dimension of the feature maps (or inputs). For example: u
 There are many types of pooling operation, namely: **MaxPooling**, **AveragePooling**, **GlobalAveragePooling**.
 
 From the diagram, we can see that the downsampling module contains one convolutional layer and one max-pooling layer which later merges together. 
-Now, if we look closely at the diagram (top-right), we will see that the convolutional layer takes 3 x 3 size filter with strides **2 x 2**. And the 
-pooling layer (here MaxPooling) takes pooling size **3 x 3** with strides **2 x 2**. Fair enough, however, we also ensure that the dimension coming from 
-each of them should be the same in order to merge at the end. Now, if we remember when we design the **ConvModule** we purposely set the value of 
+Now, if we look closely at the diagram (top-right), we will see that the convolutional layer takes **3** x **3** size filter with strides **2 x 2**. And the 
+pooling layer (here **MaxPooling**) takes pooling size **3 x 3** with strides **2 x 2**. Fair enough, however, we also ensure that the dimension coming from 
+each of them should be the same in order to merge at the end. Now, if we remember when we design the **ConvModule**, we purposely set the value of 
 padding argument to `same`. But in this case, we need to set to `valid`.
 
 ```python
@@ -321,11 +321,11 @@ class DownsampleModule(tf.keras.layers.Layer):
 	def __init__(self, kernel_size):
 		super(DownsampleModule, self).__init__()
 
-        # conv layer
+                # conv layer
 		self.conv3 = ConvModule(kernel_size, kernel_size=(3,3), 
                          strides=(2,2), padding="valid") 
 
-        # pooling layer 
+                # pooling layer 
 		self.pool  = tf.keras.layers.MaxPooling2D(pool_size=(3, 3), 
                          strides=(2,2))
 		self.cat   = tf.keras.layers.Concatenate()
@@ -333,20 +333,20 @@ class DownsampleModule(tf.keras.layers.Layer):
 
 	def call(self, input_tensor, training=False):
 
-        # forward pass 
+                # forward pass 
 		conv_x = self.conv3(input_tensor, training=training)
 		pool_x = self.pool(input_tensor)
 	
 
-        # merged
-        return self.cat([conv_x, pool_x])
+               # merged
+               return self.cat([conv_x, pool_x])
 ```
 
-# Model Class: Layers Encompassing
+## Model Class: Layers Encompassing
 
 In general, we use the **Layer** class to define the inner computation blocks and will use the **Model** class to define the outer model, practically the object that we will train. In our case, in an **Inception** model, we define three computational blocks: **Conv Module**, **Inception Module**, and **Downsample Module**. These are created by subclassing the **Layer** class. And so next, we will use the **Model** class to encompass these computational blocks in order to create the entire **Inception** network. Typically the **Model** class has the same API as Layer but with some extra functionality.
 
-Same as the **Layer** class, we will initialize the computational block inside the init method of the **Model** class as follows:
+Same as the **Layer** class, we will initialize the computational block inside the `init` method of the **Model** class as follows:
 
 ```python
 # the first conv module
@@ -369,7 +369,6 @@ self.inception_block7 = InceptionModule(176, 160)
 self.inception_block8 = InceptionModule(176, 160)
 
 # average pooling
-
 self.avg_pool = tf.keras.layers.AveragePooling2D((7,7))
 ```
 The amount of **filter number** for each computational block is set according to the design of the model (also visualized down below in the diagram). After initialing all the blocks, we will connect them according to the design (diagram). Here is the full **Inception** network using **Model** subclass:
@@ -415,22 +414,18 @@ class MiniInception(tf.keras.Model):
         x = self.inception_block2(x)
         x = self.downsample_block1(x)
 
-
         x = self.inception_block3(x)
         x = self.inception_block4(x)
         x = self.inception_block5(x)
         x = self.inception_block6(x)
         x = self.downsample_block2(x)
 
-
         x = self.inception_block7(x)
         x = self.inception_block8(x)
         x = self.avg_pool(x)
 
-
         x = self.flat(x)
         return self.classfier(x)
-
 
     def build_graph(self, raw_shape):
         x = tf.keras.layers.Input(shape=raw_shape)
@@ -491,7 +486,7 @@ Non-trainable params: 3,424
 
 Now, it is complete to build the entire **Inception** model via model subclassing. However, compared to the functional API, instead of defining each module in a separate function, using the subclassing API, it looks more natural.
 
-# End-to-End Training with Custom Training Loop from Scratch
+## End-to-End Training with Custom Training Loop from Scratch
 
 Now we have built a complex network, it’s time to make it busy to learn something. We can now easily train the model simply just by using the `compile` and `fit`. But here we will look at a custom training loop from scratch. This functionality is newly introduced in TensorFlow 2. Please note, this functionality is a little bit complex comparatively and more fit for the deep learning researcher.
 
@@ -535,11 +530,9 @@ y_train = tf.keras.utils.to_categorical(y_train, num_classes=10)
 # validation set / target 
 y_test = tf.keras.utils.to_categorical(y_test, num_classes=10)
 
-
 # Prepare the training dataset.
 train_dataset = tf.data.Dataset.from_tensor_slices((x_train, y_train))
 train_dataset = train_dataset.shuffle(buffer_size=1024).batch(batch_size)
-
 
 # Prepare the validation dataset.
 val_dataset = tf.data.Dataset.from_tensor_slices((x_test, y_test))
@@ -576,7 +569,7 @@ for i, (x, y) in enumerate(val_dataset):
 
 so far so good. We have an input shape of **32 x 32 x 3** and a total of **10** classes to classify. However, it’s not ideal to make a test set as a validation set but for demonstration purposes, we are not considering the **train_test_split** approach. Now, let’s see how the custom training pipelines consist of in Tensorflow 2.
 
-## Training Mechanism
+### Training Mechanism
 
 In `TF.Keras`, we have convenient training and evaluating loops, **fit**, and **evaluate**. But we also can have leveraged the low-level control over the training and evaluation process. In that case, we need to write our own training and evaluation loops from scratch. Here are the recipes:
 
@@ -587,7 +580,7 @@ In `TF.Keras`, we have convenient training and evaluating loops, **fit**, and **
 5. Outside this scope, we retrieve the **gradients of the weights** of the model with regard to the **loss**.
 6. Next, we use the optimizer to **update the weights** of the model based on the gradients.
 
-TensorFlow provides the `tf.GradientTape()` API for automatic differentiation, that is, computing the gradient of computation with respect to some inputs. Below is a short demonstration of its operation process. Here we have some input (x) and trainable param (**w**, **b**). Inside the **tf.GradientTape()** scope, output (y, which basically would be the model output), and loss are measured. And outside the scope, we retrieve the gradients of the weight parameter with respect to the loss.
+TensorFlow provides the `tf.GradientTape()` API for automatic differentiation, that is, computing the gradient of computation with respect to some inputs. Below is a short demonstration of its operation process. Here we have some input (**x**) and trainable param (**w**, **b**). Inside the **tf.GradientTape()** scope, output (**y**, which basically would be the model output), and loss are measured. And outside the scope, we retrieve the gradients of the weight parameter with respect to the loss.
 
 ```python
 # x:input, w,b: trainable param - x*w + b
@@ -702,14 +695,13 @@ def test_step(x, y):
 
     # Update val metrics
     val_acc_metric.update_state(y, val_logits)
-
     
     return val_loss_value
 ```
 
 Here we’re seeing the usage of **metrics.update_state()**. These functions return to the training loop where we will set up displaying the log message, **metric.result()**, and also reset the metrics, **metric.reset_states()**.
 
-Here is the last thing we like to set up, the **TensorBoard**. There are some great functionalities in it to utilize such as: [displaying per batches samples + confusion matrix](https://www.tensorflow.org/tensorboard/image_summaries), hyper-parameter tuning, embedding projector, model graph, etc. For now, we will only focus on logging the training metrics on it. Simple enough but we will integrate it in the custom training loop. So, we can’t use **tf.keras.callbacks.TensorBoard** but need to use the TensorFlow Summary API. The **tf.summary** module provides API for writing summary data on TensorBoard. We want to write the logging state after each batch operation to get more details. Otherwise, we may prefer at the end of each epoch. Let’s create some directory where the message of the event will be saved. In the working directory, create the **log/train** and **log/test**. Below is the full training pipelines. We recommend reading the code thoroughly at first in order to get the overall training flow.
+Here is the last thing we like to set up, the **TensorBoard**. There are some great functionalities in it to utilize such as: [displaying per batches samples + confusion matrix](https://www.tensorflow.org/tensorboard/image_summaries), hyper-parameter tuning, embedding projector, model graph, etc. For now, we will only focus on logging the training metrics on it. Simple enough but we will integrate it in the custom training loop. So, we can’t use **tf.keras.callbacks.TensorBoard** but need to use the **TensorFlow Summary API**. The `tf.summary` module provides API for writing summary data on TensorBoard. We want to write the logging state after each batch operation to get more details. Otherwise, we may prefer at the end of each epoch. Let’s create some directory where the message of the event will be saved. In the working directory, create the **log/train** and **log/test**. Below is the full training pipelines. We recommend reading the code thoroughly at first in order to get the overall training flow.
 
 ```python
 # Instantiate an optimizer to train the model.
@@ -718,16 +710,13 @@ optimizer = tf.keras.optimizers.Adam()
 # Instantiate a loss function
 loss_fn = tf.keras.losses.CategoricalCrossentropy()
 
-
 # Prepare the metrics.
 train_acc_metric = tf.keras.metrics.CategoricalAccuracy()
 val_acc_metric   = tf.keras.metrics.CategoricalAccuracy()
 
-
 # tensorboard writer 
 train_writer = tf.summary.create_file_writer('logs/train/')
 test_writer  = tf.summary.create_file_writer('logs/test/')
-
 
 @tf.function
 def train_step(step, x, y):
@@ -818,17 +807,16 @@ for epoch in range(epochs):
 Voila! We run the code in our local system, having RTX 2070. By enabling the mixed-precision we’re able to increase the batch size up to 256. Here is the log output:
 
 ```
-ETA: 0.78 - epoch: 1 loss: 0.7587890625  acc: 0.5794399976730347 val loss: 3.173828125 val acc: 0.10159999877214432
-ETA: 0.29 - epoch: 2 loss: 0.63232421875  acc: 0.7421200275421143 val loss: 1.0126953125 val acc: 0.5756999850273132
-ETA: 0.32 - epoch: 3 loss: 0.453369140625  acc: 0.8073400259017944 val loss: 0.7734375 val acc: 0.7243000268936157
-ETA: 0.33 - epoch: 4 loss: 0.474365234375  acc: 0.8501200079917908 val loss: 0.64111328125 val acc: 0.7628999948501587
+ETA: 0.78 - epoch: 1 loss: 0.75878  acc: 0.57943 val loss: 3.17382 val acc: 0.10159
+ETA: 0.29 - epoch: 2 loss: 0.63232  acc: 0.74212 val loss: 1.01269 val acc: 0.57569
+ETA: 0.32 - epoch: 3 loss: 0.45336  acc: 0.80734 val loss: 0.77343 val acc: 0.72430
+ETA: 0.33 - epoch: 4 loss: 0.47436  acc: 0.85012 val loss: 0.64111 val acc: 0.76289
 ..
 ..
-
-ETA: 0.35 - epoch: 17 loss: 0.0443115234375  acc: 0.9857199788093567 val loss: 1.8603515625 val acc: 0.7465000152587891
-ETA: 0.68 - epoch: 18 loss: 0.01328277587890625  acc: 0.9839400053024292 val loss: 0.65380859375 val acc: 0.7875999808311462
-ETA: 0.53 - epoch: 19 loss: 0.035552978515625  acc: 0.9851599931716919 val loss: 1.0849609375 val acc: 0.7432000041007996
-ETA: 0.4 - epoch: 20 loss: 0.04217529296875  acc: 0.9877399802207947 val loss: 3.078125 val acc: 0.7224000096321106
+ETA: 0.35 - epoch: 17 loss: 0.04431  acc: 0.98571 val loss: 1.8603 val acc: 0.746500
+ETA: 0.68 - epoch: 18 loss: 0.01328  acc: 0.98394 val loss: 0.6538 val acc: 0.787599
+ETA: 0.53 - epoch: 19 loss: 0.03555  acc: 0.98515 val loss: 1.0849 val acc: 0.743200
+ETA: 0.40 - epoch: 20 loss: 0.042175  acc: 0.98773 val loss: 3.0781 val acc: 0.722400
 ```
 
 Overfitting! But that’s ok for now. For that, we just need some care to consider such as **Image Augmentation**, **Learning Rate Schedule**, etc. In the working directory, run the following command to live tensorboard. In the below command, logs are the folder name that we created manually to save the event logs.
@@ -837,29 +825,27 @@ Overfitting! But that’s ok for now. For that, we just need some care to consid
 tensorboard --logdir logs
 ```
 
-## Save and Load
+### Save and Load
 
 There are [various ways](https://www.tensorflow.org/guide/keras/save_and_serialize) to save TensorFlow models depending on the API we’re using. Model **saving** and **re-loading** in model subclassing are not the same as in `Sequential` or `Functional API`. It needs some special attention. Currently, there are two formats to store the model: [SaveModel](https://www.tensorflow.org/guide/saved_model) and [HDF5](https://www.tensorflow.org/tutorials/keras/save_and_load). From the official doc:
 
 > The key difference between HDF5 and SavedModel is that HDF5 uses object configs to save the model architecture, while SavedModel saves the execution graph. Thus, SavedModels are able to save custom objects like subclassed models and custom layers without requiring the orginal code.
 
-So, it looks like `SavedModels` are able to save our custom subclassed models. But what if we want `HDF5` format for our custom subclassed models? According to the doc. we can do that either but we need some extra stuff. We must define the **get_config** method in our object. And also need to pass the object to the **custom_object** argument when loading the model. This argument must be a dictionary mapping: `tf.keras.models.load_model(path, custom_objects={‘CustomLayer’: CustomLayer})`. However, it seems like we can’t use HDF5 for now as we don’t use the `get_config` method in our customed object. However, it’s actually a good practice to define this function in the custom object. This will allow us to easily update the computation later if needed. But for now, let’s now save the model and reload it again with SavedModel format.
+So, it looks like `SavedModels` are able to save our custom subclassed models. But what if we want `HDF5` format for our custom subclassed models? According to the doc. we can do that either but we need some extra stuff. We must define the **get_config** method in our object. And also need to pass the object to the **custom_object** argument when loading the model. This argument must be a dictionary mapping: `tf.keras.models.load_model(path, custom_objects={‘CustomLayer’: CustomLayer})`. However, it seems like we can’t use HDF5 for now as we don’t use the `get_config` method in our customed object. However, it’s actually a good practice to define this function in the custom object. This will allow us to easily update the computation later if needed. But for now, let’s now save the model and reload it again with `SavedModel` format.
 
 ```
 model.save('net', save_format='tf')
 ```
 
-After that, it will create a new folder named net in the working directory. It will contain **assets, saved_model.pb, and variables**. The model architecture and training configuration, including the optimizer, losses, and metrics are stored in `saved_model.pb`. The weights are saved in the variables directory.
+After that, it will create a new folder named net in the working directory. It will contain **assets, saved_model.pb, and variables**. The model architecture and training configuration, including the optimizer, losses, and metrics are stored in `saved_model.pb`. The weights are saved in the `variables` directory.
 
-When saving the model and its layers, the **SavedModel** format stores the class name, **call** function, losses, and weights (and the config, if implemented). The **call** function defines the computation graph of the model/layer. In the absence of the model/layer config, the **call** function is used to create a model that exists like the original model which can be trained, evaluated, and used for inference. Later to re-load the saved model, we will do:
+When saving the model and its layers, the **SavedModel** format stores the class name, call function, losses, and weights (and the config, if implemented). The **call** function defines the computation graph of the model/layer. In the absence of the model/layer config, the **call** function is used to create a model that exists like the original model which can be trained, evaluated, and used for inference. Later to re-load the saved model, we will do:
 
 ```
 new_model = tf.keras.models.load_model("net", compile=False)
 ```
 
-Set `compile=False` is optional, I do this to avoid warning logs. Also as we are doing custom loop training, we don’t need any compilation.
-
-So far, we have talked about saving the entire model (`computation graph` and `parameters`). But what, if we want to save the trained weight only and reload the weight when need it. Yeap, we can do that too. Simply just,
+Set `compile=False` is optional, I do this to avoid warning logs. Also as we are doing custom loop training, we don’t need any compilation. So far, we have talked about saving the entire model (`computation graph` and `parameters`). But what, if we want to save the trained weight only and reload the weight when need it. Yeap, we can do that too. Simply just,
 
 ```
 model.save_weights('net.h5')
@@ -881,7 +867,7 @@ new_model = MiniInception()
 new_model.build((None, *x_train.shape[1:])) # or .build((x_train.shape))
 new_model.load_weights('net.h5')
 ```
-It will load successfully. Here is an awesome [article](https://colab.research.google.com/drive/172D4jishSgE3N7AO6U2OKAA_0wNnrMOq#scrollTo=xXgtNRCSyuIW) regarding saving and serializing models in TF.Keras by [François Chollet](https://twitter.com/fchollet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor), must-read.
+It will load successfully. Here is an awesome [article](https://colab.research.google.com/drive/172D4jishSgE3N7AO6U2OKAA_0wNnrMOq#scrollTo=xXgtNRCSyuIW) regarding saving and serializing models in `TF.Keras` by [François Chollet](https://twitter.com/fchollet?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor), must-read.
 
 ### Evaluation and Prediction
 
@@ -890,16 +876,12 @@ Though not necessary, let’s end up with measuring the model performance. **CIF
 ```python
 Y_pred = model.predict(x_test, verbose=1)
 y_pred = np.argmax(Y_pred, axis=1)
-
-
  
 target_names = ['airplane', 'automobile', 'bird', 'cat', 'deer',
                'dog', 'frog', 'horse', 'ship', 'truck']
 
-
 classification_report(np.argmax(y_test, axis=1), 
                       y_pred,target_names=target_names)
-
 
 #--------------------------------------------------------------------
 
@@ -938,7 +920,7 @@ multiclass_roc_auc_score(y_test,y_pred)
 #output: 0.8436111111111112
 ```
 
-### Confusion Matrix:
+**Confusion Matrix**
 
 ```python
 Y_pred = model.predict(x_test, verbose=2)
@@ -947,7 +929,6 @@ y_pred = np.argmax(Y_pred, axis=1)
 cm = confusion_matrix(np.argmax(y_test, axis=1), y_pred)
 cm = pd.DataFrame(cm, range(10),range(10))
 plt.figure(figsize = (10,10))
-
 
 sns.heatmap(cm, annot=True, annot_kws={"size": 12}) # font size
 plt.show()
@@ -974,4 +955,6 @@ class_names[label_index]
 
 This ends here. Thank you so much for reading the article, hope you guys enjoy it. The article is a bit long, so here is a quick summary; we first compare **TF.Keras** modeling APIs. Next, we use the Model Sub-Classing API to build a small **Inception** network step by step. Then we look at the training process of newly introduced custom loop training in TensorFlow 2 with **GradientTape**. We’ve also trained the subclassed **Inception** model end to end. And lastly, we discuss custom model saving and reloading followed by measuring the performance of these trained models.
 
-There are many new kinds of stuff introduced in TensorFlow 2. And TensorFlow developers are actively working to improve it in every release. Recently they’ve released [TensorFlow 2.4](https://github.com/tensorflow/tensorflow/releases) with lots of modifications. For example, these works use TensorFlow 2.3.1, differ from it, in 2.4 the tf.keras.mixed_precision is no longer experimental and now it allows the use of 16-bit floating-point formats during training, improving performance by up to 3x on GPUs and 60% on TPUs which are really cool.
+---
+
+Supplementary: [Code](https://github.com/innat/TensorFlow-2-Practice)
